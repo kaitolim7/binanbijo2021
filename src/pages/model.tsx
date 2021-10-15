@@ -6,10 +6,20 @@ import HeadingBox from "../components/HeadingBox";
 import ImageItem from "../components/ImageGridItem";
 import IntroLinkBox from "../components/IntroLinkBox";
 import ModelGrid from "../components/ModelGrid";
+import Image from "next/image";
+import KadaiInfoBox from "../../public/images/kadaiinfobox.png";
 
 export default function Model() {
   return (
     <Box w="100%" h="100%">
+      <Flex position="fixed" right="2.5" zIndex="overlay">
+        <Image
+          src={KadaiInfoBox}
+          width={50}
+          height={70}
+          objectPosition="right"
+        />
+      </Flex>
       <Box marginTop="18px" />
       <Heading>
         <Center fontSize="xl" color="lightblue">
