@@ -1,7 +1,11 @@
 import { Box, Center, Flex, Heading, SimpleGrid } from "@chakra-ui/layout";
 import { Spacer } from "@chakra-ui/react";
+import AdArea from "../components/AdArea";
+import Footer from "../components/Footer";
 import HeadingBox from "../components/HeadingBox";
-import ImageItem from "../components/ImageItem";
+import ImageItem from "../components/ImageGridItem";
+import IntroLinkBox from "../components/IntroLinkBox";
+import ModelGrid from "../components/ModelGrid";
 
 export default function Model() {
   return (
@@ -28,14 +32,42 @@ export default function Model() {
         <HeadingBox />
         <Spacer />
       </Flex>
-      <SimpleGrid columns={2} spacing={0}>
-        <ImageItem />
-        <ImageItem />
-        <ImageItem />
-        <ImageItem />
-        <ImageItem />
-        <ImageItem />
-      </SimpleGrid>
+      <ModelGrid />
+      <Box marginTop="56px" />
+      <Box w="100%" h="250px" position="relative" bgColor="gray.300">
+        <Box position="absolute" top="-25px">
+          <Flex marginX="8">
+            <HeadingBox />
+          </Flex>
+        </Box>
+        投票説明画像
+      </Box>
+      <Box marginTop="48px" />
+      <Box w="100%">
+        <Center>
+          <AdArea width="300px" height="250px" text="広告A" />
+        </Center>
+        <Box marginTop="16px" />
+        <Center>
+          <AdArea width="320px" height="100px" text="広告B①" />
+        </Center>
+        <Box marginTop="8px" />
+        <Center>
+          <AdArea width="320px" height="100px" text="広告B①" />
+        </Center>
+        <Box marginTop="16px" />
+        <Center>
+          <AdArea width="234px" height="60px" text="広告C①" />
+        </Center>
+        <Box marginTop="8px" />
+        <Center>
+          <AdArea width="234px" height="60px" text="広告C①" />
+        </Center>
+      </Box>
+      <Box marginTop="36px" />
+      <IntroLinkBox text="TOPに戻る" />
+      <Box marginTop="36px" />
+      <Footer />
     </Box>
   );
 }
