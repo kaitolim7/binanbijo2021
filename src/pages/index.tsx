@@ -4,6 +4,7 @@ import {
   Center,
   Container,
   Divider,
+  Flex,
   Heading,
   Text,
 } from "@chakra-ui/layout";
@@ -17,10 +18,20 @@ import AdArea from "../components/AdArea";
 import ImageSlider from "../components/ImageSlider";
 import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
+import KadaiInfoBox from "../../public/images/kadaiinfobox.png";
 
 const Home: NextPage = () => {
   return (
     <Box w="100%" h="100%">
+      <Flex position="fixed" right="2.5" zIndex="overlay">
+        <Image
+          src={KadaiInfoBox}
+          width={50}
+          height={70}
+          objectPosition="right"
+        />
+      </Flex>
+
       <Box marginTop="18px" />
       <Heading>
         <Center fontSize="xl" color="lightblue">

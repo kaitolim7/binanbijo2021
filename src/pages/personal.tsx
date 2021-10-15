@@ -5,10 +5,35 @@ import AdArea from "../components/AdArea";
 import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
 import PersonalImageSlider from "../components/PersonalImageSlider";
+import PersonalSns from "../components/PersonalSns";
+import KadaiInfoBox from "../../public/images/kadaiinfobox.png";
 
 export default function Personal() {
   return (
     <Box w="100%" h="100%">
+      <Flex position="fixed" right="2.5" zIndex="overlay">
+        <Image
+          src={KadaiInfoBox}
+          width={50}
+          height={70}
+          objectPosition="right"
+        />
+      </Flex>
+      <Flex position="fixed" right="2.5" bottom="8" zIndex="overlay">
+        <Center
+          w="68px"
+          h="68px"
+          bgColor="white"
+          marginX="auto"
+          borderRadius="full"
+          borderColor="black"
+          border="2px"
+        >
+          <Text fontWeight="bold" fontSize="sm" marginX="1">
+            投票する
+          </Text>
+        </Center>
+      </Flex>
       <Box marginTop="18px" />
       <Heading>
         <Center fontSize="xl" color="lightblue">
@@ -29,33 +54,45 @@ export default function Personal() {
         </Text>
       </Center>
       <Box marginTop="18px" />
-      <Flex>
-        <Text
-          borderColor="black"
-          border="2px"
-          borderStart="inherit"
-          fontSize="2xl"
-          fontWeight="bold"
-          padding="2"
-        >
-          No.1 さきっちょ
-        </Text>
-      </Flex>
-      <Box w="100%" h="100%">
-        <Image src={Test} layout="responsive" />
+      <Box w="100%" position="relative">
+        <Flex>
+          <Text
+            position="absolute"
+            top="20px"
+            zIndex="overlay"
+            borderColor="black"
+            border="2px"
+            borderStart="inherit"
+            bgColor="white"
+            fontSize="2xl"
+            fontWeight="bold"
+            padding="2"
+          >
+            No.1 さきっちょ
+          </Text>
+          <Spacer />
+          <PersonalSns />
+        </Flex>
+        <Box w="100%" h="100%">
+          <Image src={Test} layout="responsive" />
+        </Box>
+        <Flex justify="flex-end">
+          <Text
+            position="absolute"
+            bottom="-20px"
+            borderColor="black"
+            border="2px"
+            borderEnd="inherit"
+            bgColor="white"
+            fontSize="sm"
+            fontWeight="bold"
+            padding="2"
+          >
+            ● 教育学部 3年 ● 出身 / 鹿児島 ● サークル / -
+          </Text>
+        </Flex>
       </Box>
-      <Flex justify="flex-end">
-        <Text
-          borderColor="black"
-          border="2px"
-          borderEnd="inherit"
-          fontSize="sm"
-          fontWeight="bold"
-          padding="2"
-        >
-          ● 教育学部 3年 ● 出身 / 鹿児島 ● サークル / -
-        </Text>
-      </Flex>
+
       <Box marginTop="56px" />
       <Box w="100%">
         <Center>
