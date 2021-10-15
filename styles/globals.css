@@ -14,3 +14,22 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.relative {
+  position: relative;
+}
+.absolute-right {
+  position: absolute;
+  z-index: 1;
+  top: 37%;
+  right: 0%;
+}
+.absolute-left {
+  position: absolute;
+  z-index: 1;
+  top: 37%;
+  left: 0%;
+}
+.icon {
+  fill: #fff;
+}
