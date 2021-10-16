@@ -26,7 +26,7 @@ export default function ImageSliderSlider(props: Props) {
       </ScrollingCarousel>
       <Flex w="95%">
         <Spacer />
-        <Text fontWeight="bold" fontSize="md" as="u">
+        <Text fontWeight="bold" fontSize={["md", "xl"]} as="u">
           モデル一覧を見る
         </Text>
         <Text fontWeight="bold">→</Text>

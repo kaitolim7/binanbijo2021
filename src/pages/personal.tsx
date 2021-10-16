@@ -96,7 +96,11 @@ export default function Personal() {
       <Box marginTop="56px" />
       <Box w="100%">
         <Center>
-          <AdArea width="300px" height="250px" text="広告A" />
+          <AdArea
+            width={["300px", "600px"]}
+            height={["250px", "500px"]}
+            text="広告A"
+          />
         </Center>
       </Box>
       <Box marginTop="56px" />
@@ -182,25 +186,41 @@ export default function Personal() {
       <Box marginTop="36px" />
       <Box w="100%">
         <Center>
-          <AdArea width="320px" height="100px" text="広告B①" />
+          <AdArea
+            width={["320px", "640px"]}
+            height={["100px", "200px"]}
+            text="広告B①"
+          />
         </Center>
       </Box>
       <Box marginTop="12px" />
       <Box w="100%">
         <Center>
-          <AdArea width="320px" height="100px" text="広告B①" />
+          <AdArea
+            width={["320px", "640px"]}
+            height={["100px", "200px"]}
+            text="広告B①"
+          />
         </Center>
       </Box>
       <Box marginTop="12px" />
       <Box w="100%">
         <Center>
-          <AdArea width="234px" height="60px" text="広告C①" />
+          <AdArea
+            width={["234px", "540px"]}
+            height={["60px", "180px"]}
+            text="広告C①"
+          />
         </Center>
       </Box>
       <Box marginTop="12px" />
       <Box w="100%">
         <Center>
-          <AdArea width="234px" height="60px" text="広告C①" />
+          <AdArea
+            width={["234px", "540px"]}
+            height={["60px", "180px"]}
+            text="広告C①"
+          />
         </Center>
       </Box>
       <Box marginTop="56px" />
