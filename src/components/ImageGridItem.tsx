@@ -1,10 +1,13 @@
 import Test from "../../public/images/parker.jpeg";
 import Image from "next/image";
 import { Box, Center, Flex, Spacer, Text } from "@chakra-ui/layout";
+import { useBreakpointValue } from "@chakra-ui/media-query";
 
 export default function ImageGridItem() {
+  const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
+
   return (
-    <Box padding="8px">
+    <Flex padding="8px" flexDir="column">
       <Flex>
         <Text
           marginX="3"
@@ -19,7 +22,12 @@ export default function ImageGridItem() {
           FINAL決定
         </Text>
       </Flex>
-      <Image src={Test} width={180} height={140} />
+      {isXl ? (
+        <Image src={Test} width={300} height={220} />
+      ) : (
+        <Image src={Test} width={180} height={140} />
+      )}
+
       <Flex>
         <Spacer />
         <Text fontSize="md" fontWeight="bold">
@@ -31,6 +39,6 @@ export default function ImageGridItem() {
         </Text>
         <Spacer />
       </Flex>
-    </Box>
+    </Flex>
   );
 }

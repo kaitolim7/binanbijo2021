@@ -1,25 +1,23 @@
-import { Box, Center, Flex, Heading, SimpleGrid } from "@chakra-ui/layout";
+import {
+  Box,
+  Center,
+  Flex,
+  Heading,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/layout";
 import { Spacer } from "@chakra-ui/react";
 import AdArea from "../components/AdArea";
 import Footer from "../components/Footer";
 import HeadingBox from "../components/HeadingBox";
-import ImageItem from "../components/ImageGridItem";
 import IntroLinkBox from "../components/IntroLinkBox";
 import ModelGrid from "../components/ModelGrid";
-import Image from "next/image";
-import KadaiInfoBox from "../../public/images/kadaiinfobox.png";
+import MenuBox from "../components/MenuBox";
 
 export default function Model() {
   return (
     <Box w="100%" h="100%">
-      <Flex position="fixed" right="2.5" zIndex="overlay">
-        <Image
-          src={KadaiInfoBox}
-          width={50}
-          height={70}
-          objectPosition="right"
-        />
-      </Flex>
+      <MenuBox />
       <Box marginTop="18px" />
       <Heading>
         <Center fontSize="xl" color="lightblue">
@@ -42,37 +40,81 @@ export default function Model() {
         <HeadingBox />
         <Spacer />
       </Flex>
-      <ModelGrid />
+      <Flex>
+        <Spacer />
+        <ModelGrid />
+        <Spacer />
+      </Flex>
       <Box marginTop="56px" />
-      <Box w="100%" h="250px" position="relative" bgColor="gray.300">
+      <Box w="100%" position="relative">
         <Box position="absolute" top="-25px">
-          <Flex marginX="8">
+          <Flex justify={["center", "initial"]}>
             <HeadingBox />
           </Flex>
         </Box>
-        投票説明画像
+        <Flex justify={["initial", "center"]}>
+          <Text w={["100%", "350px"]} h="250px" bgColor="gray.300">
+            投票説明画像
+          </Text>
+        </Flex>
       </Box>
       <Box marginTop="48px" />
       <Box w="100%">
         <Center>
-          <AdArea width="300px" height="250px" text="広告A" />
+          <AdArea
+            width={["300px", "600px"]}
+            height={["250px", "500px"]}
+            text="広告A"
+          />
         </Center>
         <Box marginTop="16px" />
-        <Center>
-          <AdArea width="320px" height="100px" text="広告B①" />
-        </Center>
-        <Box marginTop="8px" />
-        <Center>
-          <AdArea width="320px" height="100px" text="広告B①" />
-        </Center>
+        <Flex justify="center" flexDir={["column", "row"]}>
+          <Spacer />
+          <Spacer />
+          <Center>
+            <AdArea
+              width={["320px", "640px"]}
+              height={["100px", "200px"]}
+              text="広告B①"
+            />
+          </Center>
+          <Spacer />
+          <Box marginTop="18px" />
+          <Center>
+            <AdArea
+              width={["320px", "640px"]}
+              height={["100px", "200px"]}
+              text="広告B①"
+            />
+          </Center>
+          <Spacer />
+          <Spacer />
+        </Flex>
         <Box marginTop="16px" />
-        <Center>
-          <AdArea width="234px" height="60px" text="広告C①" />
-        </Center>
-        <Box marginTop="8px" />
-        <Center>
-          <AdArea width="234px" height="60px" text="広告C①" />
-        </Center>
+        <Flex flexDir={["column", "row"]}>
+          <Spacer />
+          <Spacer />
+          <Spacer />
+          <Center>
+            <AdArea
+              width={["234px", "540px"]}
+              height={["60px", "180px"]}
+              text="広告C①"
+            />
+          </Center>
+          <Spacer />
+          <Box marginTop="18px" />
+          <Center>
+            <AdArea
+              width={["234px", "540px"]}
+              height={["60px", "180px"]}
+              text="広告C①"
+            />
+          </Center>
+          <Spacer />
+          <Spacer />
+          <Spacer />
+        </Flex>
       </Box>
       <Box marginTop="36px" />
       <IntroLinkBox text="TOPに戻る" />
