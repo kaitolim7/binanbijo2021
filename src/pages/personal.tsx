@@ -1,42 +1,37 @@
 import { Box, Center, Flex, Heading, Spacer, Text } from "@chakra-ui/layout";
-import Test from "../../public/images/parker.jpeg";
 import Image from "next/image";
 import AdArea from "../components/AdArea";
-import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
 import PersonalImageSlider from "../components/PersonalImageSlider";
-import PersonalSns from "../components/PersonalSns";
 import KadaiInfoBox from "../../public/images/kadaiinfobox.png";
+import PersonalTopImage from "../components/PersonalTopImage";
+import PersonalMovie from "../components/PersonalMovie";
+import PersonalInterview from "../components/PersonalInterview";
+import PersonalAdArea from "../components/PersonalAdArea";
+import MenuBox from "../components/MenuBox";
 
 export default function Personal() {
   return (
     <Box w="100%" h="100%">
-      <Flex position="fixed" right="2.5" zIndex="overlay">
-        <Image
-          src={KadaiInfoBox}
-          width={50}
-          height={70}
-          objectPosition="right"
-        />
-      </Flex>
-      <Flex position="fixed" right="2.5" bottom="8" zIndex="overlay">
+      <MenuBox />
+      <Flex position="fixed" right={["2.5", "5"]} bottom="8" zIndex="overlay">
         <Center
-          w="68px"
-          h="68px"
+          w={["68px", "96px"]}
+          h={["68px", "96px"]}
           bgColor="white"
           marginX="auto"
           borderRadius="full"
           borderColor="black"
           border="2px"
         >
-          <Text fontWeight="bold" fontSize="sm" marginX="1">
+          <Text fontWeight="bold" fontSize={["sm", "md"]} marginX="1">
             投票する
           </Text>
         </Center>
       </Flex>
       <Box marginTop="18px" />
       <Heading>
-        <Center fontSize="xl" color="lightblue">
+        <Center fontSize={["xl", "4xl"]} color="lightblue">
           KADAI INFO
         </Center>
       </Heading>
@@ -45,53 +40,18 @@ export default function Personal() {
         <Center>Top画像</Center>
       </Box>
       <Box marginTop="36px" />
-      <Heading>
-        <Center>MODEL</Center>
-      </Heading>
-      <Center>
-        <Text color="red.600" fontSize="xl">
-          Girls
-        </Text>
-      </Center>
+      <Flex flexDir={["column", "row"]} justify="center">
+        <Heading>
+          <Center>MODEL</Center>
+        </Heading>
+        <Center marginLeft={["0", "8"]}>
+          <Text color="red.600" fontSize="xl">
+            Girls
+          </Text>
+        </Center>
+      </Flex>
       <Box marginTop="18px" />
-      <Box w="100%" position="relative">
-        <Flex>
-          <Text
-            position="absolute"
-            top="20px"
-            zIndex="overlay"
-            borderColor="black"
-            border="2px"
-            borderStart="inherit"
-            bgColor="white"
-            fontSize="2xl"
-            fontWeight="bold"
-            padding="2"
-          >
-            No.1 さきっちょ
-          </Text>
-          <Spacer />
-          <PersonalSns />
-        </Flex>
-        <Box w="100%" h="100%">
-          <Image src={Test} layout="responsive" />
-        </Box>
-        <Flex justify="flex-end">
-          <Text
-            position="absolute"
-            bottom="-20px"
-            borderColor="black"
-            border="2px"
-            borderEnd="inherit"
-            bgColor="white"
-            fontSize="sm"
-            fontWeight="bold"
-            padding="2"
-          >
-            ● 教育学部 3年 ● 出身 / 鹿児島 ● サークル / -
-          </Text>
-        </Flex>
-      </Box>
+      <PersonalTopImage />
 
       <Box marginTop="56px" />
       <Box w="100%">
@@ -104,125 +64,28 @@ export default function Personal() {
         </Center>
       </Box>
       <Box marginTop="56px" />
-      <Heading fontSize="2xl">一 PHOTO</Heading>
+      <Heading fontSize="2xl" marginLeft={["0", "80"]}>
+        一 PHOTO
+      </Heading>
       <Box marginTop="24px" />
-      <Box w="100%">
+      <Box w="100%" h="100%">
         <PersonalImageSlider />
       </Box>
       <Box marginTop="56px" />
-      <Heading fontSize="2xl">一 MOVIE</Heading>
+      <Heading fontSize="2xl" marginLeft={["0", "80"]}>
+        一 MOVIE
+      </Heading>
       <Box marginTop="24px" />
       <Box w="100%">
         <Box marginX="4">
-          <iframe
-            width="100%"
-            height="300"
-            src="https://www.youtube.com/embed/7AYP2SvN_VA"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <PersonalMovie />
         </Box>
       </Box>
       <Box marginTop="56px" />
-      <Heading fontSize="2xl">一 INTERVIEW①</Heading>
-      <Box marginTop="24px" />
-      <Box marginLeft="8">
-        <Text fontSize="xs" paddingBottom="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-      </Box>
-      <Box marginTop="24px" />
-      <Box w="100%" h="100%">
-        <Image src={Test} layout="responsive" />
-      </Box>
-      <Box marginTop="56px" />
-      <Heading fontSize="2xl">一 INTERVIEW②</Heading>
-      <Box marginTop="24px" />
-      <Box marginLeft="8">
-        <Text fontSize="xs" paddingBottom="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-        <Text fontSize="xs" paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
-        </Text>
-      </Box>
+      <PersonalInterview />
+
       <Box marginTop="36px" />
-      <Center
-        marginX="32"
-        borderColor="black"
-        borderWidth="thin"
-        borderTop="hidden"
-        borderX="hidden"
-      >
-        <Text fontSize="xl">撮影 : ahn</Text>
-      </Center>
-      <Box marginTop="36px" />
-      <IntroLinkBox text="この人に投票する" />
-      <Box marginTop="16px" />
-      <IntroLinkBox text="他のモデルを見る" />
-      <Box marginTop="36px" />
-      <Box w="100%">
-        <Center>
-          <AdArea
-            width={["320px", "640px"]}
-            height={["100px", "200px"]}
-            text="広告B①"
-          />
-        </Center>
-      </Box>
-      <Box marginTop="12px" />
-      <Box w="100%">
-        <Center>
-          <AdArea
-            width={["320px", "640px"]}
-            height={["100px", "200px"]}
-            text="広告B①"
-          />
-        </Center>
-      </Box>
-      <Box marginTop="12px" />
-      <Box w="100%">
-        <Center>
-          <AdArea
-            width={["234px", "540px"]}
-            height={["60px", "180px"]}
-            text="広告C①"
-          />
-        </Center>
-      </Box>
-      <Box marginTop="12px" />
-      <Box w="100%">
-        <Center>
-          <AdArea
-            width={["234px", "540px"]}
-            height={["60px", "180px"]}
-            text="広告C①"
-          />
-        </Center>
-      </Box>
+      <PersonalAdArea />
       <Box marginTop="56px" />
       <Footer />
     </Box>

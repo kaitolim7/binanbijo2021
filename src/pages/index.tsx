@@ -19,23 +19,16 @@ import AdArea from "../components/AdArea";
 import ImageSlider from "../components/ImageSlider";
 import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
-import KadaiInfoBox from "../../public/images/kadaiinfobox.png";
+
 import { useBreakpointValue } from "@chakra-ui/media-query";
+import MenuBox from "../components/MenuBox";
 
 const Home: NextPage = () => {
   const hiddenAddAreaB = useBreakpointValue({ sm: false, xl: true });
 
   return (
     <Box w="100%" h="100%">
-      <Flex position="fixed" right="2.5" zIndex="overlay">
-        <Image
-          src={KadaiInfoBox}
-          width={50}
-          height={70}
-          objectPosition="right"
-        />
-      </Flex>
-
+      <MenuBox />
       <Box marginTop="18" />
       <Heading>
         <Center fontSize={["xl", "4xl"]} color="lightblue">
@@ -150,25 +143,31 @@ const Home: NextPage = () => {
       </Box>
       <Box marginTop="12px" />
       <Flex flexDir={["column", "row"]}>
-        <Box w="100%">
-          <Center>
-            <AdArea
-              width={["234px", "540px"]}
-              height={["60px", "180px"]}
-              text="広告C①"
-            />
-          </Center>
-        </Box>
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Center>
+          <AdArea
+            width={["234px", "540px"]}
+            height={["60px", "180px"]}
+            text="広告C①"
+          />
+        </Center>
+        <Spacer />
+
         <Box marginTop="12px" />
-        <Box w="100%">
-          <Center>
-            <AdArea
-              width={["234px", "540px"]}
-              height={["60px", "180px"]}
-              text="広告C②"
-            />
-          </Center>
-        </Box>
+        <Center>
+          <AdArea
+            width={["234px", "540px"]}
+            height={["60px", "180px"]}
+            text="広告C②"
+          />
+        </Center>
+        <Spacer />
+        <Spacer />
+        <Spacer />
+        <Spacer />
       </Flex>
       <Box marginTop="56px" />
       <Box w="100%" position="relative">

@@ -7,7 +7,7 @@ type Props = {
 export default function IntroLinkBox(props: Props) {
   return (
     <Center
-      w="70%"
+      w="300px"
       h="60px"
       marginX="auto"
       borderRadius="full"
