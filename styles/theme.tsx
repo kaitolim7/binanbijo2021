@@ -7,19 +7,10 @@ const theme = extendTheme({
     heading: "irohakakuC-Bold",
     body: "'YuGothic', 'Yu Gothic Medium', 'Yu Gothic'",
   },
-  components: {
-    Divider: {
-      baseStyle: {
-        colorScheme: "red", // Normally, it is "semibold"
-      },
-      sizes: {
-        xl: {
-          h: "56px",
-          fontSize: "lg",
-          px: "32px",
-        },
-      },
-    },
+  colors: {
+    base: "#fff",
+    main: "#250B0D",
+    accent: "#F6D967",
   },
   breakpoints: {
     sm: "30em",

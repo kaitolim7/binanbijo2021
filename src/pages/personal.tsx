@@ -9,6 +9,8 @@ import PersonalMovie from "../components/PersonalMovie";
 import PersonalInterview from "../components/PersonalInterview";
 import PersonalAdArea from "../components/PersonalAdArea";
 import MenuBox from "../components/MenuBox";
+import HeadingModel2 from "../components/HeadingModel2";
+import Header from "../components/Header";
 
 export default function Personal() {
   return (
@@ -30,20 +32,12 @@ export default function Personal() {
         </Center>
       </Flex>
       <Box marginTop="18px" />
-      <Heading>
-        <Center fontSize={["xl", "4xl"]} color="lightblue">
-          KADAI INFO
-        </Center>
-      </Heading>
-      <Box marginTop="18px" />
-      <Box w="100%" h="200px" bgColor="gray.200">
-        <Center>Top画像</Center>
-      </Box>
+      <Header />
       <Box marginTop="36px" />
       <Flex flexDir={["column", "row"]} justify="center">
-        <Heading>
-          <Center>MODEL</Center>
-        </Heading>
+        <Center>
+          <HeadingModel2 />
+        </Center>
         <Center marginLeft={["0", "8"]}>
           <Text color="red.600" fontSize="xl">
             Girls
