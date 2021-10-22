@@ -1,7 +1,7 @@
 import { Box, Center, Flex, Spacer, Text } from "@chakra-ui/layout";
 import Image from "next/image";
-import TwitterLogo from "../../public/images/twitter_icon.png";
-import InstagramLogo from "../../public/images/instagram_icon.png";
+import TwitterLogo from "../../public/svgs/personal_twitter.svg";
+import InstagramLogo from "../../public/svgs/personal_instagram.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
 export default function PersonalSns() {
@@ -23,7 +23,7 @@ export default function PersonalSns() {
           </Flex>
           <Box marginTop="16px" />
           <Flex paddingRight="3" alignItems="flex-end">
-            <Image src={InstagramLogo} width={46} height={46} />
+            <Image src={TwitterLogo} width={46} height={46} />
           </Flex>
         </Flex>
       </Box>
@@ -40,7 +40,7 @@ export default function PersonalSns() {
           </Flex>
           <Box marginTop="16px" />
           <Flex paddingRight="3" alignItems="flex-end">
-            <Image src={InstagramLogo} width={36} height={36} />
+            <Image src={TwitterLogo} width={36} height={36} />
           </Flex>
         </Flex>
       </Box>

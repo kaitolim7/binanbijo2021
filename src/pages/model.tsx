@@ -1,11 +1,4 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Heading,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/layout";
+import { Box, Center, Flex, Heading, Text } from "@chakra-ui/layout";
 import { Spacer } from "@chakra-ui/react";
 import AdArea from "../components/AdArea";
 import Footer from "../components/Footer";
@@ -13,31 +6,25 @@ import HeadingBox from "../components/HeadingBox";
 import IntroLinkBox from "../components/IntroLinkBox";
 import ModelGrid from "../components/ModelGrid";
 import MenuBox from "../components/MenuBox";
+import HeadingModel2 from "../components/HeadingModel2";
+import Header from "../components/Header";
 
 export default function Model() {
   return (
     <Box w="100%" h="100%">
       <MenuBox />
       <Box marginTop="18px" />
-      <Heading>
-        <Center fontSize="xl" color="lightblue">
-          KADAI INFO
-        </Center>
-      </Heading>
-      <Box marginTop="18px" />
-      <Box w="100%" h="200px" bgColor="gray.200">
-        <Center>Top画像</Center>
-      </Box>
+      <Header />
       <Box marginTop="36px" />
-      <Heading>
-        <Center>MODEL</Center>
-      </Heading>
+      <Center>
+        <HeadingModel2 />
+      </Center>
       <Box marginTop="16px" />
       <Flex w="100%" h="100px">
         <Spacer />
-        <HeadingBox />
+        <HeadingBox title="Girls" />
         <Spacer />
-        <HeadingBox />
+        <HeadingBox title="Boys" />
         <Spacer />
       </Flex>
       <Flex>
@@ -49,7 +36,7 @@ export default function Model() {
       <Box w="100%" position="relative">
         <Box position="absolute" top="-25px">
           <Flex justify={["center", "initial"]}>
-            <HeadingBox />
+            <HeadingBox title="投票方法" />
           </Flex>
         </Box>
         <Flex justify={["initial", "center"]}>

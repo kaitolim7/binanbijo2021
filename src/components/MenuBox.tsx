@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import Image from "next/image";
-import KadaiInfoBox from "../../public/images/kadaiinfobox.png";
+import KadaiInfoMenuBox from "../../public/svgs/menu_box.svg";
 
 export default function MenuBox() {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
@@ -10,9 +10,9 @@ export default function MenuBox() {
     return (
       <Flex position="fixed" right="5" zIndex="overlay">
         <Image
-          src={KadaiInfoBox}
-          width={90}
-          height={150}
+          src={KadaiInfoMenuBox}
+          // width={90}
+          // height={150}
           objectPosition="right"
         />
       </Flex>
@@ -21,7 +21,7 @@ export default function MenuBox() {
     return (
       <Flex position="fixed" right="2.5" zIndex="overlay">
         <Image
-          src={KadaiInfoBox}
+          src={KadaiInfoMenuBox}
           width={50}
           height={70}
           objectPosition="right"

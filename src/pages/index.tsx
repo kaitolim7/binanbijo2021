@@ -22,6 +22,12 @@ import Footer from "../components/Footer";
 
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import MenuBox from "../components/MenuBox";
+import HeadingVote from "../components/HeadingVote";
+import HeadingSchedule from "../components/HeadingSchedule";
+import HeadingOperation from "../components/HeadingOperation";
+import HeadingModel from "../components/HeadingModel";
+import Header from "../components/Header";
+import NewsBox from "../components/NewsBox";
 
 const Home: NextPage = () => {
   const hiddenAddAreaB = useBreakpointValue({ sm: false, xl: true });
@@ -30,36 +36,12 @@ const Home: NextPage = () => {
     <Box w="100%" h="100%">
       <MenuBox />
       <Box marginTop="18" />
-      <Heading>
-        <Center fontSize={["xl", "4xl"]} color="lightblue">
-          KADAI INFO
-        </Center>
-      </Heading>
+      <Header />
       <Box marginTop="18px" />
-      <Box w="100%" h={["300px", "500px"]} bgColor="gray.200">
-        <Center>Top画像</Center>
-      </Box>
       <Box marginTop={["36px", "36px"]} />
       <Flex flexDir={["column", "row"]}>
-        <Flex justify={["center", "flex-start"]} marginTop={["0", "56"]}>
-          <HeadingBox />
-        </Flex>
-        <Box w={["100%", "80%"]} h={["250px"]} marginTop={["0", "56"]}>
-          <Center>
-            <Box w={["90%", "70%"]}>
-              <Text fontWeight="bold" fontSize="sm">
-                New!!
-              </Text>
-              <NewsLine />
-              <NewsLine />
-              <NewsLine />
-              <Box marginTop="8px" />
-              <Text fontWeight="bold" fontSize="sm">
-                もっと見る
-              </Text>
-            </Box>
-          </Center>
-        </Box>
+        <NewsBox />
+        <Box marginTop="36px" />
         <Box w="100%">
           <Center>
             <AdArea
@@ -71,16 +53,16 @@ const Home: NextPage = () => {
         </Box>
       </Flex>
       <Box marginTop={["36px", "36px"]} />
-      <Flex justify={["center", "initial"]}>
-        <HeadingBox />
+      <Flex justify={["flex-end", "initial"]}>
+        <HeadingModel />
       </Flex>
-      <Box marginTop="36px" />
+
       <ImageSlider heading="Girls" hedingColor="red.600" />
       <Box marginTop="30px" />
       <ImageSlider heading="Boys" hedingColor="blue.600" />
       <Box marginTop="36px" />
       <Flex justify={["center", "initial"]}>
-        <HeadingBox />
+        <HeadingVote />
       </Flex>
       <Flex justify={["initial", "center"]}>
         <Text w={["100%", "350px"]} h="250px" bgColor="gray.300">
@@ -110,7 +92,7 @@ const Home: NextPage = () => {
       </Flex>
       <Box marginTop="36px" />
       <Flex justify={["center", "initial"]}>
-        <HeadingBox />
+        <HeadingSchedule />
       </Flex>
       <Flex justify={["initial", "center"]}>
         <Text w={["100%", "350px"]} h="250px" bgColor="gray.300">
@@ -171,11 +153,9 @@ const Home: NextPage = () => {
       </Flex>
       <Box marginTop="56px" />
       <Box w="100%" position="relative">
-        <Box position="absolute" top="-25px">
-          <Flex justify={["center", "initial"]}>
-            <HeadingBox />
-          </Flex>
-        </Box>
+        <Flex position="absolute" top="-12" left="20">
+          <HeadingOperation />
+        </Flex>
         <Flex justify={["initial", "center"]}>
           <Text w={["100%", "350px"]} h="250px" bgColor="gray.300">
             KADAI INFOの紹介画像
