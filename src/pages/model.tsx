@@ -8,6 +8,8 @@ import ModelGrid from "../components/ModelGrid";
 import MenuBox from "../components/MenuBox";
 import HeadingModel2 from "../components/HeadingModel2";
 import Header from "../components/Header";
+import HeadingGenderButton from "../components/HeadingGenderButton";
+import HeadingVote from "../components/HeadingVote";
 
 export default function Model() {
   return (
@@ -20,13 +22,7 @@ export default function Model() {
         <HeadingModel2 />
       </Center>
       <Box marginTop="16px" />
-      <Flex w="100%" h="100px">
-        <Spacer />
-        <HeadingBox title="Girls" />
-        <Spacer />
-        <HeadingBox title="Boys" />
-        <Spacer />
-      </Flex>
+      <HeadingGenderButton />
       <Flex>
         <Spacer />
         <ModelGrid />
@@ -36,7 +32,7 @@ export default function Model() {
       <Box w="100%" position="relative">
         <Box position="absolute" top="-25px">
           <Flex justify={["center", "initial"]}>
-            <HeadingBox title="投票方法" />
+            <HeadingVote />
           </Flex>
         </Box>
         <Flex justify={["initial", "center"]}>
@@ -105,7 +101,7 @@ export default function Model() {
       </Box>
       <Box marginTop="36px" />
       <IntroLinkBox text="TOPに戻る" />
-      <Box marginTop="36px" />
+      <Box marginTop="56px" />
       <Footer />
     </Box>
   );
