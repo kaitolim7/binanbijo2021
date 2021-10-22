@@ -28,6 +28,7 @@ import HeadingOperation from "../components/HeadingOperation";
 import HeadingModel from "../components/HeadingModel";
 import Header from "../components/Header";
 import NewsBox from "../components/NewsBox";
+import Intro from "../../public/svgs/introduction.svg";
 
 const Home: NextPage = () => {
   const hiddenAddAreaB = useBreakpointValue({ sm: false, xl: true });
@@ -60,6 +61,8 @@ const Home: NextPage = () => {
       <ImageSlider heading="Girls" hedingColor="red.600" />
       <Box marginTop="30px" />
       <ImageSlider heading="Boys" hedingColor="blue.600" />
+      <Box marginTop="36px" />
+      <Image src={Intro} />
       <Box marginTop="36px" />
       <Flex justify={["center", "initial"]}>
         <HeadingVote />

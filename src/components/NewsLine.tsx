@@ -1,9 +1,12 @@
 import { Box, Divider, Text } from "@chakra-ui/layout";
-import theme from "../../styles/theme";
 
-export default function NewsLine() {
+type Props = {
+  height: number;
+};
+
+export default function NewsLine(props: Props) {
   return (
-    <Box>
+    <Box h={props.height}>
       <Text fontSize="sm">2021.12.15</Text>
       <Text fontSize="sm" align="center">
         モデル画像「PHOTO」が追加されました。

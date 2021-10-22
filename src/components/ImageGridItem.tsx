@@ -15,7 +15,7 @@ export default function ImageGridItem() {
           borderWidth="thin"
           fontSize="x-small"
           fontWeight="bold"
-          bgColor="yellow"
+          bgColor="accent"
           paddingTop="0.5"
           paddingX="3"
         >
