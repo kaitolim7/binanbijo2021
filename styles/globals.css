@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.rounded {
+  border-radius: 9999px;
+}

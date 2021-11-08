@@ -4,7 +4,11 @@ import TwitterLogo from "../../public/svgs/personal_twitter.svg";
 import InstagramLogo from "../../public/svgs/personal_instagram.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
-export default function PersonalSns() {
+type Props = {
+  disable?: boolean;
+};
+
+export default function PersonalSns(props: Props) {
   const isXl = useBreakpointValue({
     sm: false,
     md: false,
@@ -31,7 +35,12 @@ export default function PersonalSns() {
   } else {
     return (
       <Box paddingBottom="1">
-        <Text fontSize="sm" fontWeight="bold" textAlign="center">
+        <Text
+          fontSize="sm"
+          fontWeight="bold"
+          textAlign="center"
+          hidden={props.disable}
+        >
           \ check it /&nbsp;&nbsp;&nbsp;
         </Text>
         <Flex>

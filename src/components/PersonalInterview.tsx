@@ -12,19 +12,19 @@ export default function PersonalInterview() {
       <Box marginTop="24px" />
       <Box marginLeft={["8", "96"]}>
         <Text fontSize={["xs", "md"]} paddingBottom="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
+          ◯ 休日の過ごし方 / ひとりでYOUTUBE
         </Text>
         <Text fontSize={["xs", "md"]} paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
+          ◯ 休日の過ごし方 / ひとりでYOUTUBE
         </Text>
         <Text fontSize={["xs", "md"]} paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
+          ◯ 休日の過ごし方 / ひとりでYOUTUBE
         </Text>
         <Text fontSize={["xs", "md"]} paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
+          ◯ 休日の過ごし方 / ひとりでYOUTUBE
         </Text>
         <Text fontSize={["xs", "md"]} paddingY="2">
-          ◯ 休日の過ごし方 / ひとりごそごそ
+          ◯ 休日の過ごし方 / ひとりでYOUTUBE
         </Text>
       </Box>
       <Box marginTop="24px" />
@@ -40,19 +40,19 @@ export default function PersonalInterview() {
               <Box marginTop="24px" />
               <Box marginLeft="16">
                 <Text fontSize={["xs", "md"]} paddingBottom="2">
-                  ◯ 休日の過ごし方 / ひとりごそごそ
+                  ◯ 休日の過ごし方 / ひとりでYOUTUBE
                 </Text>
                 <Text fontSize={["xs", "md"]} paddingY="2">
-                  ◯ 休日の過ごし方 / ひとりごそごそ
+                  ◯ 休日の過ごし方 / ひとりでYOUTUBE
                 </Text>
                 <Text fontSize={["xs", "md"]} paddingY="2">
-                  ◯ 休日の過ごし方 / ひとりごそごそ
+                  ◯ 休日の過ごし方 / ひとりでYOUTUBE
                 </Text>
                 <Text fontSize={["xs", "md"]} paddingY="2">
-                  ◯ 休日の過ごし方 / ひとりごそごそ
+                  ◯ 休日の過ごし方 / ひとりでYOUTUBE
                 </Text>
                 <Text fontSize={["xs", "md"]} paddingY="2">
-                  ◯ 休日の過ごし方 / ひとりごそごそ
+                  ◯ 休日の過ごし方 / ひとりでYOUTUBE
                 </Text>
               </Box>
             </Box>
