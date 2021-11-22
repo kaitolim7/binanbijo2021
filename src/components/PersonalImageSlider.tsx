@@ -1,45 +1,97 @@
-import { Center } from "@chakra-ui/layout";
+import { Center, Flex, Spacer } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { useEffect } from "react";
-import SimpleImageSlider from "react-simple-image-slider";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Test from "../../public/images/parker.jpeg";
+import Test1 from "../../public/svgs/menu_box.svg";
+import ImageSliderItem from "./ImageSliderItem";
+import RightIcon from "./RightIcon";
+import LeftIcon from "./LeftIcon";
 export default function PersonalImageSlider() {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
-  const images = [
-    {
-      url: Test.src,
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
     },
-    {
-      url: Test.src,
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
     },
-    {
-      url: Test.src,
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
     },
-    {
-      url: Test.src,
-    },
-  ];
+  };
+
   if (isXl) {
     return (
-      <Center>
-        <SimpleImageSlider
-          width={540}
-          height={400}
-          images={images}
-          showNavs={true}
-          showBullets={true}
-        />
-      </Center>
+      <Flex mx={20}>
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={"desktop"}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+          customRightArrow={<RightIcon />}
+          customLeftArrow={<LeftIcon />}
+          focusOnSelect={true}
+        >
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+        </Carousel>
+      </Flex>
     );
   } else {
     return (
-      <SimpleImageSlider
-        width="100%"
-        height="250px"
-        images={images}
-        showNavs={true}
-        showBullets={true}
-      />
+      <Flex>
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          deviceType={"desktop"}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+          customRightArrow={<RightIcon />}
+          customLeftArrow={<LeftIcon />}
+          focusOnSelect={true}
+        >
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+          <ImageSliderItem />
+        </Carousel>
+      </Flex>
     );
   }
 }

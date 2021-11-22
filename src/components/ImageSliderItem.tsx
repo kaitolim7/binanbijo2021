@@ -1,11 +1,21 @@
 import Test from "../../public/images/parker.jpeg";
 import Image from "next/image";
-import { Box, Center, Flex, Spacer, Text } from "@chakra-ui/layout";
+import { Box, Center } from "@chakra-ui/layout";
+import { useBreakpointValue } from "@chakra-ui/media-query";
 
 export default function ImageSliderItem() {
-  return (
-    <Box padding="8px">
-      <Image src={Test} width={180} height={140} />
-    </Box>
-  );
+  const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
+  if (isXl) {
+    return (
+      <Center mx={3}>
+        <Image src={Test} />
+      </Center>
+    );
+  } else {
+    return (
+      <Center>
+        <Image src={Test} />
+      </Center>
+    );
+  }
 }

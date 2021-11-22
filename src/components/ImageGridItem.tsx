@@ -13,7 +13,7 @@ export default function ImageGridItem() {
           marginX="3"
           borderColor="black"
           borderWidth="thin"
-          fontSize="x-small"
+          fontSize={["x-small", "sm"]}
           fontWeight="bold"
           bgColor="accent"
           paddingTop="0.5"

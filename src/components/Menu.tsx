@@ -6,106 +6,20 @@ import YouTubeLogo from "../../public/svgs/youtube.svg";
 import InstagramLogo from "../../public/svgs/instagram.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import OurSns from "../../public/svgs/oursns.svg";
-import KadaiInfoBox from "../../public/svgs/kadaiinfo_box.svg";
+import KadaiInfoMenuBoxRotate from "../../public/svgs/menu_box_rotate.svg";
 import { useRouter } from "next/dist/client/router";
 
-export default function Footer() {
+export default function Menu() {
   const router = useRouter();
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   if (isXl) {
     return (
-      <Box>
-        <Box w="100%" h="100px" bgColor="accent" position="relative">
-          <Box position="absolute" top="-20" left="44">
-            <Image src={KadaiInfoBox} width={100} height={161} />
-          </Box>
-          <Flex justify="center" paddingTop="8">
-            <Text
-              paddingRight="8"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
-              onClick={() => router.push("/")}
-            >
-              Top
-            </Text>
-            <Text
-              paddingRight="8"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
-              onClick={() => router.push("/intro")}
-            >
-              企画概要
-            </Text>
-            <Text
-              paddingRight="8"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
-              onClick={() => router.push("/photographer")}
-            >
-              カメラマン紹介
-            </Text>
-            <Text
-              paddingRight="8"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
-            >
-              過去の美男美女SNAP
-            </Text>
-
-            <Text
-              paddingRight="8"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
-              onClick={() => router.push("/model")}
-            >
-              モデル一覧
-            </Text>
-            <Text
-              paddingRight="8"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
-            >
-              お問い合わせ
-            </Text>
-            <Text
-              paddingRight="8"
-              fontSize="xl"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
-            >
-              KADAIINFOとは
-            </Text>
-          </Flex>
-        </Box>
-        <Box w="100%" bgColor="accent">
-          <Flex justifyContent="center" alignItems="center">
+      <Flex justify="center" bgColor="accent">
+        <Box mt={8} mb={5}>
+          <Center>
+            <Image src={KadaiInfoMenuBoxRotate} />
+          </Center>
+          <Flex justifyContent="center" alignItems="center" mt={14}>
             <Box paddingBottom="2" paddingRight="2.5">
               <Image src={OurSns} />
             </Box>
@@ -118,27 +32,203 @@ export default function Footer() {
             <Box paddingRight="3">
               <Image src={YouTubeLogo} width={44} height={38} />
             </Box>
-            <Text fontSize="sm" paddingTop="3.5" paddingX="8">
-              運営 : KADAI INFO
+          </Flex>
+        </Box>
+        <Box mt={8} mb={5}>
+          <Flex justify="center">
+            <Text
+              fontWeight="bold"
+              paddingRight="8"
+              fontSize="xl"
+              _hover={{
+                textDecoration: "underline",
+                textUnderlinePosition: "under",
+              }}
+              onClick={() => router.push("/")}
+            >
+              Top
             </Text>
-            <Text fontSize="sm" paddingTop="3.5" paddingRight="8">
-              協賛 : 〇〇, 〇〇
+            <Text
+              fontWeight="bold"
+              paddingRight="8"
+              fontSize="xl"
+              _hover={{
+                textDecoration: "underline",
+                textUnderlinePosition: "under",
+              }}
+              onClick={() => router.push("/intro")}
+            >
+              企画概要
             </Text>
-            <Text fontSize="sm" fontWeight="bold" paddingTop="3.5">
-              ©KADAI INFO all right reserved.
+          </Flex>
+          <Flex justify="center" paddingTop="8">
+            <Text
+              fontWeight="bold"
+              paddingRight="8"
+              fontSize="xl"
+              _hover={{
+                textDecoration: "underline",
+                textUnderlinePosition: "under",
+              }}
+              onClick={() => router.push("/model")}
+            >
+              モデル一覧
+            </Text>
+            <Text
+              fontWeight="bold"
+              paddingRight="8"
+              fontSize="xl"
+              _hover={{
+                textDecoration: "underline",
+                textUnderlinePosition: "under",
+              }}
+              onClick={() => router.push("/photographer")}
+            >
+              カメラマン紹介
+            </Text>
+          </Flex>
+          <Flex alignItems="center" justify="center" flexDir="column" mt={8}>
+            <Text
+              padding={2}
+              fontSize="l"
+              fontWeight="bold"
+              _hover={{
+                textDecoration: "underline",
+                textUnderlinePosition: "under",
+              }}
+            >
+              過去の美男美女SNAP
+            </Text>
+            <Text
+              padding={2}
+              fontSize="l"
+              fontWeight="bold"
+              _hover={{
+                textDecoration: "underline",
+                textUnderlinePosition: "under",
+              }}
+            >
+              お問い合わせ
+            </Text>
+            <Text
+              padding={2}
+              fontSize="l"
+              fontWeight="bold"
+              _hover={{
+                textDecoration: "underline",
+                textUnderlinePosition: "under",
+              }}
+            >
+              KADAIINFOとは
             </Text>
           </Flex>
         </Box>
-      </Box>
+      </Flex>
     );
   } else {
     return (
       <Box>
-        <Box w="100%" h="60px" bgColor="accent" position="relative">
-          <Box position="absolute" top="-16" left="4">
-            <Image src={KadaiInfoBox} width={80} height={131} />
-          </Box>
-          <Flex justifyContent="flex-end" alignItems="center" paddingTop="2">
+        <Box w="100%" h="160px" bgColor="accent">
+          <Center>
+            <Flex>
+              <Box paddingRight="8">
+                <Text
+                  paddingY="6"
+                  fontSize="large"
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                  onClick={() => router.push("/")}
+                >
+                  Top
+                </Text>
+                <Text
+                  paddingBottom="6"
+                  fontSize="large"
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                  onClick={() => router.push("/intro")}
+                >
+                  企画概要
+                </Text>
+                <Text
+                  paddingBottom="6"
+                  fontSize="large"
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                >
+                  過去の美男美女SNAP
+                </Text>
+                <Text
+                  paddingBottom="6"
+                  fontSize="large"
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                >
+                  KADAI INFOとは
+                </Text>
+              </Box>
+              <Box>
+                <Text
+                  paddingY="6"
+                  fontSize="large"
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                  onClick={() => router.push("/model")}
+                >
+                  モデル一覧
+                </Text>
+                <Text
+                  paddingBottom="6"
+                  fontSize="large"
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                  onClick={() => router.push("/photographer")}
+                >
+                  カメラマン一覧
+                </Text>
+                <Text
+                  paddingBottom="6"
+                  fontSize="large"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                  fontWeight="bold"
+                >
+                  お問い合わせ
+                </Text>
+                <Box ml={5}>
+                  <Image src={KadaiInfoMenuBoxRotate} />
+                </Box>
+              </Box>
+            </Flex>
+          </Center>
+        </Box>
+        <Box w="100%" bgColor="accent" paddingTop="28">
+          <Flex
+            justifyContent="flex-start"
+            alignItems="center"
+            paddingTop="2"
+            paddingLeft="6"
+          >
             <Box paddingBottom="2" paddingRight="2.5">
               <Image src={OurSns} />
             </Box>
@@ -151,110 +241,6 @@ export default function Footer() {
             <Box paddingRight="4">
               <Image src={YouTubeLogo} width={40} height={36} />
             </Box>
-          </Flex>
-        </Box>
-        <Box w="100%" bgColor="accent">
-          <Center>
-            <Flex>
-              <Box paddingRight="8">
-                <Text
-                  paddingY="3"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
-                  onClick={() => router.push("/")}
-                >
-                  Top
-                </Text>
-                <Text
-                  paddingBottom="3"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
-                  onClick={() => router.push("/intro")}
-                >
-                  企画概要
-                </Text>
-                <Text
-                  paddingBottom="3"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
-                >
-                  過去の美男美女SNAP
-                </Text>
-                <Text
-                  paddingBottom="3"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
-                >
-                  KADAIINFOとは
-                </Text>
-              </Box>
-              <Box>
-                <Text
-                  paddingY="3"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
-                  onClick={() => router.push("/model")}
-                >
-                  モデル一覧
-                </Text>
-                <Text
-                  paddingBottom="3"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
-                  onClick={() => router.push("/photographer")}
-                >
-                  カメラマン一覧
-                </Text>
-                <Text
-                  paddingBottom="3"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
-                >
-                  お問い合わせ
-                </Text>
-              </Box>
-            </Flex>
-          </Center>
-        </Box>
-        <Box w="100%" h="40px" bgColor="accent">
-          <Box paddingLeft="8">
-            <Text fontSize="sm">運営 : KADAI INFO</Text>
-            <Text fontSize="sm">協賛 : 〇〇, 〇〇</Text>
-          </Box>
-        </Box>
-        <Box w="100%" h="36px" bgColor="accent">
-          <Flex marginRight="3" marginTop="-3" justify="flex-end">
-            <Text fontSize="xx-small" fontWeight="bold">
-              ©KADAI INFO all right reserved.
-            </Text>
           </Flex>
         </Box>
       </Box>

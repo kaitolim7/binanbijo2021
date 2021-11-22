@@ -11,7 +11,6 @@ import Header from "../components/Header";
 import MenuBox from "../components/MenuBox";
 import Image from "next/image";
 import Test from "../../public/images/parker.jpeg";
-import theme from "../../styles/theme";
 import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
 import Cameraman from "../components/Cameraman";
@@ -26,7 +25,13 @@ export default function Photographer() {
       <Center>
         <Heading fontSize={30}>Photographer</Heading>
       </Center>
-      <Flex flexDir="column" marginX="5" marginTop="4">
+      <Flex
+        alignItems="center"
+        justify="center"
+        flexDir="column"
+        marginX="5"
+        marginTop="4"
+      >
         <Text fontSize={13}>
           「美男美女SNAP2021」はカメラマンとして活動している現役鹿児島大学生に撮影を依頼しました！
         </Text>
@@ -35,17 +40,19 @@ export default function Photographer() {
         </Text>
         <Text fontSize={13}>是非、彼らのSNSもチェックしてみてください！</Text>
       </Flex>
-      <SimpleGrid columns={3} spacing={3} marginX="6" marginTop="6">
-        <Cameraman />
-        <Cameraman />
-        <Cameraman />
-        <Cameraman />
-        <Cameraman />
-        <Cameraman />
-      </SimpleGrid>
-      <Box marginTop="12" />
-      <IntroLinkBox text="TOPに戻る" />
-      <Box marginTop="56px" />
+      <Center>
+        <SimpleGrid columns={3} spacing={[3, 14]} marginX="6" marginTop="6">
+          <Cameraman />
+          <Cameraman />
+          <Cameraman />
+          <Cameraman />
+          <Cameraman />
+          <Cameraman />
+        </SimpleGrid>
+      </Center>
+      <Box marginTop={12} />
+      <IntroLinkBox text="TOPに戻る" topage="/" />
+      <Box marginTop={20} />
       <Footer />
     </Box>
   );

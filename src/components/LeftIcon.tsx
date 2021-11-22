@@ -6,7 +6,7 @@ export default function LeftIcon() {
     <Box
       position="absolute"
       zIndex="overlay"
-      top="39%"
+      top={["39%", "45%"]}
       left="0.5"
       transform="scale(-1, 1)"
     >

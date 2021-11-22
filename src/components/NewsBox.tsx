@@ -1,4 +1,4 @@
-import { Box, Center, Text } from "@chakra-ui/layout";
+import { Box, Center, Flex, Text } from "@chakra-ui/layout";
 import { useState } from "react";
 import NewsBoxOutline from "./NewsBoxOutline";
 import NewsLine from "./NewsLine";
@@ -9,7 +9,10 @@ export default function NewsBox() {
   const [open, setOpen] = useState(false);
 
   const viewBox: string = "0 0 345 " + (publicNews.length * 100).toString();
+  const viewBoxXl: string =
+    "0 0 827.261 " + (publicNews.length * 100).toString();
   const height: string = (publicNews.length * 88).toString();
+  const heightXl: string = (publicNews.length * 77).toString();
 
   const handleOpen = () => {
     setOpen(true);
@@ -22,33 +25,52 @@ export default function NewsBox() {
   };
 
   return (
-    <Box w={["90%", "70%"]} position="relative" margin="auto">
-      <NewsBoxOutline viewBox={viewBox} height={height} />
+    <Box w={["90%", "56%"]} position="relative" margin="auto">
+      <NewsBoxOutline
+        viewBox={viewBox}
+        viewBoxXl={viewBoxXl}
+        height={height}
+        heightXl={heightXl}
+      />
       <Box
-        w={["95%", "80%"]}
+        w={["95%", "75%"]}
         h={["250px"]}
-        top="20"
-        left="2"
+        top={["14", "20"]}
+        left={["2", "32"]}
         position="absolute"
       >
         <Center>
           <Box w={["90%", "70%"]}>
-            <Text fontWeight="bold" fontSize="sm">
-              New!!
-            </Text>
             {open && publicNews.length > 0
-              ? publicNews.map((index) => <NewsLine height={14} />)
-              : publicNews.map((index) => <NewsLine height={12} />)}
-            <Box marginTop="8px" />
-            {open ? (
-              <Text fontWeight="bold" fontSize="sm" onClick={handleClose}>
-                とじる
-              </Text>
-            ) : (
-              <Text fontWeight="bold" fontSize="sm" onClick={handleOpen}>
-                もっと見る
-              </Text>
-            )}
+              ? publicNews.map((index) => <NewsLine height={14} key={index} />)
+              : publicNews.map((index) => <NewsLine height={12} key={index} />)}
+            <Flex h="100%" alignItems="end" justify="end">
+              {open ? (
+                <Text
+                  fontWeight="bold"
+                  fontSize={["sm", "md"]}
+                  onClick={handleClose}
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                >
+                  とじる
+                </Text>
+              ) : (
+                <Text
+                  fontWeight="bold"
+                  fontSize={["sm", "md"]}
+                  onClick={handleOpen}
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                >
+                  もっと見る
+                </Text>
+              )}
+            </Flex>
           </Box>
         </Center>
       </Box>

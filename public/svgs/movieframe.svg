@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="365" height="229" viewBox="0 0 365 229">
+  <g id="グループ_159" data-name="グループ 159" transform="translate(-35 -1666.136)">
+    <g id="グループ_158" data-name="グループ 158" transform="translate(35 1666)">
+      <g id="グループ_157" data-name="グループ 157">
+        <g id="グループ_156" data-name="グループ 156">
+          <g id="長方形_160" data-name="長方形 160" transform="translate(0 0.136)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <rect width="365" height="229" rx="11" stroke="none"/>
+            <rect x="0.5" y="0.5" width="364" height="228" rx="10.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="楕円形_81" data-name="楕円形 81" transform="translate(348 111.136)" fill="#fff" stroke="#250b0d" stroke-width="1">
+        <circle cx="6" cy="6" r="6" stroke="none"/>
+        <circle cx="6" cy="6" r="5.5" fill="none"/>
+      </g>
+      <g id="楕円形_82" data-name="楕円形 82" transform="translate(5 113.136)" fill="#250b0d" stroke="#250b0d" stroke-width="1">
+        <circle cx="2" cy="2" r="2" stroke="none"/>
+        <circle cx="2" cy="2" r="1.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
