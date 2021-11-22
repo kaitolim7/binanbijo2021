@@ -13,13 +13,13 @@ export default function PersonalTopImage() {
           {isXl ? (
             <Text
               position="absolute"
-              top="-25"
-              left="24%"
+              top="4"
+              left="28%"
               zIndex="overlay"
               borderColor="black"
               border="2px"
               bgColor="white"
-              fontSize="4xl"
+              fontSize="3xl"
               fontWeight="bold"
               padding="2"
             >
@@ -28,7 +28,7 @@ export default function PersonalTopImage() {
           ) : (
             <Text
               position="absolute"
-              top="20px"
+              top="4"
               zIndex="overlay"
               borderColor="black"
               border="2px"
@@ -47,7 +47,7 @@ export default function PersonalTopImage() {
 
         <Box w="100%" h="100%" position="relative">
           {isXl ? (
-            <Center>
+            <Center mt={16}>
               <Image src={Test} width={540} height={400} />
             </Center>
           ) : (
@@ -55,34 +55,16 @@ export default function PersonalTopImage() {
           )}
         </Box>
 
-        <Flex justify="flex-end">
+        <Flex justify={["flex-end", "center"]}>
           {isXl ? (
-            <Text
-              position="absolute"
-              bottom="-20px"
-              right="80"
-              borderColor="black"
-              border="2px"
-              bgColor="white"
-              fontSize="xl"
-              fontWeight="bold"
-              padding="2"
-            >
-              ● 教育学部 3年 ● 出身 / 鹿児島 ● サークル / -
+            <Text fontSize="md" fontWeight="bold" padding="2" ml={96}>
+              ⚫ 教育学部 3年 &nbsp;&nbsp;⚫ 出身 / 鹿児島&nbsp;&nbsp; ⚫
+              サークル / -
             </Text>
           ) : (
-            <Text
-              position="absolute"
-              bottom="-20px"
-              borderColor="black"
-              border="2px"
-              borderEnd="inherit"
-              bgColor="white"
-              fontSize="sm"
-              fontWeight="bold"
-              padding="2"
-            >
-              ● 教育学部 3年 ● 出身 / 鹿児島 ● サークル / -
+            <Text fontSize="sm" fontWeight="bold" padding="2">
+              ⚫ 教育学部 3年 &nbsp;&nbsp;⚫ 出身 / 鹿児島&nbsp;&nbsp; ⚫
+              サークル / -
             </Text>
           )}
         </Flex>

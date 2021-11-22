@@ -3,12 +3,9 @@ import Image from "next/image";
 import TwitterLogo from "../../public/svgs/personal_twitter.svg";
 import InstagramLogo from "../../public/svgs/personal_instagram.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
+import Sns from "./Sns";
 
-type Props = {
-  disable?: boolean;
-};
-
-export default function PersonalSns(props: Props) {
+export default function PersonalSns() {
   const isXl = useBreakpointValue({
     sm: false,
     md: false,
@@ -17,7 +14,7 @@ export default function PersonalSns(props: Props) {
   });
   if (isXl) {
     return (
-      <Box zIndex="overlay" position="absolute" right="23%" marginRight="20">
+      <Box zIndex="overlay" position="absolute" top="10%" right="28%">
         <Text fontSize="mdß" fontWeight="bold">
           \ check it /
         </Text>
@@ -35,23 +32,10 @@ export default function PersonalSns(props: Props) {
   } else {
     return (
       <Box paddingBottom="1">
-        <Text
-          fontSize="sm"
-          fontWeight="bold"
-          textAlign="center"
-          hidden={props.disable}
-        >
+        <Text fontSize="sm" fontWeight="bold" textAlign="center">
           \ check it /&nbsp;&nbsp;&nbsp;
         </Text>
-        <Flex>
-          <Flex paddingRight="3" alignItems="flex-end">
-            <Image src={InstagramLogo} width={36} height={36} />
-          </Flex>
-          <Box marginTop="16px" />
-          <Flex paddingRight="3" alignItems="flex-end">
-            <Image src={TwitterLogo} width={36} height={36} />
-          </Flex>
-        </Flex>
+        <Sns />
       </Box>
     );
   }

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeadingModel() {
   return (
-    <Box>
+    <Box ml={[0, 80]}>
       <Image src={HeadingModelImage} />
     </Box>
   );

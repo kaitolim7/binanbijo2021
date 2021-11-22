@@ -1,12 +1,15 @@
 import { Box, Center, Flex, Spacer, Text } from "@chakra-ui/layout";
 import RightArrow from "../../public/svgs/right_arrow.svg";
 import Image from "next/image";
+import { useRouter } from "next/dist/client/router";
 
 type Props = {
   text: string;
+  topage: string;
 };
 
 export default function IntroLinkBox(props: Props) {
+  const router = useRouter();
   return (
     <Center
       w="300px"
@@ -16,6 +19,7 @@ export default function IntroLinkBox(props: Props) {
       borderColor="black"
       borderWidth="medium"
       _hover={{ bgColor: "accent" }}
+      onClick={() => router.push(props.topage)}
     >
       <Flex>
         <Text fontWeight="bold" fontSize="xl">
