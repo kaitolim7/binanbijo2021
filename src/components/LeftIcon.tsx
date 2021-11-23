@@ -1,7 +1,7 @@
 import RightScrollIcon from "../../public/svgs/scroll_icon.svg";
 import Image from "next/image";
 import { Box } from "@chakra-ui/layout";
-export default function LeftIcon() {
+export default function LeftIcon({ onClick }: any) {
   return (
     <Box
       position="absolute"
@@ -10,7 +10,12 @@ export default function LeftIcon() {
       left="0.5"
       transform="scale(-1, 1)"
     >
-      <Image src={RightScrollIcon} width={28} height={28} />
+      <Image
+        src={RightScrollIcon}
+        width={28}
+        height={28}
+        onClick={() => onClick()}
+      />
     </Box>
   );
 }

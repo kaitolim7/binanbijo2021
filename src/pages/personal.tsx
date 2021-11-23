@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Text } from "@chakra-ui/layout";
+import { Box, Center, Flex, Text } from "@chakra-ui/layout";
 import AdArea from "../components/AdArea";
 import Footer from "../components/Footer";
 import PersonalImageSlider from "../components/PersonalImageSlider";

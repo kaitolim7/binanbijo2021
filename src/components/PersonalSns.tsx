@@ -35,7 +35,7 @@ export default function PersonalSns() {
         <Text fontSize="sm" fontWeight="bold" textAlign="center">
           \ check it /&nbsp;&nbsp;&nbsp;
         </Text>
-        <Sns />
+        <Sns instagram={""} twitter={""} />
       </Box>
     );
   }

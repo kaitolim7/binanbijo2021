@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.3.0",
     "@trendyol-js/react-carousel": "^2.0.0",
     "framer-motion": "^4.1.17",
+    "microcms-js-sdk": "^2.0.0",
     "next": "11.1.2",
     "next-images": "^1.8.1",
     "next-transpile-modules": "^8.0.0",

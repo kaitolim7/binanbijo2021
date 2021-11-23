@@ -7,13 +7,13 @@ export default function ImageSliderItem() {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   if (isXl) {
     return (
-      <Center mx={3}>
+      <Center mx={3} p={3}>
         <Image src={Test} />
       </Center>
     );
   } else {
     return (
-      <Center>
+      <Center mx={3} p={3}>
         <Image src={Test} />
       </Center>
     );
