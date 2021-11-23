@@ -14,8 +14,23 @@ import Test from "../../public/images/parker.jpeg";
 import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
 import Cameraman from "../components/Cameraman";
+import { getPhotographer } from "./api";
+import { useEffect } from "react";
 
-export default function Photographer() {
+export async function getStaticProps() {
+  const photographers = await getPhotographer();
+
+  return {
+    props: {
+      photographers: photographers,
+    },
+  };
+}
+
+export default function Photographer({ photographers }: any) {
+  useEffect(() => {
+    console.log(photographers);
+  }, []);
   return (
     <Box w="100%" h="100%">
       <MenuBox />
@@ -42,12 +57,15 @@ export default function Photographer() {
       </Flex>
       <Center>
         <SimpleGrid columns={3} spacing={[3, 14]} marginX="6" marginTop="6">
-          <Cameraman />
-          <Cameraman />
-          <Cameraman />
-          <Cameraman />
-          <Cameraman />
-          <Cameraman />
+          {photographers.map((photographer: any) => (
+            <Cameraman
+              key={photographer.id}
+              name={photographer.name}
+              image={photographer.image.url}
+              instagram={photographer.instagram}
+              twitter={photographer.twitter}
+            />
+          ))}
         </SimpleGrid>
       </Center>
       <Box marginTop={12} />

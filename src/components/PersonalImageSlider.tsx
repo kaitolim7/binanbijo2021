@@ -3,11 +3,9 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import { useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Test from "../../public/images/parker.jpeg";
-import Test1 from "../../public/svgs/menu_box.svg";
 import ImageSliderItem from "./ImageSliderItem";
-import RightIcon from "./RightIcon";
-import LeftIcon from "./LeftIcon";
+import PersonalRightIcon from "./PersonalRightIcon";
+import PersonalLeftIcon from "./PersonalLeftIcon";
 export default function PersonalImageSlider() {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   const responsive = {
@@ -32,7 +30,7 @@ export default function PersonalImageSlider() {
     return (
       <Flex mx={20}>
         <Carousel
-          swipeable={false}
+          swipeable={true}
           draggable={false}
           showDots={true}
           responsive={responsive}
@@ -48,8 +46,8 @@ export default function PersonalImageSlider() {
           deviceType={"desktop"}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
-          customRightArrow={<RightIcon />}
-          customLeftArrow={<LeftIcon />}
+          customRightArrow={<PersonalRightIcon />}
+          customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
           <ImageSliderItem />
@@ -62,17 +60,25 @@ export default function PersonalImageSlider() {
       </Flex>
     );
   } else {
+    const CustomRightArrow = ({ onClick, ...rest }: any) => {
+      const {
+        onMove,
+        carouselState: { currentSlide, deviceType },
+      } = rest;
+      // onMove means if dragging or swiping in progress.
+      return <button onClick={() => onClick()} />;
+    };
     return (
       <Flex>
         <Carousel
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
           showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={2500}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
@@ -80,8 +86,8 @@ export default function PersonalImageSlider() {
           deviceType={"desktop"}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
-          customRightArrow={<RightIcon />}
-          customLeftArrow={<LeftIcon />}
+          customRightArrow={<PersonalRightIcon />}
+          customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
           <ImageSliderItem />

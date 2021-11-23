@@ -13,7 +13,16 @@ import Test from "../../public/images/parker.jpeg";
 import HeadingInterview from "./HeadingInterview";
 import InterviewItem from "./InterviewItem";
 
-export default function PersonalInterview() {
+type Props = {
+  whyEntry: string;
+  working: string;
+  want: string;
+  beauty: string;
+  selfIntro: string;
+  aWord: string;
+};
+
+export default function PersonalInterview(props: Props) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
 
   if (isXl) {
@@ -28,32 +37,32 @@ export default function PersonalInterview() {
               <InterviewItem
                 num={1}
                 title="美男美女SNAPへ参加したきっかけ"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.whyEntry}
               />
               <InterviewItem
                 num={2}
                 title="今、頑張っていることを教えて！"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.working}
               />
               <InterviewItem
                 num={3}
                 title="大学生のうちにやりたいことは？"
-                content="大学生のうちにやりたいことは？"
+                content={props.want}
               />
               <InterviewItem
                 num={4}
                 title="美容のために気を遣っていることは？"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.beauty}
               />
               <InterviewItem
                 num={5}
                 title="自己PRをどうぞ！"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.selfIntro}
               />
               <InterviewItem
                 num={6}
                 title="サイトを見ている人へ向けて一言！"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.aWord}
               />
             </SimpleGrid>
           </Center>
@@ -75,32 +84,32 @@ export default function PersonalInterview() {
               <InterviewItem
                 num={1}
                 title="美男美女SNAPへ参加したきっかけ"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.whyEntry}
               />
               <InterviewItem
                 num={2}
                 title="今、頑張っていることを教えて！"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.working}
               />
               <InterviewItem
                 num={3}
                 title="大学生のうちにやりたいことは？"
-                content="大学生のうちにやりたいことは？"
+                content={props.want}
               />
               <InterviewItem
                 num={4}
                 title="美容のために気を遣っていることは？"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.beauty}
               />
               <InterviewItem
                 num={5}
                 title="自己PRをどうぞ！"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.selfIntro}
               />
               <InterviewItem
                 num={6}
                 title="サイトを見ている人へ向けて一言！"
-                content="誘っていただけたので、貴重な機会と思い参加しました！"
+                content={props.aWord}
               />
             </SimpleGrid>
           </Center>

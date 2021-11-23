@@ -4,7 +4,17 @@ import Image from "next/image";
 import Test from "../../public/images/parker.jpeg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
-export default function PersonalTopImage() {
+type Props = {
+  entryNumber: string;
+  name: string;
+  faculty: string;
+  from: string;
+  club: string;
+  instagram: string;
+  twitter: string;
+};
+
+export default function PersonalTopImage(props: Props) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   return (
     <Box w="100%">
@@ -23,7 +33,7 @@ export default function PersonalTopImage() {
               fontWeight="bold"
               padding="2"
             >
-              No.1 さきっちょ
+              No.{props.entryNumber} {props.name}
             </Text>
           ) : (
             <Text
@@ -38,11 +48,11 @@ export default function PersonalTopImage() {
               fontWeight="bold"
               padding="2"
             >
-              No.1 さきっちょ
+              No.{props.entryNumber} {props.name}
             </Text>
           )}
           <Spacer />
-          <PersonalSns />
+          <PersonalSns instagram={props.instagram} twitter={props.twitter} />
         </Flex>
 
         <Box w="100%" h="100%" position="relative">
@@ -58,13 +68,13 @@ export default function PersonalTopImage() {
         <Flex justify={["flex-end", "center"]}>
           {isXl ? (
             <Text fontSize="md" fontWeight="bold" padding="2" ml={96}>
-              ⚫ 教育学部 3年 &nbsp;&nbsp;⚫ 出身 / 鹿児島&nbsp;&nbsp; ⚫
-              サークル / -
+              ⚫ {props.faculty} &nbsp;&nbsp;⚫ 出身 / {props.from}&nbsp;&nbsp;
+              ⚫ サークル / {props.club}
             </Text>
           ) : (
             <Text fontSize="sm" fontWeight="bold" padding="2">
-              ⚫ 教育学部 3年 &nbsp;&nbsp;⚫ 出身 / 鹿児島&nbsp;&nbsp; ⚫
-              サークル / -
+              ⚫ {props.faculty} &nbsp;&nbsp;⚫ 出身 / {props.from}&nbsp;&nbsp;
+              ⚫ サークル / {props.club}
             </Text>
           )}
         </Flex>

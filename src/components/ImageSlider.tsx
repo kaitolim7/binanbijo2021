@@ -19,7 +19,6 @@ export default function ImageSlider(props: Props) {
   return (
     <Center>
       <Box w="1000px" position="relative">
-        {/* // 一時的にScrollIcon非表示 */}
         <Box
           w="60px"
           borderColor="black"
