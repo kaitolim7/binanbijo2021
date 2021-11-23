@@ -3,11 +3,9 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import { useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Test from "../../public/images/parker.jpeg";
-import Test1 from "../../public/svgs/menu_box.svg";
 import ImageSliderItem from "./ImageSliderItem";
-import RightIcon from "./RightIcon";
-import LeftIcon from "./LeftIcon";
+import PersonalRightIcon from "./PersonalRightIcon";
+import PersonalLeftIcon from "./PersonalLeftIcon";
 export default function PersonalImageSlider() {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   const responsive = {
@@ -48,8 +46,8 @@ export default function PersonalImageSlider() {
           deviceType={"desktop"}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
-          customRightArrow={<RightIcon />}
-          customLeftArrow={<LeftIcon />}
+          customRightArrow={<PersonalRightIcon />}
+          customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
           <ImageSliderItem />
@@ -88,8 +86,8 @@ export default function PersonalImageSlider() {
           deviceType={"desktop"}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
-          customRightArrow={<RightIcon />}
-          customLeftArrow={<LeftIcon />}
+          customRightArrow={<PersonalRightIcon />}
+          customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
           <ImageSliderItem />

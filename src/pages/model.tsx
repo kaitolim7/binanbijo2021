@@ -9,8 +9,22 @@ import HeadingModel2 from "../components/HeadingModel2";
 import Header from "../components/Header";
 import HeadingGenderButton from "../components/HeadingGenderButton";
 import HowToVote from "../components/HowToVote";
+import { getBoysTopImages, getGirlsTopImages } from "./api";
+import { useEffect, useState } from "react";
 
-export default function Model() {
+export async function getStaticProps() {
+  const girls = await getGirlsTopImages();
+  const boys = await getBoysTopImages();
+  return {
+    props: {
+      girls,
+      boys,
+    },
+  };
+}
+
+export default function Model({ girls, boys }: any) {
+  const [isGirls, setIsGirls] = useState(true);
   return (
     <Box w="100%" h="100%">
       <MenuBox />
@@ -21,10 +35,10 @@ export default function Model() {
         <HeadingModel2 />
       </Center>
       <Box marginTop="16px" />
-      <HeadingGenderButton />
+      <HeadingGenderButton isGirls={isGirls} setIsGirls={setIsGirls} />
       <Flex>
         <Spacer />
-        <ModelGrid />
+        <ModelGrid girls={girls} boys={boys} isGirls={isGirls} />
         <Spacer />
       </Flex>
       <Box marginTop="56px" />

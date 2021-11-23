@@ -4,8 +4,22 @@ import TwitterLogo from "../../public/svgs/personal_twitter.svg";
 import InstagramLogo from "../../public/svgs/personal_instagram.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import Sns from "./Sns";
+import { useRouter } from "next/dist/client/router";
 
-export default function PersonalSns() {
+type Props = {
+  instagram: string;
+  twitter: string;
+};
+
+export default function PersonalSns(props: Props) {
+  const instaLink = props.instagram
+    ? `https://www.instagram.com/${props.instagram.replace("@", "")}`
+    : "";
+  const twitterLink = props.twitter
+    ? `https://twitter.com/${props.twitter.replace("@", "")}`
+    : "";
+
+  const router = useRouter();
   const isXl = useBreakpointValue({
     sm: false,
     md: false,
@@ -20,11 +34,21 @@ export default function PersonalSns() {
         </Text>
         <Flex flexDir="column" marginLeft="5" marginTop="2">
           <Flex paddingRight="3" alignItems="flex-end">
-            <Image src={InstagramLogo} width={46} height={46} />
+            <Image
+              src={InstagramLogo}
+              width={46}
+              height={46}
+              onClick={() => router.push(instaLink)}
+            />
           </Flex>
           <Box marginTop="16px" />
           <Flex paddingRight="3" alignItems="flex-end">
-            <Image src={TwitterLogo} width={46} height={46} />
+            <Image
+              src={TwitterLogo}
+              width={46}
+              height={46}
+              onClick={() => router.push(twitterLink)}
+            />
           </Flex>
         </Flex>
       </Box>
@@ -35,7 +59,7 @@ export default function PersonalSns() {
         <Text fontSize="sm" fontWeight="bold" textAlign="center">
           \ check it /&nbsp;&nbsp;&nbsp;
         </Text>
-        <Sns instagram={""} twitter={""} />
+        <Sns instagram={props.instagram} twitter={props.twitter} />
       </Box>
     );
   }

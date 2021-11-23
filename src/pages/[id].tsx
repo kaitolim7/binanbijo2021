@@ -12,8 +12,27 @@ import HeadingPhoto from "../components/HeadingPhoto";
 import HeadingMovie from "../components/HeadingMovie";
 import PersonalProfile from "../components/PersonalProfile";
 import { useBreakpointValue } from "@chakra-ui/media-query";
+import { getPageIds, getPageInfo } from "./api";
 
-export default function Personal() {
+// ビルド時に /content.id のページを静的生成してくれる
+export async function getStaticPaths() {
+  const paths = await getPageIds();
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params }: any) {
+  const personal = await getPageInfo(params.id);
+  return {
+    props: {
+      personal,
+    },
+  };
+}
+
+export default function Personal({ personal }: any) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   return (
     <Box w="100%" h="100%">
@@ -44,13 +63,27 @@ export default function Personal() {
           <HeadingModel2 />
         </Center>
         <Center marginLeft={["0", "8"]}>
-          <Text color="red.600" fontSize="xl">
-            Girls
-          </Text>
+          {personal.gender[0] == "male" ? (
+            <Text color="blue.600" fontSize="xl">
+              Boys
+            </Text>
+          ) : (
+            <Text color="red.600" fontSize="xl">
+              Girls
+            </Text>
+          )}
         </Center>
       </Flex>
       <Box marginTop="18px" />
-      <PersonalTopImage />
+      <PersonalTopImage
+        entryNumber={personal.entry_number}
+        name={personal.name}
+        faculty={personal.belonging.faculty}
+        from={personal.belonging.from}
+        club={personal.belonging.club}
+        instagram={personal.instagram}
+        twitter={personal.twitter}
+      />
       <Box marginTop="56px" />
       <Box w="100%">
         <Center>
@@ -76,9 +109,25 @@ export default function Personal() {
         </Box>
       </Box>
       <Box marginTop="56px" />
-      <PersonalProfile />
+      <PersonalProfile
+        tall={personal.profile.tall}
+        favoritePlace={personal.profile.favorite_place}
+        favoriteYouTube={personal.profile.favorite_youtube}
+        favoriteBland={personal.profile.favorite_bland}
+        hobby={personal.profile.hobby}
+        myboom={personal.profile.myboom}
+        holidays={personal.profile.holidays}
+        dream={personal.profile.dream}
+      />
       <Box marginTop="24px" />
-      <PersonalInterview />
+      <PersonalInterview
+        whyEntry={personal.interview.why_entry}
+        working={personal.interview.working}
+        want={personal.interview.want}
+        beauty={personal.interview.beauty}
+        selfIntro={personal.interview.self_intro}
+        aWord={personal.interview.a_word}
+      />
       <Box marginTop="36px" />
       <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
         <AdArea
