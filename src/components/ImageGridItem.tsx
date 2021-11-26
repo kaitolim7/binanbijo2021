@@ -6,7 +6,9 @@ import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
 
 type Props = {
-  image?: string;
+  topImage: {
+    url: string;
+  };
   id: number;
   entryNumber: number;
   name: string;
@@ -17,7 +19,7 @@ export default function ImageGridItem(props: Props) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
 
   return (
-    <Flex padding="8px" flexDir="column">
+    <Flex flexDir="column">
       {/* <Flex>
         <Text
           marginX="3"
@@ -33,28 +35,33 @@ export default function ImageGridItem(props: Props) {
         </Text>
       </Flex> */}
       {isXl ? (
-        <Image
-          src={Test}
-          width={300}
-          height={220}
-          onClick={() => router.push("/" + props.id)}
-        />
+        <Box className="sample1">
+          <Image src={props.topImage.url} width={300} height={200} />
+          <Box className="mask" onClick={() => router.push("/" + props.id)}>
+            <Box className="caption">view more</Box>
+          </Box>
+        </Box>
       ) : (
-        <Image
-          src={Test}
-          width={180}
-          height={140}
-          onClick={() => router.push("/" + props.id)}
-        />
+        <Box className="sample3">
+          <Image
+            src={props.topImage.url}
+            width={300}
+            height={200}
+            onClick={() => router.push("/" + props.id)}
+          />
+          <Box className="mask" onClick={() => router.push("/" + props.id)}>
+            <Box className="caption">view more</Box>
+          </Box>
+        </Box>
       )}
 
       <Flex>
         <Spacer />
-        <Text fontSize="md" fontWeight="bold">
+        <Text fontSize={["sm", "md"]} fontWeight="bold">
           No.{props.entryNumber}
         </Text>
         <Spacer />
-        <Text fontSize="md" fontWeight="bold">
+        <Text fontSize={["sm", "md"]} fontWeight="bold">
           {props.name}
         </Text>
         <Spacer />

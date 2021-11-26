@@ -8,13 +8,7 @@ type Props = {
 
 export default function InterviewItem(props: Props) {
   return (
-    <Box
-      w={[160, 200]}
-      h={[160, 200]}
-      border="1px"
-      borderColor="black"
-      margin={2}
-    >
+    <Box w={[160, 200]} h={[160, 200]} border="1px" borderColor="black">
       <Flex paddingY={3} alignItems="center">
         <Text fontSize={[23, 36]} fontWeight="bold" paddingX={3.5}>
           {props.num}

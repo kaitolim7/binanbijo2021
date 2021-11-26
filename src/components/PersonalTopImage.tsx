@@ -3,8 +3,10 @@ import PersonalSns from "./PersonalSns";
 import Image from "next/image";
 import Test from "../../public/images/parker.jpeg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
+import { ImageProps } from "./ImageSliderItem";
 
 type Props = {
+  topImage: ImageProps | undefined;
   entryNumber: string;
   name: string;
   faculty: string;
@@ -25,7 +27,7 @@ export default function PersonalTopImage(props: Props) {
               position="absolute"
               top="4"
               left="28%"
-              zIndex="overlay"
+              zIndex="1"
               borderColor="black"
               border="2px"
               bgColor="white"
@@ -39,7 +41,7 @@ export default function PersonalTopImage(props: Props) {
             <Text
               position="absolute"
               top="4"
-              zIndex="overlay"
+              zIndex="1"
               borderColor="black"
               border="2px"
               borderStart={["inherit", "unset"]}
@@ -58,8 +60,14 @@ export default function PersonalTopImage(props: Props) {
         <Box w="100%" h="100%" position="relative">
           {isXl ? (
             <Center mt={16}>
-              <Image src={Test} width={540} height={400} />
+              {props.topImage ? (
+                <Image src={props.topImage.url} width={600} height={400} />
+              ) : (
+                <Image src={Test} width={540} height={400} />
+              )}
             </Center>
+          ) : props.topImage ? (
+            <Image src={props.topImage.url} width={375} height={250} />
           ) : (
             <Image src={Test} layout="responsive" />
           )}

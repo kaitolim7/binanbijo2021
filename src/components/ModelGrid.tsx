@@ -23,48 +23,52 @@ export default function ModelGrid(props: Props) {
 
   if (isXl) {
     return (
-      <SimpleGrid columns={3} spacing={0}>
+      <SimpleGrid columns={3} spacing={3}>
         {props.isGirls
           ? girls.length > 0 &&
-            girls.map((content: any) => (
+            girls.map((girl: any) => (
               <ImageGridItem
-                key={content.id}
-                id={content.id}
-                entryNumber={content.entryNumber}
-                name={content.name}
+                key={girl.id}
+                id={girl.id}
+                entryNumber={girl.entryNumber}
+                name={girl.name}
+                topImage={girl.topImage}
               />
             ))
           : boys.length > 0 &&
-            boys.map((content: any) => (
+            boys.map((boy: any) => (
               <ImageGridItem
-                key={content.id}
-                id={content.id}
-                entryNumber={content.entryNumber}
-                name={content.name}
+                key={boy.id}
+                id={boy.id}
+                entryNumber={boy.entryNumber}
+                name={boy.name}
+                topImage={boy.topImage}
               />
             ))}
       </SimpleGrid>
     );
   } else {
     return (
-      <SimpleGrid columns={2} spacing={0}>
+      <SimpleGrid columns={2} spacing={1}>
         {props.isGirls
           ? girls.length > 0 &&
-            girls.map((content: any) => (
+            girls.map((girl: any) => (
               <ImageGridItem
-                key={content.id}
-                id={content.id}
-                entryNumber={content.entryNumber}
-                name={content.name}
+                key={girl.id}
+                id={girl.id}
+                entryNumber={girl.entryNumber}
+                name={girl.name}
+                topImage={girl.topImage}
               />
             ))
           : boys.length > 0 &&
-            boys.map((content: any) => (
+            boys.map((boy: any) => (
               <ImageGridItem
-                key={content.id}
-                id={content.id}
-                entryNumber={content.entryNumber}
-                name={content.name}
+                key={boy.id}
+                id={boy.id}
+                entryNumber={boy.entryNumber}
+                name={boy.name}
+                topImage={boy.topImage}
               />
             ))}
       </SimpleGrid>

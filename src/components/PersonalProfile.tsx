@@ -4,6 +4,7 @@ import HeadingProfile from "./HeadingProfile";
 import ProfileArrow from "../../public/svgs/profilearrow.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import Test from "../../public/images/parker.jpeg";
+import { ImageProps } from "./ImageSliderItem";
 
 type Props = {
   tall: number;
@@ -14,6 +15,7 @@ type Props = {
   myboom: string;
   holidays: string;
   dream: string;
+  image: ImageProps;
 };
 
 export default function PersonalProfile(props: Props) {
@@ -25,47 +27,51 @@ export default function PersonalProfile(props: Props) {
         <Box marginTop="24px" />
         <Box marginLeft={["0", "0"]}>
           <Flex justify="center">
-            <Box w={400}>
-              <Text fontSize={["10", "20"]} paddingBottom={5}>
+            <Box w={380}>
+              <Text fontSize={["10", "18"]} paddingBottom={5}>
                 ◯ 身長 / {props.tall}cm
               </Text>
-              <Text fontSize={["10", "20"]} paddingY={5}>
+              <Text fontSize={["10", "18"]} paddingY={5}>
                 ◯ 好きな場所 / {props.favoritePlace}
               </Text>
               <Box paddingY={3}>
-                <Text fontSize={["10", "20"]}>◯ 好きなYouTube /</Text>
-                <Text fontSize={["10", "20"]}>{props.favoriteYouTube}</Text>
+                <Text fontSize={["10", "18"]}>◯ 好きなYouTube /</Text>
+                <Text fontSize={["10", "18"]}>{props.favoriteYouTube}</Text>
               </Box>
               <Box paddingY={3}>
-                <Text fontSize={["10", "20"]}>◯ 好きなブランド /</Text>
-                <Text fontSize={["10", "20"]}>{props.favoriteBland}</Text>
+                <Text fontSize={["10", "18"]}>◯ 好きなブランド /</Text>
+                <Text fontSize={["10", "18"]}>{props.favoriteBland}</Text>
               </Box>
             </Box>
-            <Box w={10} />
+            <Box w={5} />
             <Image src={ProfileArrow} />
             <Box w={10} />
-            <Box w={400}>
+            <Box w={380}>
               <Box paddingBottom={3}>
-                <Text fontSize={["10", "20"]}>◯ 趣味 /</Text>
-                <Text fontSize={["10", "20"]}>{props.hobby}</Text>
+                <Text fontSize={["10", "18"]}>◯ 趣味 /</Text>
+                <Text fontSize={["10", "18"]}>{props.hobby}</Text>
               </Box>
               <Box paddingY={3}>
-                <Text fontSize={["10", "20"]}>◯ マイブーム /</Text>
-                <Text fontSize={["10", "20"]}>{props.myboom}</Text>
+                <Text fontSize={["10", "18"]}>◯ マイブーム /</Text>
+                <Text fontSize={["10", "18"]}>{props.myboom}</Text>
               </Box>
               <Box paddingY={3}>
-                <Text fontSize={["10", "20"]}>◯ 休日の過ごし方 /</Text>
-                <Text fontSize={["10", "20"]}>{props.holidays}</Text>
+                <Text fontSize={["10", "18"]}>◯ 休日の過ごし方 /</Text>
+                <Text fontSize={["10", "18"]}>{props.holidays}</Text>
               </Box>
               <Box paddingY={3}>
-                <Text fontSize={["10", "20"]}>
+                <Text fontSize={["10", "18"]}>
                   ◯ 将来の夢 /{" "}
-                  <Text fontSize={["10", "20"]}>{props.dream}</Text>
+                  <Text fontSize={["10", "18"]}>{props.dream}</Text>
                 </Text>
               </Box>
             </Box>
-            <Box w={20} />
-            <Image src={Test} width={400} height={300} />
+
+            {props.image ? (
+              <Image src={props.image.url} width={600} height={400} />
+            ) : (
+              <Image src={Test} width={400} height={300} />
+            )}
           </Flex>
         </Box>
       </Box>

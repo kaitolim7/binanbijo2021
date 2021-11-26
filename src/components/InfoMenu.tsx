@@ -8,13 +8,24 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import OurSns from "../../public/svgs/oursns.svg";
 import KadaiInfoMenuBoxRotate from "../../public/svgs/menu_box_rotate.svg";
 import { useRouter } from "next/dist/client/router";
+import { Menu, MenuList, MenuItem, MenuButton } from "@chakra-ui/react";
 
-export default function Menu() {
+type Props = {
+  onClose: () => void;
+};
+
+export default function InfoMenu(props: Props) {
   const router = useRouter();
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
+
+  const handleClick = (href: string) => {
+    router.push(href);
+    props.onClose();
+  };
+
   if (isXl) {
     return (
-      <Flex justify="center" bgColor="accent">
+      <Flex justify="center" bgColor="accent" shadow="md">
         <Box mt={8} mb={5}>
           <Center>
             <Image src={KadaiInfoMenuBoxRotate} />
@@ -24,13 +35,38 @@ export default function Menu() {
               <Image src={OurSns} />
             </Box>
             <Box paddingX="3">
-              <Image src={InstagramLogo} width={44} height={44} />
+              <Image
+                src={InstagramLogo}
+                width={44}
+                height={44}
+                onClick={() =>
+                  router.push(
+                    "https://instagram.com/kadai_info_snap?utm_medium=copy_link"
+                  )
+                }
+              />
             </Box>
             <Box paddingRight="3">
-              <Image src={TwitterLogo} width={58} height={58} />
+              <Image
+                src={TwitterLogo}
+                width={58}
+                height={58}
+                onClick={() =>
+                  router.push("https://twitter.com/snap20204?s=21")
+                }
+              />
             </Box>
             <Box paddingRight="3">
-              <Image src={YouTubeLogo} width={44} height={38} />
+              <Image
+                src={YouTubeLogo}
+                width={44}
+                height={38}
+                onClick={() =>
+                  router.push(
+                    "https://www.youtube.com/channel/UCqxPxhuAV9XC5S1Fyf-_E5w"
+                  )
+                }
+              />
             </Box>
           </Flex>
         </Box>
@@ -44,7 +80,7 @@ export default function Menu() {
                 textDecoration: "underline",
                 textUnderlinePosition: "under",
               }}
-              onClick={() => router.push("/")}
+              onClick={() => handleClick("/")}
             >
               Top
             </Text>
@@ -56,7 +92,7 @@ export default function Menu() {
                 textDecoration: "underline",
                 textUnderlinePosition: "under",
               }}
-              onClick={() => router.push("/intro")}
+              onClick={() => handleClick("/intro")}
             >
               企画概要
             </Text>
@@ -70,7 +106,7 @@ export default function Menu() {
                 textDecoration: "underline",
                 textUnderlinePosition: "under",
               }}
-              onClick={() => router.push("/model")}
+              onClick={() => handleClick("/model")}
             >
               モデル一覧
             </Text>
@@ -82,12 +118,63 @@ export default function Menu() {
                 textDecoration: "underline",
                 textUnderlinePosition: "under",
               }}
-              onClick={() => router.push("/photographer")}
+              onClick={() => handleClick("/photographer")}
             >
               カメラマン紹介
             </Text>
           </Flex>
           <Flex alignItems="center" justify="center" flexDir="column" mt={8}>
+            <Menu>
+              <>
+                <MenuButton
+                  padding={2}
+                  fontSize="l"
+                  fontWeight="bold"
+                  _hover={{
+                    textDecoration: "underline",
+                    textUnderlinePosition: "under",
+                  }}
+                >
+                  過去の美男美女SNAP
+                </MenuButton>
+                <MenuList>
+                  <MenuList>
+                    <MenuItem
+                      onClick={() =>
+                        router.push("https://binanbijosnap2020.web.app/")
+                      }
+                    >
+                      2020
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() =>
+                        router.push(
+                          "https://kadai-info.com/2019/12/02/binanbijo2019"
+                        )
+                      }
+                    >
+                      2019
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() =>
+                        router.push("https://kadai-info.com/kadai-bb18")
+                      }
+                    >
+                      2018
+                    </MenuItem>
+                    <MenuItem
+                      onClick={() =>
+                        router.push(
+                          "https://kadai-info.com/2017/11/28/binanbijo2017"
+                        )
+                      }
+                    >
+                      2017
+                    </MenuItem>
+                  </MenuList>
+                </MenuList>
+              </>
+            </Menu>
             <Text
               padding={2}
               fontSize="l"
@@ -96,17 +183,7 @@ export default function Menu() {
                 textDecoration: "underline",
                 textUnderlinePosition: "under",
               }}
-            >
-              過去の美男美女SNAP
-            </Text>
-            <Text
-              padding={2}
-              fontSize="l"
-              fontWeight="bold"
-              _hover={{
-                textDecoration: "underline",
-                textUnderlinePosition: "under",
-              }}
+              onClick={() => router.push("https://kadai-info.com/contact")}
             >
               お問い合わせ
             </Text>
@@ -118,6 +195,7 @@ export default function Menu() {
                 textDecoration: "underline",
                 textUnderlinePosition: "under",
               }}
+              onClick={() => router.push("https://kadai-info.com/lp/about-us/")}
             >
               KADAIINFOとは
             </Text>
@@ -127,7 +205,7 @@ export default function Menu() {
     );
   } else {
     return (
-      <Box>
+      <Box shadow="md">
         <Box w="100%" h="160px" bgColor="accent">
           <Center>
             <Flex>
@@ -140,7 +218,7 @@ export default function Menu() {
                     textDecoration: "underline",
                     textUnderlinePosition: "under",
                   }}
-                  onClick={() => router.push("/")}
+                  onClick={() => handleClick("/")}
                 >
                   Top
                 </Text>
@@ -152,10 +230,60 @@ export default function Menu() {
                     textDecoration: "underline",
                     textUnderlinePosition: "under",
                   }}
-                  onClick={() => router.push("/intro")}
+                  onClick={() => handleClick("/intro")}
                 >
                   企画概要
                 </Text>
+                <Menu>
+                  <>
+                    <MenuButton
+                      paddingBottom="6"
+                      fontSize="large"
+                      fontWeight="bold"
+                      _hover={{
+                        textDecoration: "underline",
+                        textUnderlinePosition: "under",
+                      }}
+                    >
+                      過去の美男美女SNAP
+                    </MenuButton>
+                    <MenuList>
+                      <MenuItem
+                        onClick={() =>
+                          router.push("https://binanbijosnap2020.web.app/")
+                        }
+                      >
+                        2020
+                      </MenuItem>
+                      <MenuItem
+                        onClick={() =>
+                          router.push(
+                            "https://kadai-info.com/2019/12/02/binanbijo2019"
+                          )
+                        }
+                      >
+                        2019
+                      </MenuItem>
+                      <MenuItem
+                        onClick={() =>
+                          router.push("https://kadai-info.com/kadai-bb18")
+                        }
+                      >
+                        2018
+                      </MenuItem>
+                      <MenuItem
+                        onClick={() =>
+                          router.push(
+                            "https://kadai-info.com/2017/11/28/binanbijo2017"
+                          )
+                        }
+                      >
+                        2017
+                      </MenuItem>
+                    </MenuList>
+                  </>
+                </Menu>
+
                 <Text
                   paddingBottom="6"
                   fontSize="large"
@@ -164,17 +292,9 @@ export default function Menu() {
                     textDecoration: "underline",
                     textUnderlinePosition: "under",
                   }}
-                >
-                  過去の美男美女SNAP
-                </Text>
-                <Text
-                  paddingBottom="6"
-                  fontSize="large"
-                  fontWeight="bold"
-                  _hover={{
-                    textDecoration: "underline",
-                    textUnderlinePosition: "under",
-                  }}
+                  onClick={() =>
+                    router.push("https://kadai-info.com/lp/about-us/")
+                  }
                 >
                   KADAI INFOとは
                 </Text>
@@ -188,7 +308,7 @@ export default function Menu() {
                     textDecoration: "underline",
                     textUnderlinePosition: "under",
                   }}
-                  onClick={() => router.push("/model")}
+                  onClick={() => handleClick("/model")}
                 >
                   モデル一覧
                 </Text>
@@ -200,7 +320,7 @@ export default function Menu() {
                     textDecoration: "underline",
                     textUnderlinePosition: "under",
                   }}
-                  onClick={() => router.push("/photographer")}
+                  onClick={() => handleClick("/photographer")}
                 >
                   カメラマン一覧
                 </Text>
@@ -212,6 +332,7 @@ export default function Menu() {
                     textUnderlinePosition: "under",
                   }}
                   fontWeight="bold"
+                  onClick={() => router.push("https://kadai-info.com/contact")}
                 >
                   お問い合わせ
                 </Text>
@@ -233,13 +354,38 @@ export default function Menu() {
               <Image src={OurSns} />
             </Box>
             <Box paddingRight="1">
-              <Image src={InstagramLogo} width={36} height={36} />
+              <Image
+                src={InstagramLogo}
+                width={36}
+                height={36}
+                onClick={() =>
+                  router.push(
+                    "https://instagram.com/kadai_info_snap?utm_medium=copy_link"
+                  )
+                }
+              />
             </Box>
             <Box paddingRight="1">
-              <Image src={TwitterLogo} width={48} height={48} />
+              <Image
+                src={TwitterLogo}
+                width={48}
+                height={48}
+                onClick={() =>
+                  router.push("https://twitter.com/snap20204?s=21")
+                }
+              />
             </Box>
             <Box paddingRight="4">
-              <Image src={YouTubeLogo} width={40} height={36} />
+              <Image
+                src={YouTubeLogo}
+                width={40}
+                height={36}
+                onClick={() =>
+                  router.push(
+                    "https://www.youtube.com/channel/UCqxPxhuAV9XC5S1Fyf-_E5w"
+                  )
+                }
+              />
             </Box>
           </Flex>
         </Box>

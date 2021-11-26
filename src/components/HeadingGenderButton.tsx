@@ -23,7 +23,7 @@ export default function HeadingGenderButton(props: Props) {
     <Flex w="100%" h="100px" justify="center">
       {props.isGirls ? (
         <>
-          <Image src={GirlButtonOn} />
+          <Image src={GirlButtonOn} onClick={() => clickBoys()} />
           <Box w={[0, 10]} />
           <Image src={BoyButton} onClick={() => clickBoys()} />
         </>
@@ -31,7 +31,7 @@ export default function HeadingGenderButton(props: Props) {
         <>
           <Image src={GirlButton} onClick={() => clickGirls()} />
           <Box w={[0, 10]} />
-          <Image src={BoyButtonOn} />
+          <Image src={BoyButtonOn} onClick={() => clickGirls()} />
         </>
       )}
     </Flex>

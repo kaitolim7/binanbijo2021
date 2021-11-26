@@ -28,9 +28,6 @@ export async function getStaticProps() {
 }
 
 export default function Photographer({ photographers }: any) {
-  useEffect(() => {
-    console.log(photographers);
-  }, []);
   return (
     <Box w="100%" h="100%">
       <MenuBox />

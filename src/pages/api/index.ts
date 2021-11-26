@@ -35,7 +35,10 @@ export async function getPageIds() {
 export async function getGirlsTopImages() {
   const page = await MicroCmsClient.get({
     endpoint: "web",
-    queries: { fields: ["id", "name", "entry_number", "gender"], limit: 24 },
+    queries: {
+      fields: ["id", "name", "entry_number", "gender", "top_image"],
+      limit: 24,
+    },
   });
   const girlsTopPages = page.contents.map((content: any) => {
     if (content.gender[0] !== "female") return;
@@ -43,6 +46,7 @@ export async function getGirlsTopImages() {
       id: content.id,
       entryNumber: content.entry_number,
       name: content.name,
+      topImage: content.top_image,
     };
   });
   return girlsTopPages.filter((content: any) => content != null);
@@ -50,7 +54,10 @@ export async function getGirlsTopImages() {
 export async function getBoysTopImages() {
   const page = await MicroCmsClient.get({
     endpoint: "web",
-    queries: { fields: ["id", "name", "entry_number", "gender"], limit: 24 },
+    queries: {
+      fields: ["id", "name", "entry_number", "gender", "top_image"],
+      limit: 24,
+    },
   });
   const boysTopPages = page.contents.map((content: any) => {
     if (content.gender[0] !== "male") return;
@@ -58,6 +65,7 @@ export async function getBoysTopImages() {
       id: content.id,
       entryNumber: content.entry_number,
       name: content.name,
+      topImage: content.top_image,
     };
   });
   return boysTopPages.filter((content: any) => content != null);

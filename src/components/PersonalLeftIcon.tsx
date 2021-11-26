@@ -6,8 +6,8 @@ export default function LeftIcon({ onClick }: any) {
   return (
     <Box
       position="absolute"
-      zIndex="overlay"
-      top={["39%", "45%"]}
+      zIndex="1"
+      top="45%"
       left="0.5"
       transform="scale(-1, 1)"
     >
