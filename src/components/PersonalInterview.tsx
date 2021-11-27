@@ -13,6 +13,7 @@ import Test from "../../public/images/parker.jpeg";
 import HeadingInterview from "./HeadingInterview";
 import { ImageProps } from "./ImageSliderItem";
 import InterviewItem from "./InterviewItem";
+import IntroLinkBox from "./IntroLinkBox";
 
 type Props = {
   whyEntry: string;

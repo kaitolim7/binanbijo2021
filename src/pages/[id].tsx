@@ -13,6 +13,7 @@ import HeadingMovie from "../components/HeadingMovie";
 import PersonalProfile from "../components/PersonalProfile";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { getPageIds, getPageInfo } from "./api";
+import IntroLinkBox from "../components/IntroLinkBox";
 
 // ビルド時に /content.id のページを静的生成してくれる
 export async function getStaticPaths() {
@@ -103,7 +104,7 @@ export default function Personal({ personal }: any) {
       <Box marginTop="24px" />
       <Box w="100%">
         <Box marginX="4">
-          <PersonalMovie />
+          <PersonalMovie youtubeUrl={personal.youtube} />
         </Box>
       </Box>
       <Box marginTop="56px" />
@@ -128,15 +129,74 @@ export default function Personal({ personal }: any) {
         selfIntro={personal.interview.self_intro}
         aWord={personal.interview.a_word}
       />
-      <Box marginTop="36px" />
-      <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
-        <AdArea
-          width={["234px", "540px"]}
-          height={["60px", "180px"]}
-          text="広告C①"
-        />
-      </Flex>
-      <Box marginTop="56px" />
+      <Box h={8} />
+      {isXl ? (
+        <>
+          <Flex
+            alignItems="center"
+            justify="center"
+            flexDir={["column", "row"]}
+          >
+            <AdArea
+              width={["234px", "540px"]}
+              height={["60px", "180px"]}
+              text="広告C①"
+            />
+          </Flex>
+          <Box h={10} />
+          <Flex justify="center">
+            <Box
+              border="1px"
+              borderColor="black"
+              borderTop="initial"
+              borderX="initial"
+              paddingX={4}
+            >
+              <Text fontSize="xl">撮影 : {personal.cameraman}</Text>
+            </Box>
+          </Flex>
+          <Box h={10} />
+          <Box>
+            <IntroLinkBox text={"この人に投票する"} topage={""} />
+            <Box h={3} />
+            <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
+          </Box>
+        </>
+      ) : (
+        <>
+          <Flex justify="center">
+            <Box
+              border="1px"
+              borderColor="black"
+              borderTop="initial"
+              borderX="initial"
+              paddingX={4}
+            >
+              <Text fontSize="md">撮影 : {personal.cameraman}</Text>
+            </Box>
+          </Flex>
+          <Box h={8} />
+          <Box>
+            <IntroLinkBox text={"この人に投票する"} topage={""} />
+            <Box h={3} />
+            <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
+          </Box>
+          <Box h={14} />
+          <Flex
+            alignItems="center"
+            justify="center"
+            flexDir={["column", "row"]}
+          >
+            <AdArea
+              width={["234px", "540px"]}
+              height={["60px", "180px"]}
+              text="広告C①"
+            />
+          </Flex>
+        </>
+      )}
+
+      <Box h={14} />
       <Footer />
     </Box>
   );
