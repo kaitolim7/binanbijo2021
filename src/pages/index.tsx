@@ -15,19 +15,51 @@ import IntroXlImage from "../../public/svgs/introductionxl.svg";
 import HowToVote from "../components/HowToVote";
 import Schedule from "../components/Schedule";
 import TopHeader from "../components/TopHeader";
+import { getBoysTopImages, getGirlsTopImages, getNews } from "./api";
+import { useEffect, useState } from "react";
+import shuffle from "../hooks/shuffle";
 
-const Home: NextPage = () => {
+export async function getStaticProps() {
+  const girls = await getGirlsTopImages();
+  const boys = await getBoysTopImages();
+  const news = await getNews();
+  const girlsTopImages = girls.map((girl: any) => ({
+    id: girl.id,
+    url: girl.topImage.url,
+  }));
+  const boysTopImages = boys.map((boy: any) => ({
+    id: boy.id,
+    url: boy.topImage.url,
+  }));
+  return {
+    props: {
+      girlsTopImages,
+      boysTopImages,
+      news,
+    },
+  };
+}
+
+const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
+  const [girls, setGirls] =
+    useState<{ id: string; url: string }[]>(girlsTopImages);
+  const [boys, setBoys] = useState(boysTopImages);
+
+  useEffect(() => {
+    setGirls(shuffle(girlsTopImages));
+    setBoys(shuffle(boysTopImages));
+  }, []);
 
   return (
     <Box w="100%" h="100%">
       <MenuBox />
       <Box marginTop="18" />
-      <TopHeader />
+      <TopHeader topImages={girls.slice(0, 3).concat(boys.slice(0, 3))} />
       <Box marginTop="18px" />
       <Box marginTop={["36px", "36px"]} />
       <Flex flexDir={["column", "row"]}>
-        <NewsBox />
+        <NewsBox news={news} />
         <Box marginTop="36px" />
         {/* <Box w="100%">
           <Center>
@@ -44,9 +76,9 @@ const Home: NextPage = () => {
         <HeadingModel />
       </Flex>
       <Box marginTop={3} />
-      <ImageSlider heading="GIRLS" hedingColor="red.600" />
+      <ImageSlider heading="GIRLS" hedingColor="red.600" topImages={girls} />
       <Box marginTop="30px" />
-      <ImageSlider heading="BOYS" hedingColor="blue.600" />
+      <ImageSlider heading="BOYS" hedingColor="blue.600" topImages={boys} />
       <Box marginTop="36px" />
       {isXl ? (
         <Image src={IntroXlImage} height={360} />
@@ -60,19 +92,6 @@ const Home: NextPage = () => {
       <Flex justify={["initial", "center"]}>
         <HowToVote />
       </Flex>
-      <Flex justify="center" marginTop="36px" hidden={!isXl}>
-        <AdArea
-          width={["320px", "640px"]}
-          height={["100px", "200px"]}
-          text="広告B①"
-        />
-        <Box w={10} />
-        <AdArea
-          width={["320px", "640px"]}
-          height={["100px", "200px"]}
-          text="広告B②"
-        />
-      </Flex>
       <Box marginTop="36px" />
       <Heading marginLeft={[6, 96]} pl={[0, 40]} fontSize={24}>
         SCHEDULE
@@ -81,41 +100,14 @@ const Home: NextPage = () => {
         <Schedule />
       </Flex>
       <Box marginTop="12px" />
-
       <IntroLinkBox text="美男美女SNAPについて" topage="/intro" />
-
       <Box marginTop="36px" />
-      <Box w="100%" hidden={isXl}>
-        <Center>
-          <AdArea
-            width={["320px", "640px"]}
-            height={["100px", "200px"]}
-            text="広告B①"
-          />
-        </Center>
-      </Box>
-      <Box marginTop="12px" />
-      <Box w="100%" hidden={isXl}>
-        <Center>
-          <AdArea
-            width={["320px", "640px"]}
-            height={["100px", "200px"]}
-            text="広告B②"
-          />
-        </Center>
-      </Box>
       <Box marginTop="12px" />
       <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
         <AdArea
           width={["234px", "540px"]}
           height={["60px", "180px"]}
           text="広告C①"
-        />
-        <Box w={10} h={3} />
-        <AdArea
-          width={["234px", "540px"]}
-          height={["60px", "180px"]}
-          text="広告C②"
         />
       </Flex>
       <Box marginTop="56px" />
@@ -127,10 +119,12 @@ const Home: NextPage = () => {
           KADAI INFOの紹介画像
         </Text>
       </Flex>
-
       <Box marginTop="12px" />
-      <IntroLinkBox text="KADAI INFOとは" topage="/intro" />
-      <Box marginTop="56px" />
+      <IntroLinkBox
+        text="KADAI INFOとは"
+        topage="https://kadai-info.com/lp/about-us/"
+      />
+      <Box h={16} />
       <Footer />
     </Box>
   );

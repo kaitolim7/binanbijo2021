@@ -51,35 +51,8 @@ export default function Model({ girls, boys }: any) {
       </Flex>
       <Box marginTop="48px" />
       <Box w="100%">
-        <Center>
-          <AdArea
-            width={["300px", "600px"]}
-            height={["250px", "500px"]}
-            text="広告A"
-          />
-        </Center>
-        <Box marginTop={6} />
+        <Box marginTop={8} />
         <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
-          <AdArea
-            width={["320px", "640px"]}
-            height={["100px", "200px"]}
-            text="広告B①"
-          />
-          <Box w={5} h={3} />
-          <AdArea
-            width={["320px", "640px"]}
-            height={["100px", "200px"]}
-            text="広告B①"
-          />
-        </Flex>
-        <Box marginTop="16px" />
-        <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
-          <AdArea
-            width={["234px", "540px"]}
-            height={["60px", "180px"]}
-            text="広告C①"
-          />
-          <Box w={5} h={3} />
           <AdArea
             width={["234px", "540px"]}
             height={["60px", "180px"]}
@@ -87,9 +60,9 @@ export default function Model({ girls, boys }: any) {
           />
         </Flex>
       </Box>
-      <Box marginTop="36px" />
+      <Box h={12} />
       <IntroLinkBox text="TOPに戻る" topage="/" />
-      <Box marginTop="56px" />
+      <Box h={16} />
       <Footer />
     </Box>
   );

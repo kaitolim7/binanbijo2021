@@ -11,7 +11,9 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import Image from "next/image";
 import Test from "../../public/images/parker.jpeg";
 import HeadingInterview from "./HeadingInterview";
+import { ImageProps } from "./ImageSliderItem";
 import InterviewItem from "./InterviewItem";
+import IntroLinkBox from "./IntroLinkBox";
 
 type Props = {
   whyEntry: string;
@@ -20,6 +22,7 @@ type Props = {
   beauty: string;
   selfIntro: string;
   aWord: string;
+  image: ImageProps;
 };
 
 export default function PersonalInterview(props: Props) {
@@ -33,7 +36,7 @@ export default function PersonalInterview(props: Props) {
           <HeadingInterview />
           <Box marginTop="24px" />
           <Center>
-            <SimpleGrid columns={3} spacing={0}>
+            <SimpleGrid columns={3} spacing={5}>
               <InterviewItem
                 num={1}
                 title="美男美女SNAPへ参加したきっかけ"
@@ -73,14 +76,22 @@ export default function PersonalInterview(props: Props) {
     return (
       <Box>
         <Center>
-          <Image src={Test} />
+          {props.image ? (
+            <Image
+              src={props.image.url}
+              width={props.image.width}
+              height={props.image.height}
+            />
+          ) : (
+            <Image src={Test} width={400} height={300} />
+          )}
         </Center>
         <Box marginTop={["56px", "0"]} />
         <Box>
           <HeadingInterview />
           <Box marginTop="24px" />
           <Center>
-            <SimpleGrid columns={2} spacing={0}>
+            <SimpleGrid columns={2} spacing={3}>
               <InterviewItem
                 num={1}
                 title="美男美女SNAPへ参加したきっかけ"

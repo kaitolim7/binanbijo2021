@@ -3,16 +3,21 @@ import { useState } from "react";
 import NewsBoxOutline from "./NewsBoxOutline";
 import NewsLine from "./NewsLine";
 
-export default function NewsBox() {
-  const [news, setNews] = useState(["a", "a", "a", "a", "a", "a", "a", "a"]);
-  const [publicNews, setPublicNews] = useState(["a", "a", "a"]);
+type Props = {
+  news: { date: string; content: string }[];
+};
+
+export default function NewsBox(props: Props) {
+  const [news, setNews] = useState(props.news);
+  const [publicNews, setPublicNews] = useState(props.news.slice(0, 3));
   const [open, setOpen] = useState(false);
 
-  const viewBox: string = "0 0 345 " + (publicNews.length * 100).toString();
-  const viewBoxXl: string =
-    "0 0 827.261 " + (publicNews.length * 100).toString();
-  const height: string = (publicNews.length * 88).toString();
-  const heightXl: string = (publicNews.length * 77).toString();
+  const viewBox = "0 0 345 " + (publicNews.length * 100).toString();
+
+  const viewBoxXl = "0 0 827.261 " + (publicNews.length * 100).toString();
+
+  const height = (publicNews.length * 88).toString();
+  const heightXl = (publicNews.length * 77).toString();
 
   const handleOpen = () => {
     setOpen(true);
@@ -42,8 +47,22 @@ export default function NewsBox() {
         <Center>
           <Box w={["90%", "70%"]}>
             {open && publicNews.length > 0
-              ? publicNews.map((index) => <NewsLine height={14} key={index} />)
-              : publicNews.map((index) => <NewsLine height={12} key={index} />)}
+              ? publicNews.map((news) => (
+                  <NewsLine
+                    key={news.content}
+                    height={14}
+                    date={news.date}
+                    content={news.content}
+                  />
+                ))
+              : publicNews.map((news) => (
+                  <NewsLine
+                    key={news.content}
+                    height={12}
+                    date={news.date}
+                    content={news.content}
+                  />
+                ))}
             <Flex h="100%" alignItems="end" justify="end">
               {open ? (
                 <Text

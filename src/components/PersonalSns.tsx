@@ -28,27 +28,41 @@ export default function PersonalSns(props: Props) {
   });
   if (isXl) {
     return (
-      <Box zIndex="overlay" position="absolute" top="10%" right="28%">
-        <Text fontSize="mdß" fontWeight="bold">
-          \ check it /
-        </Text>
+      <Box zIndex="1" position="absolute" top="8%" right="26%">
+        {instaLink || twitterLink ? (
+          <Text fontSize="md" fontWeight="bold">
+            \ check it /
+          </Text>
+        ) : (
+          <></>
+        )}
         <Flex flexDir="column" marginLeft="5" marginTop="2">
-          <Flex paddingRight="3" alignItems="flex-end">
-            <Image
-              src={InstagramLogo}
-              width={46}
-              height={46}
-              onClick={() => router.push(instaLink)}
-            />
+          <Flex alignItems="flex-end">
+            {instaLink ? (
+              <Image
+                src={InstagramLogo}
+                width={46}
+                height={46}
+                onClick={() => router.push(instaLink)}
+              />
+            ) : (
+              <></>
+            )}
           </Flex>
-          <Box marginTop="16px" />
-          <Flex paddingRight="3" alignItems="flex-end">
-            <Image
-              src={TwitterLogo}
-              width={46}
-              height={46}
-              onClick={() => router.push(twitterLink)}
-            />
+          {instaLink && <Box h={2} />}
+          <Flex alignItems="flex-end">
+            {twitterLink ? (
+              <>
+                <Image
+                  src={TwitterLogo}
+                  width={46}
+                  height={46}
+                  onClick={() => router.push(twitterLink)}
+                />
+              </>
+            ) : (
+              <></>
+            )}
           </Flex>
         </Flex>
       </Box>
@@ -56,10 +70,16 @@ export default function PersonalSns(props: Props) {
   } else {
     return (
       <Box paddingBottom="1">
-        <Text fontSize="sm" fontWeight="bold" textAlign="center">
-          \ check it /&nbsp;&nbsp;&nbsp;
-        </Text>
-        <Sns instagram={props.instagram} twitter={props.twitter} />
+        {instaLink || twitterLink ? (
+          <Text fontSize="sm" fontWeight="bold" textAlign="center">
+            \ check it /&nbsp;&nbsp;&nbsp;
+          </Text>
+        ) : (
+          <Box h={61} />
+        )}
+        <Center mr={2}>
+          <Sns instagram={props.instagram} twitter={props.twitter} />
+        </Center>
       </Box>
     );
   }

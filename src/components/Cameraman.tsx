@@ -1,7 +1,6 @@
 import { Box, Center, Text } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import Image from "next/image";
-import Test from "../../public/images/parker.jpeg";
 import Sns from "./Sns";
 
 type Props = {
@@ -28,7 +27,7 @@ export default function Cameraman(props: Props) {
           </Text>
         </Center>
         <Box h={2} />
-        <Center paddingLeft="2.5">
+        <Center>
           <Sns instagram={props.instagram} twitter={props.twitter} />
         </Center>
         <Box marginBottom="3" />
@@ -44,7 +43,7 @@ export default function Cameraman(props: Props) {
           </Text>
         </Center>
         <Box h={2} />
-        <Center paddingLeft="2.5">
+        <Center w={100}>
           <Sns instagram={props.instagram} twitter={props.twitter} />
         </Center>
         <Box marginBottom="3" />

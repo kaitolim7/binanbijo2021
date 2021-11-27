@@ -7,7 +7,11 @@ import Test from "../../public/images/parker.jpeg";
 import KadaiInfoLogo from "../../public/svgs/kadaiinfo_logo.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
-export default function TopHeader() {
+type Props = {
+  topImages: { id: string; url: string }[];
+};
+
+export default function TopHeader(props: Props) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   const [openA, setOpenA] = useState(false);
   const [openB, setOpenB] = useState(false);
@@ -27,29 +31,29 @@ export default function TopHeader() {
           <Flex h="580px" alignItems="center" justify="center">
             <Box paddingX={3}>
               <Box padding={3} opacity={openA ? 1 : 0} transition="0.4s">
-                <Image src={Test} />
+                <Image src={props.topImages[0].url} width={300} height={200} />
               </Box>
               <Box marginTop={14} />
               <Box padding={3} opacity={openA ? 1 : 0} transition="2.8s">
-                <Image src={Test} />
+                <Image src={props.topImages[3].url} width={300} height={200} />
               </Box>
             </Box>
             <Box paddingX={3}>
               <Box padding={3} opacity={openA ? 1 : 0} transition="3.6s">
-                <Image src={Test} />
+                <Image src={props.topImages[4].url} width={300} height={200} />
               </Box>
               <Box marginTop={14} />
               <Box padding={3} opacity={openA ? 1 : 0} transition="1.2s">
-                <Image src={Test} />
+                <Image src={props.topImages[1].url} width={300} height={200} />
               </Box>
             </Box>
             <Box paddingX={3}>
               <Box padding={3} opacity={openA ? 1 : 0} transition="2.0s">
-                <Image src={Test} />
+                <Image src={props.topImages[2].url} width={300} height={200} />
               </Box>
               <Box marginTop={14} />
               <Box padding={3} opacity={openA ? 1 : 0} transition="4.6s">
-                <Image src={Test} />
+                <Image src={props.topImages[5].url} width={300} height={200} />
               </Box>
             </Box>
           </Flex>
@@ -76,25 +80,26 @@ export default function TopHeader() {
           <Flex h="580px" alignItems="center" justify="center">
             <Box marginTop={5}>
               <Box padding={3} opacity={openA ? 1 : 0} transition="0.4s">
-                <Image src={Test} />
+                <Image src={props.topImages[0].url} width={176} height={117} />
               </Box>
 
               <Box padding={3} opacity={openA ? 1 : 0} transition="3.2s">
-                <Image src={Test} />
+                <Image src={props.topImages[3].url} width={176} height={117} />
               </Box>
               <Box padding={3} opacity={openA ? 1 : 0} transition="2.0s">
-                <Image src={Test} />
+                <Image src={props.topImages[1].url} width={176} height={117} />
               </Box>
             </Box>
+            <Box mx={-1.5} />
             <Box marginTop={-32}>
               <Box padding={3} opacity={openA ? 1 : 0} transition="2.8s">
-                <Image src={Test} />
+                <Image src={props.topImages[4].url} width={176} height={117} />
               </Box>
               <Box padding={3} opacity={openA ? 1 : 0} transition="1.2s">
-                <Image src={Test} />
+                <Image src={props.topImages[2].url} width={176} height={117} />
               </Box>
               <Box padding={3} opacity={openA ? 1 : 0} transition="4.0s">
-                <Image src={Test} />
+                <Image src={props.topImages[5].url} width={176} height={117} />
               </Box>
             </Box>
           </Flex>

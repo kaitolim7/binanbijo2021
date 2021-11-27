@@ -1,11 +1,25 @@
-import { Box } from "@chakra-ui/layout";
+import { Box, Flex } from "@chakra-ui/layout";
 import HeadingMovieImage from "../../public/svgs/headingmovie.svg";
+import HeadingYoutubeImage from "../../public/svgs/headingyoutube.svg";
 import Image from "next/image";
+import { useBreakpointValue } from "@chakra-ui/media-query";
 
 export default function HeadingMovie() {
+  const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
+  if (isXl) {
+    return (
+      <Flex ml={96} pl={12}>
+        <Image src={HeadingMovieImage} width={200} height={50} />
+        <Box w={400} />
+        <Image src={HeadingYoutubeImage} width={200} height={50} />
+      </Flex>
+    );
+  }
   return (
-    <Box ml={[0, 96]} pl={[0, 12]}>
+    <Flex>
       <Image src={HeadingMovieImage} />
-    </Box>
+      <Box w={100} />
+      <Image src={HeadingYoutubeImage} />
+    </Flex>
   );
 }

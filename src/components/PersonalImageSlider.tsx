@@ -1,12 +1,18 @@
-import { Center, Flex, Spacer } from "@chakra-ui/layout";
+import { Flex } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
-import { useEffect } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ImageSliderItem from "./ImageSliderItem";
+import { ImageProps } from "./ImageSliderItem";
 import PersonalRightIcon from "./PersonalRightIcon";
 import PersonalLeftIcon from "./PersonalLeftIcon";
-export default function PersonalImageSlider() {
+import PersonalImageSliderItem from "./PersonalImageSliderItem";
+import TempImage from "./TempImage";
+
+export type ImagesProps = {
+  images: ImageProps[] | undefined;
+};
+
+export default function PersonalImageSlider(props: ImagesProps) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   const responsive = {
     desktop: {
@@ -37,7 +43,7 @@ export default function PersonalImageSlider() {
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={3000}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
@@ -50,24 +56,19 @@ export default function PersonalImageSlider() {
           customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
+          {props.images ? (
+            props.images.map((image) => (
+              <PersonalImageSliderItem key={image.url} image={image} />
+            ))
+          ) : (
+            <PersonalImageSliderItem image={undefined} />
+          )}
+          {/* <TempImage day={8} />
+          <TempImage day={15} /> */}
         </Carousel>
       </Flex>
     );
   } else {
-    const CustomRightArrow = ({ onClick, ...rest }: any) => {
-      const {
-        onMove,
-        carouselState: { currentSlide, deviceType },
-      } = rest;
-      // onMove means if dragging or swiping in progress.
-      return <button onClick={() => onClick()} />;
-    };
     return (
       <Flex>
         <Carousel
@@ -78,24 +79,27 @@ export default function PersonalImageSlider() {
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={2500}
+          autoPlaySpeed={3000}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
           containerClass="carousel-container"
-          deviceType={"desktop"}
+          deviceType={"mobile"}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
           customRightArrow={<PersonalRightIcon />}
           customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
-          <ImageSliderItem />
+          {props.images ? (
+            props.images.map((image) => (
+              <PersonalImageSliderItem key={image.url} image={image} />
+            ))
+          ) : (
+            <PersonalImageSliderItem image={undefined} />
+          )}
+          <TempImage day={8} />
+          <TempImage day={15} />
         </Carousel>
       </Flex>
     );

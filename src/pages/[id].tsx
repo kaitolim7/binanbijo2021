@@ -13,6 +13,7 @@ import HeadingMovie from "../components/HeadingMovie";
 import PersonalProfile from "../components/PersonalProfile";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { getPageIds, getPageInfo } from "./api";
+import IntroLinkBox from "../components/IntroLinkBox";
 
 // ビルド時に /content.id のページを静的生成してくれる
 export async function getStaticPaths() {
@@ -38,17 +39,17 @@ export default function Personal({ personal }: any) {
     <Box w="100%" h="100%">
       <MenuBox />
       {!isXl && (
-        <Flex position="fixed" right={["2.5", "5"]} bottom="8" zIndex="overlay">
+        <Flex position="fixed" right="2.5" bottom="5" zIndex="overlay">
           <Center
-            w={["68px", "96px"]}
-            h={["68px", "96px"]}
+            w={14}
+            h={14}
             bgColor="white"
             marginX="auto"
             borderRadius="full"
             borderColor="black"
             border="2px"
           >
-            <Text fontWeight="bold" fontSize={["sm", "md"]} marginX="1">
+            <Text fontWeight="bold" fontSize={10} marginX="1">
               投票する
             </Text>
           </Center>
@@ -76,6 +77,7 @@ export default function Personal({ personal }: any) {
       </Flex>
       <Box marginTop="18px" />
       <PersonalTopImage
+        topImage={personal.top_image}
         entryNumber={personal.entry_number}
         name={personal.name}
         faculty={personal.belonging.faculty}
@@ -85,31 +87,28 @@ export default function Personal({ personal }: any) {
         twitter={personal.twitter}
       />
       <Box marginTop="56px" />
-      <Box w="100%">
-        <Center>
-          <AdArea
-            width={["300px", "600px"]}
-            height={["250px", "500px"]}
-            text="広告A"
-          />
-        </Center>
-      </Box>
-      <Box marginTop="56px" />
       <HeadingPhoto />
       <Box marginTop="24px" />
       <Box w="100%" h="100%">
-        <PersonalImageSlider />
+        <PersonalImageSlider
+          images={[
+            personal.images.slider_image1,
+            personal.images.slider_image2,
+            personal.images.slider_image3,
+          ]}
+        />
       </Box>
       <Box marginTop="56px" />
       <HeadingMovie />
       <Box marginTop="24px" />
       <Box w="100%">
         <Box marginX="4">
-          <PersonalMovie />
+          <PersonalMovie youtubeUrl={personal.youtube} />
         </Box>
       </Box>
       <Box marginTop="56px" />
       <PersonalProfile
+        image={personal.second_image}
         tall={personal.profile.tall}
         favoritePlace={personal.profile.favorite_place}
         favoriteYouTube={personal.profile.favorite_youtube}
@@ -121,6 +120,7 @@ export default function Personal({ personal }: any) {
       />
       <Box marginTop="24px" />
       <PersonalInterview
+        image={personal.second_image}
         whyEntry={personal.interview.why_entry}
         working={personal.interview.working}
         want={personal.interview.want}
@@ -128,35 +128,74 @@ export default function Personal({ personal }: any) {
         selfIntro={personal.interview.self_intro}
         aWord={personal.interview.a_word}
       />
-      <Box marginTop="36px" />
-      <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
-        <AdArea
-          width={["320px", "640px"]}
-          height={["100px", "200px"]}
-          text="広告B①"
-        />
-        <Box w={5} h={3} />
-        <AdArea
-          width={["320px", "640px"]}
-          height={["100px", "200px"]}
-          text="広告B①"
-        />
-      </Flex>
-      <Box marginTop="16px" />
-      <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
-        <AdArea
-          width={["234px", "540px"]}
-          height={["60px", "180px"]}
-          text="広告C①"
-        />
-        <Box w={5} h={3} />
-        <AdArea
-          width={["234px", "540px"]}
-          height={["60px", "180px"]}
-          text="広告C①"
-        />
-      </Flex>
-      <Box marginTop="56px" />
+      <Box h={8} />
+      {isXl ? (
+        <>
+          <Flex
+            alignItems="center"
+            justify="center"
+            flexDir={["column", "row"]}
+          >
+            <AdArea
+              width={["234px", "540px"]}
+              height={["60px", "180px"]}
+              text="広告C①"
+            />
+          </Flex>
+          <Box h={10} />
+          <Flex justify="center">
+            <Box
+              border="1px"
+              borderColor="black"
+              borderTop="initial"
+              borderX="initial"
+              paddingX={4}
+            >
+              <Text fontSize="xl">撮影 : {personal.cameraman}</Text>
+            </Box>
+          </Flex>
+          <Box h={10} />
+          <Box>
+            <IntroLinkBox text={"この人に投票する"} topage={""} />
+            <Box h={3} />
+            <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
+          </Box>
+        </>
+      ) : (
+        <>
+          <Flex justify="center">
+            <Box
+              border="1px"
+              borderColor="black"
+              borderTop="initial"
+              borderX="initial"
+              paddingX={4}
+            >
+              <Text fontSize="md">撮影 : {personal.cameraman}</Text>
+            </Box>
+          </Flex>
+          <Box h={8} />
+          <Box>
+            <IntroLinkBox text={"この人に投票する"} topage={""} />
+            <Box h={3} />
+            <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
+          </Box>
+          <Box h={14} />
+          <Flex
+            alignItems="center"
+            justify="center"
+            flexDir={["column", "row"]}
+          >
+            <AdArea
+              width={["234px", "540px"]}
+              height={["60px", "180px"]}
+              text="広告C①"
+            />
+          </Flex>
+        </>
+      )}
+
+      <Box h={16} />
       <Footer />
     </Box>
   );

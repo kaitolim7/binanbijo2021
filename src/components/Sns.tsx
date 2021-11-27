@@ -14,6 +14,7 @@ export default function Sns(props: Props) {
   const instaLink = props.instagram
     ? `https://www.instagram.com/${props.instagram.replace("@", "")}`
     : "";
+
   const twitterLink = props.twitter
     ? `https://twitter.com/${props.twitter.replace("@", "")}`
     : "";
@@ -27,45 +28,65 @@ export default function Sns(props: Props) {
   });
   if (isXl) {
     return (
-      <Flex>
-        <Flex paddingRight="3" alignItems="flex-end">
-          <Image
-            src={InstagramLogo}
-            width={46}
-            height={46}
-            onClick={() => router.push(instaLink)}
-          />
+      <Flex justify="center">
+        <Flex alignItems="flex-end">
+          {instaLink ? (
+            <Image
+              src={InstagramLogo}
+              width={36}
+              height={36}
+              onClick={() => router.push(instaLink)}
+            />
+          ) : (
+            <></>
+          )}
         </Flex>
-        <Box marginTop="16px" />
-        <Flex paddingRight="3" alignItems="flex-end">
-          <Image
-            src={TwitterLogo}
-            width={46}
-            height={46}
-            onClick={() => router.push(twitterLink)}
-          />
+        <Flex alignItems="flex-end">
+          {twitterLink ? (
+            <>
+              <Box w={1} />
+              <Image
+                src={TwitterLogo}
+                width={36}
+                height={36}
+                onClick={() => router.push(twitterLink)}
+              />
+            </>
+          ) : (
+            <></>
+          )}
         </Flex>
       </Flex>
     );
   } else {
     return (
       <Flex>
-        <Flex paddingRight="3" alignItems="flex-end">
-          <Image
-            src={InstagramLogo}
-            width={36}
-            height={36}
-            onClick={() => router.push(instaLink)}
-          />
+        <Flex alignItems="flex-end">
+          {instaLink ? (
+            <Image
+              src={InstagramLogo}
+              width={36}
+              height={36}
+              onClick={() => router.push(instaLink)}
+            />
+          ) : (
+            <></>
+          )}
         </Flex>
-        <Box marginTop="16px" />
-        <Flex paddingRight="3" alignItems="flex-end">
-          <Image
-            src={TwitterLogo}
-            width={36}
-            height={36}
-            onClick={() => router.push(twitterLink)}
-          />
+        <Flex alignItems="flex-end">
+          {twitterLink ? (
+            <>
+              <Box w={1} />
+              <Image
+                src={TwitterLogo}
+                width={36}
+                height={36}
+                onClick={() => router.push(twitterLink)}
+              />
+            </>
+          ) : (
+            <></>
+          )}
         </Flex>
       </Flex>
     );

@@ -65,9 +65,9 @@ export default function Intro() {
           景品紹介
         </Text>
       </Flex>
-      <Box marginTop="12" />
+      <Box h={12} />
       <IntroLinkBox text="TOPに戻る" topage="/" />
-      <Box marginTop="56px" />
+      <Box h={16} />
       <Footer />
     </Box>
   );
