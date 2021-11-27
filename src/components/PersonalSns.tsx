@@ -28,7 +28,7 @@ export default function PersonalSns(props: Props) {
   });
   if (isXl) {
     return (
-      <Box zIndex="overlay" position="absolute" top="8%" right="26%">
+      <Box zIndex="1" position="absolute" top="8%" right="26%">
         {instaLink || twitterLink ? (
           <Text fontSize="md" fontWeight="bold">
             \ check it /
@@ -37,29 +37,29 @@ export default function PersonalSns(props: Props) {
           <></>
         )}
         <Flex flexDir="column" marginLeft="5" marginTop="2">
-          <Flex paddingRight="3" alignItems="flex-end">
+          <Flex alignItems="flex-end">
             {instaLink ? (
-              <>
-                <Image
-                  src={InstagramLogo}
-                  width={46}
-                  height={46}
-                  onClick={() => router.push(instaLink)}
-                />
-                <Box marginBottom="16px" />
-              </>
+              <Image
+                src={InstagramLogo}
+                width={46}
+                height={46}
+                onClick={() => router.push(instaLink)}
+              />
             ) : (
               <></>
             )}
           </Flex>
-          <Flex paddingRight="3" alignItems="flex-end">
+          {instaLink && <Box h={2} />}
+          <Flex alignItems="flex-end">
             {twitterLink ? (
-              <Image
-                src={TwitterLogo}
-                width={46}
-                height={46}
-                onClick={() => router.push(twitterLink)}
-              />
+              <>
+                <Image
+                  src={TwitterLogo}
+                  width={46}
+                  height={46}
+                  onClick={() => router.push(twitterLink)}
+                />
+              </>
             ) : (
               <></>
             )}

@@ -61,13 +61,25 @@ export default function PersonalTopImage(props: Props) {
           {isXl ? (
             <Center mt={16}>
               {props.topImage ? (
-                <Image src={props.topImage.url} width={600} height={400} />
+                <Center w={600}>
+                  <Image
+                    src={props.topImage.url}
+                    width={props.topImage.width}
+                    height={props.topImage.height}
+                  />
+                </Center>
               ) : (
                 <Image src={Test} width={540} height={400} />
               )}
             </Center>
           ) : props.topImage ? (
-            <Image src={props.topImage.url} width={375} height={250} />
+            <Center w={375}>
+              <Image
+                src={props.topImage.url}
+                width={props.topImage.width}
+                height={props.topImage.height}
+              />
+            </Center>
           ) : (
             <Image src={Test} layout="responsive" />
           )}

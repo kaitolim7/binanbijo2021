@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/layout";
+import { Box, Center, Flex, Text } from "@chakra-ui/layout";
 import Image from "next/image";
 import HeadingProfile from "./HeadingProfile";
 import ProfileArrow from "../../public/svgs/profilearrow.svg";
@@ -68,7 +68,13 @@ export default function PersonalProfile(props: Props) {
             </Box>
 
             {props.image ? (
-              <Image src={props.image.url} width={600} height={400} />
+              <Center w={600}>
+                <Image
+                  src={props.image.url}
+                  width={props.image.width}
+                  height={props.image.height}
+                />
+              </Center>
             ) : (
               <Image src={Test} width={400} height={300} />
             )}

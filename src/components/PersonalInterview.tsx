@@ -76,7 +76,11 @@ export default function PersonalInterview(props: Props) {
       <Box>
         <Center>
           {props.image ? (
-            <Image src={props.image.url} width={600} height={400} />
+            <Image
+              src={props.image.url}
+              width={props.image.width}
+              height={props.image.height}
+            />
           ) : (
             <Image src={Test} width={400} height={300} />
           )}
