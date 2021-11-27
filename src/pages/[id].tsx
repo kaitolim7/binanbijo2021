@@ -95,7 +95,6 @@ export default function Personal({ personal }: any) {
             personal.images.slider_image1,
             personal.images.slider_image2,
             personal.images.slider_image3,
-            personal.images.slider_image4,
           ]}
         />
       </Box>
@@ -196,7 +195,7 @@ export default function Personal({ personal }: any) {
         </>
       )}
 
-      <Box h={14} />
+      <Box h={16} />
       <Footer />
     </Box>
   );

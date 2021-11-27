@@ -60,9 +60,9 @@ export default function Model({ girls, boys }: any) {
           />
         </Flex>
       </Box>
-      <Box marginTop="36px" />
+      <Box h={12} />
       <IntroLinkBox text="TOPに戻る" topage="/" />
-      <Box marginTop="56px" />
+      <Box h={16} />
       <Footer />
     </Box>
   );

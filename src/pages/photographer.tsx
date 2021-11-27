@@ -44,13 +44,15 @@ export default function Photographer({ photographers }: any) {
         marginX="5"
         marginTop="4"
       >
-        <Text fontSize={13}>
+        <Text fontSize={[13, 16]}>
           「美男美女SNAP2021」はカメラマンとして活動している現役鹿児島大学生に撮影を依頼しました！
         </Text>
-        <Text fontSize={13}>
+        <Text fontSize={[13, 16]}>
           カメラマンの皆様、ご協力ありがとうございました！
         </Text>
-        <Text fontSize={13}>是非、彼らのSNSもチェックしてみてください！</Text>
+        <Text fontSize={[13, 16]}>
+          是非、彼らのSNSもチェックしてみてください！
+        </Text>
       </Flex>
       <Center>
         <SimpleGrid columns={3} spacing={[3, 14]} marginX="6" marginTop="6">
@@ -65,9 +67,9 @@ export default function Photographer({ photographers }: any) {
           ))}
         </SimpleGrid>
       </Center>
-      <Box marginTop={12} />
+      <Box h={12} />
       <IntroLinkBox text="TOPに戻る" topage="/" />
-      <Box marginTop={20} />
+      <Box h={16} />
       <Footer />
     </Box>
   );

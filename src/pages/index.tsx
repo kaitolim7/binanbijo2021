@@ -100,7 +100,6 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
         <Schedule />
       </Flex>
       <Box marginTop="12px" />
-
       <IntroLinkBox text="美男美女SNAPについて" topage="/intro" />
       <Box marginTop="36px" />
       <Box marginTop="12px" />
@@ -120,13 +119,12 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
           KADAI INFOの紹介画像
         </Text>
       </Flex>
-
       <Box marginTop="12px" />
       <IntroLinkBox
         text="KADAI INFOとは"
         topage="https://kadai-info.com/lp/about-us/"
       />
-      <Box marginTop="56px" />
+      <Box h={16} />
       <Footer />
     </Box>
   );

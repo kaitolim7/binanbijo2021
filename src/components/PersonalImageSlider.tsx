@@ -6,6 +6,7 @@ import { ImageProps } from "./ImageSliderItem";
 import PersonalRightIcon from "./PersonalRightIcon";
 import PersonalLeftIcon from "./PersonalLeftIcon";
 import PersonalImageSliderItem from "./PersonalImageSliderItem";
+import TempImage from "./TempImage";
 
 export type ImagesProps = {
   images: ImageProps[] | undefined;
@@ -62,6 +63,8 @@ export default function PersonalImageSlider(props: ImagesProps) {
           ) : (
             <PersonalImageSliderItem image={undefined} />
           )}
+          {/* <TempImage day={8} />
+          <TempImage day={15} /> */}
         </Carousel>
       </Flex>
     );
@@ -95,6 +98,8 @@ export default function PersonalImageSlider(props: ImagesProps) {
           ) : (
             <PersonalImageSliderItem image={undefined} />
           )}
+          <TempImage day={8} />
+          <TempImage day={15} />
         </Carousel>
       </Flex>
     );
