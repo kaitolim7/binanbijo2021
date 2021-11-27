@@ -28,7 +28,7 @@ export default function PersonalSns(props: Props) {
   });
   if (isXl) {
     return (
-      <Box zIndex="1" position="absolute" top="8%" right="26%">
+      <Box zIndex="1" position="absolute" top="8%" right="23%">
         {instaLink || twitterLink ? (
           <Text fontSize="md" fontWeight="bold">
             \ check it /

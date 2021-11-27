@@ -25,61 +25,61 @@ export default function PersonalProfile(props: Props) {
       <Box>
         <HeadingProfile />
         <Box marginTop="24px" />
-        <Box marginLeft={["0", "0"]}>
-          <Flex justify="center">
-            <Box w={380}>
-              <Text fontSize={["10", "18"]} paddingBottom={5}>
-                ◯ 身長 / {props.tall}cm
-              </Text>
-              <Text fontSize={["10", "18"]} paddingY={5}>
-                ◯ 好きな場所 / {props.favoritePlace}
-              </Text>
-              <Box paddingY={3}>
-                <Text fontSize={["10", "18"]}>◯ 好きなYouTube /</Text>
-                <Text fontSize={["10", "18"]}>{props.favoriteYouTube}</Text>
-              </Box>
-              <Box paddingY={3}>
-                <Text fontSize={["10", "18"]}>◯ 好きなブランド /</Text>
-                <Text fontSize={["10", "18"]}>{props.favoriteBland}</Text>
-              </Box>
-            </Box>
-            <Box w={5} />
-            <Image src={ProfileArrow} />
-            <Box w={10} />
-            <Box w={380}>
-              <Box paddingBottom={3}>
-                <Text fontSize={["10", "18"]}>◯ 趣味 /</Text>
-                <Text fontSize={["10", "18"]}>{props.hobby}</Text>
-              </Box>
-              <Box paddingY={3}>
-                <Text fontSize={["10", "18"]}>◯ マイブーム /</Text>
-                <Text fontSize={["10", "18"]}>{props.myboom}</Text>
-              </Box>
-              <Box paddingY={3}>
-                <Text fontSize={["10", "18"]}>◯ 休日の過ごし方 /</Text>
-                <Text fontSize={["10", "18"]}>{props.holidays}</Text>
-              </Box>
-              <Box paddingY={3}>
-                <Text fontSize={["10", "18"]}>
-                  ◯ 将来の夢 /{" "}
-                  <Text fontSize={["10", "18"]}>{props.dream}</Text>
-                </Text>
-              </Box>
-            </Box>
 
-            {props.image ? (
-              <Center w={600}>
-                <Image
-                  src={props.image.url}
-                  width={props.image.width}
-                  height={props.image.height}
-                />
-              </Center>
-            ) : (
-              <Image src={Test} width={400} height={300} />
-            )}
-          </Flex>
-        </Box>
+        <Flex alignItems="center" justify="center">
+          <Box w={200} />
+          <Box w={380}>
+            <Text fontSize={["10", "18"]} paddingBottom={5}>
+              ◯ 身長 / {props.tall}cm
+            </Text>
+            <Text fontSize={["10", "18"]} paddingY={5}>
+              ◯ 好きな場所 / {props.favoritePlace}
+            </Text>
+            <Box paddingY={3}>
+              <Text fontSize={["10", "18"]}>◯ 好きなYouTube /</Text>
+              <Text fontSize={["10", "18"]}>{props.favoriteYouTube}</Text>
+            </Box>
+            <Box paddingY={3}>
+              <Text fontSize={["10", "18"]}>◯ 好きなブランド /</Text>
+              <Text fontSize={["10", "18"]}>{props.favoriteBland}</Text>
+            </Box>
+          </Box>
+          <Box w={5} />
+          <Image src={ProfileArrow} />
+          <Box w={10} />
+          <Box w={380}>
+            <Box paddingBottom={3}>
+              <Text fontSize={["10", "18"]}>◯ 趣味 /</Text>
+              <Text fontSize={["10", "18"]}>{props.hobby}</Text>
+            </Box>
+            <Box paddingY={3}>
+              <Text fontSize={["10", "18"]}>◯ マイブーム /</Text>
+              <Text fontSize={["10", "18"]}>{props.myboom}</Text>
+            </Box>
+            <Box paddingY={3}>
+              <Text fontSize={["10", "18"]}>◯ 休日の過ごし方 /</Text>
+              <Text fontSize={["10", "18"]}>{props.holidays}</Text>
+            </Box>
+            <Box paddingY={3}>
+              <Text fontSize={["10", "18"]}>
+                ◯ 将来の夢 / <Text fontSize={["10", "18"]}>{props.dream}</Text>
+              </Text>
+            </Box>
+          </Box>
+
+          {props.image ? (
+            <Center w={600}>
+              <Image
+                src={props.image.url}
+                width={props.image.width}
+                height={props.image.height}
+              />
+            </Center>
+          ) : (
+            <Image src={Test} width={400} height={300} />
+          )}
+          <Box w={200} />
+        </Flex>
       </Box>
     );
   } else {
