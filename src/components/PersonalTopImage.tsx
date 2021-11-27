@@ -25,8 +25,8 @@ export default function PersonalTopImage(props: Props) {
           {isXl ? (
             <Text
               position="absolute"
-              top="4"
-              left="28%"
+              top="3%"
+              left="25%"
               zIndex="1"
               borderColor="black"
               border="2px"
