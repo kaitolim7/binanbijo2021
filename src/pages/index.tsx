@@ -15,13 +15,14 @@ import IntroXlImage from "../../public/svgs/introductionxl.svg";
 import HowToVote from "../components/HowToVote";
 import Schedule from "../components/Schedule";
 import TopHeader from "../components/TopHeader";
-import { getBoysTopImages, getGirlsTopImages } from "./api";
+import { getBoysTopImages, getGirlsTopImages, getNews } from "./api";
 import { useEffect, useState } from "react";
 import shuffle from "../hooks/shuffle";
 
 export async function getStaticProps() {
   const girls = await getGirlsTopImages();
   const boys = await getBoysTopImages();
+  const news = await getNews();
   const girlsTopImages = girls.map((girl: any) => ({
     id: girl.id,
     url: girl.topImage.url,
@@ -34,13 +35,13 @@ export async function getStaticProps() {
     props: {
       girlsTopImages,
       boysTopImages,
+      news,
     },
   };
 }
 
-const Home: NextPage = ({ girlsTopImages, boysTopImages }: any) => {
+const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
-
   const [girls, setGirls] =
     useState<{ id: string; url: string }[]>(girlsTopImages);
   const [boys, setBoys] = useState(boysTopImages);
@@ -58,7 +59,7 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages }: any) => {
       <Box marginTop="18px" />
       <Box marginTop={["36px", "36px"]} />
       <Flex flexDir={["column", "row"]}>
-        <NewsBox />
+        <NewsBox news={news} />
         <Box marginTop="36px" />
         {/* <Box w="100%">
           <Center>

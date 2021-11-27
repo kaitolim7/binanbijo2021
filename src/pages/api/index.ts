@@ -70,3 +70,14 @@ export async function getBoysTopImages() {
   });
   return boysTopPages.filter((content: any) => content != null);
 }
+
+export async function getNews() {
+  const news = await MicroCmsClient.get({
+    endpoint: "news",
+    queries: {
+      fields: ["date", "content"],
+      limit: 10,
+    },
+  });
+  return news.contents.filter((content: any) => content != null);
+}

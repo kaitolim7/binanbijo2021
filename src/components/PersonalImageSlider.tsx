@@ -2,10 +2,9 @@ import { Flex } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ImageSliderItem, { ImageProps } from "./ImageSliderItem";
+import { ImageProps } from "./ImageSliderItem";
 import PersonalRightIcon from "./PersonalRightIcon";
 import PersonalLeftIcon from "./PersonalLeftIcon";
-import { useEffect } from "react";
 import PersonalImageSliderItem from "./PersonalImageSliderItem";
 
 export type ImagesProps = {
@@ -13,9 +12,6 @@ export type ImagesProps = {
 };
 
 export default function PersonalImageSlider(props: ImagesProps) {
-  useEffect(() => {
-    console.log(props.images);
-  }, []);
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   const responsive = {
     desktop: {
@@ -61,7 +57,7 @@ export default function PersonalImageSlider(props: ImagesProps) {
         >
           {props.images ? (
             props.images.map((image) => (
-              <PersonalImageSliderItem image={image} />
+              <PersonalImageSliderItem key={image.url} image={image} />
             ))
           ) : (
             <PersonalImageSliderItem image={undefined} />
@@ -94,7 +90,7 @@ export default function PersonalImageSlider(props: ImagesProps) {
         >
           {props.images ? (
             props.images.map((image) => (
-              <PersonalImageSliderItem image={image} />
+              <PersonalImageSliderItem key={image.url} image={image} />
             ))
           ) : (
             <PersonalImageSliderItem image={undefined} />

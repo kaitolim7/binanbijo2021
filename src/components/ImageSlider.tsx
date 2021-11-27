@@ -47,7 +47,11 @@ export default function ImageSlider(props: Props) {
               rightIcon={<RightIcon />}
             >
               {props.topImages.map((topImage: any) => (
-                <ImageSliderItem id={topImage.id} image={topImage.url} />
+                <ImageSliderItem
+                  key={topImage.id}
+                  id={topImage.id}
+                  image={topImage.url}
+                />
               ))}
             </ScrollingCarousel>
           ) : (
