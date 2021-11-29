@@ -5,7 +5,7 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   fonts: {
     heading: "irohakakuC-Bold",
-    body: "'YuGothic', 'Yu Gothic Medium', 'Yu Gothic','游ゴシック体', '游ゴシック Medium', '游ゴシック', 'Noto Sans JP', sans-serif",
+    body: "'YuGothic', 'Yu Gothic Medium', 'Yu Gothic','游ゴシック体', '游ゴシック Medium', '游ゴシック', sans-serif",
   },
   colors: {
     base: "#fff",
