@@ -11,13 +11,15 @@ type Props = {
 };
 
 export default function Sns(props: Props) {
-  const instaLink = props.instagram
-    ? `https://www.instagram.com/${props.instagram.replace("@", "")}/`
-    : "";
+  const instaLink =
+    props.instagram != "null"
+      ? `https://www.instagram.com/${props.instagram.replace("@", "")}/`
+      : "";
 
-  const twitterLink = props.twitter
-    ? `https://twitter.com/${props.twitter.replace("@", "")}/`
-    : "";
+  const twitterLink =
+    props.twitter != "null"
+      ? `https://twitter.com/${props.twitter.replace("@", "")}/`
+      : "";
 
   const router = useRouter();
   const isXl = useBreakpointValue({
