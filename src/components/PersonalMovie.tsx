@@ -27,7 +27,7 @@ export default function PersonalMovie(props: Props) {
     return (
       <Box pos="relative">
         <MovieFrame></MovieFrame>
-        <Box pos="absolute" zIndex="1" top="11%" left="6">
+        <Box pos="absolute" zIndex="1" top="10%" left="5%">
           <iframe
             width="320"
             height="180"
