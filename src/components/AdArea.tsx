@@ -1,20 +1,30 @@
 import { Box } from "@chakra-ui/layout";
+import Image from "next/image";
+import BannerC from "../../public/images/banner_c_mobile.jpg";
+import BannerCXl from "../../public/images/banner_c_desktop.jpg";
+import { useBreakpointValue } from "@chakra-ui/media-query";
+import { useRouter } from "next/dist/client/router";
 
-type Props = {
-  width: string[];
-  height: string[];
-  imagePath?: string;
-  text: string;
-};
-
-export default function AdArea(props: Props) {
-  return (
-    <Box
-      w={[props.width[0], props.width[1]]}
-      h={[props.height[0], props.height[1]]}
-      bg="red.300"
-    >
-      {props.text}
-    </Box>
-  );
+export default function AdArea() {
+  const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
+  const router = useRouter();
+  if (isXl) {
+    return (
+      <Image
+        src={BannerCXl}
+        width={540}
+        height={180}
+        onClick={() => router.push("https://mecanbaco.theshop.jp/")}
+      />
+    );
+  } else {
+    return (
+      <Image
+        src={BannerC}
+        width={234}
+        height={60}
+        onClick={() => router.push("https://mecanbaco.theshop.jp/")}
+      />
+    );
+  }
 }
