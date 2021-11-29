@@ -3,7 +3,7 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import Image from "next/image";
 import { useState } from "react";
 import KadaiInfoMenuBox from "../../public/svgs/menu_box.svg";
-import KadaiInfoLogo from "../../public/svgs/kadaiinfo_logo.svg";
+import KadaiInfoLogo from "../../public/images/kadaiinfo_logo.png";
 import Menu from "./InfoMenu";
 import { CloseIcon } from "@chakra-ui/icons";
 import { Slide } from "@chakra-ui/transition";
@@ -29,7 +29,7 @@ export default function MenuBox() {
         <Slide direction="top" in={open}>
           <Flex paddingTop="5" bgColor="white">
             <Spacer />
-            <Image src={KadaiInfoLogo} />
+            <Image src={KadaiInfoLogo} width={235} height={50} />
             <Spacer>
               <CloseIcon
                 marginTop="2"
@@ -67,7 +67,7 @@ export default function MenuBox() {
         <Slide direction="top" in={open}>
           <Flex paddingTop="5" bgColor="white">
             <Spacer />
-            <Image src={KadaiInfoLogo} />
+            <Image src={KadaiInfoLogo} width={141} height={30} />
             <Spacer>
               <CloseIcon
                 marginTop="2"
@@ -83,8 +83,8 @@ export default function MenuBox() {
       <Flex position="fixed" right="2.5" zIndex="overlay">
         <Image
           src={KadaiInfoMenuBox}
-          width={50}
-          height={70}
+          width={60}
+          height={84}
           objectPosition="right"
           onClick={() => handleOpen()}
         />

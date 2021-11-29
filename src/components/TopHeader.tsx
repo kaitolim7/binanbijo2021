@@ -3,7 +3,7 @@ import TopHeaderImage from "../../public/svgs/topheader.svg";
 import TopHeaderXlImage from "../../public/svgs/topheaderxl.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import KadaiInfoLogo from "../../public/svgs/kadaiinfo_logo.svg";
+import KadaiInfoLogo from "../../public/images/kadaiinfo_logo.png";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
 type Props = {
@@ -24,7 +24,7 @@ export default function TopHeader(props: Props) {
     return (
       <Box>
         <Center shadow="md">
-          <Image src={KadaiInfoLogo} />
+          <Image src={KadaiInfoLogo} width={235} height={50} />
         </Center>
         <Center pos="relative" w="100%" h="580px" mt={3}>
           <Flex h="580px" alignItems="center" justify="center">
@@ -73,7 +73,7 @@ export default function TopHeader(props: Props) {
     return (
       <Box>
         <Center shadow="md">
-          <Image src={KadaiInfoLogo} />
+          <Image src={KadaiInfoLogo} width={141} height={30} />
         </Center>
         <Center pos="relative" w="100%" h="580px" mt={3}>
           <Flex h="580px" alignItems="center" justify="center">
