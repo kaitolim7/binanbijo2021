@@ -1,4 +1,5 @@
 import { MicroCmsClient } from "./client";
+import { Content, Page } from "./type";
 
 export async function getPhotographer() {
   const photographers = await MicroCmsClient.get({ endpoint: "photographer" });
@@ -33,14 +34,14 @@ export async function getPageIds() {
 }
 
 export async function getGirlsTopImages() {
-  const page = await MicroCmsClient.get({
+  const page = (await MicroCmsClient.get({
     endpoint: "web",
     queries: {
       fields: ["id", "name", "entry_number", "gender", "top_image"],
       limit: 24,
     },
-  });
-  const girlsTopPages = page.contents.map((content: any) => {
+  })) as Page;
+  const girlsTopPages = page.contents.map((content: Content) => {
     if (content.gender[0] !== "female") return;
     return {
       id: content.id,
@@ -52,14 +53,14 @@ export async function getGirlsTopImages() {
   return girlsTopPages.filter((content: any) => content != null);
 }
 export async function getBoysTopImages() {
-  const page = await MicroCmsClient.get({
+  const page = (await MicroCmsClient.get({
     endpoint: "web",
     queries: {
       fields: ["id", "name", "entry_number", "gender", "top_image"],
       limit: 24,
     },
-  });
-  const boysTopPages = page.contents.map((content: any) => {
+  })) as Page;
+  const boysTopPages = page.contents.map((content: Content) => {
     if (content.gender[0] !== "male") return;
     return {
       id: content.id,
@@ -68,7 +69,7 @@ export async function getBoysTopImages() {
       topImage: content.top_image,
     };
   });
-  return boysTopPages.filter((content: any) => content != null);
+  return boysTopPages.filter((content) => content != null);
 }
 
 export async function getNews() {
