@@ -10,7 +10,7 @@ import Header from "../components/Header";
 import HeadingGenderButton from "../components/HeadingGenderButton";
 import HowToVote from "../components/HowToVote";
 import { getBoysTopImages, getGirlsTopImages } from "./api";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export async function getStaticProps() {
   const girls = await getGirlsTopImages();
@@ -46,7 +46,7 @@ export default function Model({ girls, boys }: any) {
       <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         投票方法
       </Heading>
-      <Flex justify={["initial", "center"]}>
+      <Flex justify="center">
         <HowToVote />
       </Flex>
       <Box marginTop="48px" />

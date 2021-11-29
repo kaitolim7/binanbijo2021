@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Heading, Spacer, Text } from "@chakra-ui/layout";
+import { Box, Center, Flex, Heading } from "@chakra-ui/layout";
 import type { NextPage } from "next";
 import Image from "next/image";
 import AdArea from "../components/AdArea";
@@ -83,20 +83,22 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
       {isXl ? (
         <Image src={IntroXlImage} height={360} />
       ) : (
-        <Image src={IntroImage} />
+        <Center>
+          <Image src={IntroImage} />
+        </Center>
       )}
       <Box marginTop="36px" />
       <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         投票方法
       </Heading>
-      <Flex justify={["initial", "center"]}>
+      <Flex justify="center">
         <HowToVote />
       </Flex>
       <Box marginTop="36px" />
       <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         SCHEDULE
       </Heading>
-      <Flex justify={["initial", "center"]}>
+      <Flex justify="center">
         <Schedule />
       </Flex>
       <Box marginTop="12px" />
@@ -110,7 +112,7 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
       <Heading marginLeft={[6, 64]} pl={[0, 56]} fontSize={24}>
         運営
       </Heading>
-      <Flex justify={["initial", "center"]}>
+      <Flex justify="center">
         {isXl ? (
           <Image src={KadaiInfoImage} width={500} height={400} />
         ) : (

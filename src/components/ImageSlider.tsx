@@ -2,7 +2,7 @@ import { Box, Center, Flex, Heading, Spacer, Text } from "@chakra-ui/layout";
 import { ScrollingCarousel } from "@trendyol-js/react-carousel";
 import RightArrow from "../../public/svgs/right_arrow.svg";
 import Image from "next/image";
-import ImageSliderItem, { ImageProps } from "./ImageSliderItem";
+import ImageSliderItem from "./ImageSliderItem";
 import LeftIcon from "./LeftIcon";
 import RightIcon from "./RightIcon";
 import { useRouter } from "next/dist/client/router";
@@ -22,7 +22,7 @@ export default function ImageSlider(props: Props) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   return (
     <Center>
-      <Box w="1000px" position="relative">
+      <Box w={["100%", "1000px"]} position="relative">
         <Box
           w="60px"
           borderColor="black"
@@ -40,30 +40,16 @@ export default function ImageSlider(props: Props) {
             {props.heading}
           </Center>
         </Box>
-        <Box w={[375, 1020]}>
-          {props.topImages ? (
-            <ScrollingCarousel
-              leftIcon={<LeftIcon />}
-              rightIcon={<RightIcon />}
-            >
-              {props.topImages.map((topImage: any) => (
-                <ImageSliderItem
-                  key={topImage.id}
-                  id={topImage.id}
-                  image={topImage.url}
-                />
-              ))}
-            </ScrollingCarousel>
-          ) : (
-            <ScrollingCarousel
-              leftIcon={<LeftIcon />}
-              rightIcon={<RightIcon />}
-            >
-              <ImageSliderItem id={""} image={""} />
-              <ImageSliderItem id={""} image={""} />
-              <ImageSliderItem id={""} image={""} />
-            </ScrollingCarousel>
-          )}
+        <Box w={["100%", 1020]}>
+          <ScrollingCarousel leftIcon={<LeftIcon />} rightIcon={<RightIcon />}>
+            {props.topImages.map((topImage: any) => (
+              <ImageSliderItem
+                key={topImage.id}
+                id={topImage.id}
+                image={topImage.url}
+              />
+            ))}
+          </ScrollingCarousel>
         </Box>
 
         <Flex w={["95%", "1020px"]} justify="flex-end">
