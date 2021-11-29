@@ -29,7 +29,11 @@ export default function PersonalImageSliderItem(props: Props) {
   } else {
     return (
       <Center>
-        <Image src={props.image.url} width={375} height={562.5} />
+        <Image
+          src={props.image.url}
+          width={props.image.width}
+          height={props.image.height}
+        />
       </Center>
     );
   }

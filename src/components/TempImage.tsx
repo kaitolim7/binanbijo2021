@@ -12,8 +12,8 @@ export default function TempImage(props: Props) {
       <Flex
         alignItems="center"
         justify="center"
-        w={[375, 400]}
-        h={[562.5, 600]}
+        w={[413, 400]}
+        h={[620, 600]}
         bgColor="white"
         border="1px"
         borderBottom="2px"
