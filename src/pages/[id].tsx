@@ -25,7 +25,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-  const personal = await getPageInfo(params.id);
+  const personal: any = await getPageInfo(params.id);
   return {
     props: {
       personal,
