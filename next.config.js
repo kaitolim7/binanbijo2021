@@ -13,6 +13,7 @@ module.exports = {
     // !! 警告 !!
     ignoreBuildErrors: true,
   },
+  optimizeFonts: false,
 };
 
 // module.exports = withImages(withTM());
