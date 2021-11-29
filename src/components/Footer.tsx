@@ -1,5 +1,5 @@
 import { Box, Center, Flex } from "@chakra-ui/layout";
-import { Text, Button } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import Image from "next/image";
 import TwitterLogo from "../../public/svgs/twitter.svg";
 import YouTubeLogo from "../../public/svgs/youtube.svg";

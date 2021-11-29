@@ -1,9 +1,8 @@
-import { Box, Center, Flex, SimpleGrid } from "@chakra-ui/layout";
+import { Box, Center, Flex } from "@chakra-ui/layout";
 import TopHeaderImage from "../../public/svgs/topheader.svg";
 import TopHeaderXlImage from "../../public/svgs/topheaderxl.svg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Test from "../../public/images/parker.jpeg";
 import KadaiInfoLogo from "../../public/svgs/kadaiinfo_logo.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 

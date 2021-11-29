@@ -1,12 +1,11 @@
 import { Box, Center, Flex, Spacer, Text } from "@chakra-ui/layout";
 import PersonalSns from "./PersonalSns";
 import Image from "next/image";
-import Test from "../../public/images/parker.jpeg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { ImageProps } from "./ImageSliderItem";
 
 type Props = {
-  topImage: ImageProps | undefined;
+  topImage: ImageProps;
   entryNumber: string;
   name: string;
   faculty: string;
@@ -60,19 +59,15 @@ export default function PersonalTopImage(props: Props) {
         <Box w="100%" h="100%" position="relative">
           {isXl ? (
             <Center mt={16}>
-              {props.topImage ? (
-                <Center w={600}>
-                  <Image
-                    src={props.topImage.url}
-                    width={props.topImage.width}
-                    height={props.topImage.height}
-                  />
-                </Center>
-              ) : (
-                <Image src={Test} width={540} height={400} />
-              )}
+              <Center w={600}>
+                <Image
+                  src={props.topImage.url}
+                  width={props.topImage.width}
+                  height={props.topImage.height}
+                />
+              </Center>
             </Center>
-          ) : props.topImage ? (
+          ) : (
             <Center w={375}>
               <Image
                 src={props.topImage.url}
@@ -80,8 +75,6 @@ export default function PersonalTopImage(props: Props) {
                 height={props.topImage.height}
               />
             </Center>
-          ) : (
-            <Image src={Test} layout="responsive" />
           )}
         </Box>
 

@@ -3,7 +3,6 @@ import Image from "next/image";
 import HeadingProfile from "./HeadingProfile";
 import ProfileArrow from "../../public/svgs/profilearrow.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
-import Test from "../../public/images/parker.jpeg";
 import { ImageProps } from "./ImageSliderItem";
 
 type Props = {
@@ -67,17 +66,13 @@ export default function PersonalProfile(props: Props) {
             </Box>
           </Box>
           <Box w={10} />
-          {props.image ? (
-            <Center w={600}>
-              <Image
-                src={props.image.url}
-                width={props.image.width}
-                height={props.image.height}
-              />
-            </Center>
-          ) : (
-            <Image src={Test} width={400} height={300} />
-          )}
+          <Center w={600}>
+            <Image
+              src={props.image.url}
+              width={props.image.width}
+              height={props.image.height}
+            />
+          </Center>
           <Box w={150} />
         </Flex>
       </Box>

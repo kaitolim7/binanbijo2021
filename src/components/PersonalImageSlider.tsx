@@ -9,7 +9,7 @@ import PersonalImageSliderItem from "./PersonalImageSliderItem";
 import TempImage from "./TempImage";
 
 export type ImagesProps = {
-  images: ImageProps[] | undefined;
+  images: ImageProps[];
 };
 
 export default function PersonalImageSlider(props: ImagesProps) {
@@ -56,15 +56,9 @@ export default function PersonalImageSlider(props: ImagesProps) {
           customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
-          {props.images ? (
-            props.images.map((image) => (
-              <PersonalImageSliderItem key={image.url} image={image} />
-            ))
-          ) : (
-            <PersonalImageSliderItem image={undefined} />
-          )}
-          {/* <TempImage day={8} />
-          <TempImage day={15} /> */}
+          {props.images.map((image) => (
+            <PersonalImageSliderItem key={image.url} image={image} />
+          ))}
         </Carousel>
       </Flex>
     );
@@ -91,13 +85,9 @@ export default function PersonalImageSlider(props: ImagesProps) {
           customLeftArrow={<PersonalLeftIcon />}
           focusOnSelect={true}
         >
-          {props.images ? (
-            props.images.map((image) => (
-              <PersonalImageSliderItem key={image.url} image={image} />
-            ))
-          ) : (
-            <PersonalImageSliderItem image={undefined} />
-          )}
+          {props.images.map((image) => (
+            <PersonalImageSliderItem key={image.url} image={image} />
+          ))}
           <TempImage day={8} />
           <TempImage day={15} />
         </Carousel>

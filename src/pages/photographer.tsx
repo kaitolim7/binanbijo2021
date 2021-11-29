@@ -4,18 +4,14 @@ import {
   Flex,
   Heading,
   SimpleGrid,
-  Spacer,
   Text,
 } from "@chakra-ui/layout";
 import Header from "../components/Header";
 import MenuBox from "../components/MenuBox";
-import Image from "next/image";
-import Test from "../../public/images/parker.jpeg";
 import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
 import Cameraman from "../components/Cameraman";
 import { getPhotographer } from "./api";
-import { useEffect } from "react";
 
 export async function getStaticProps() {
   const photographers = await getPhotographer();
