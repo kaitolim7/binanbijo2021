@@ -6,7 +6,7 @@ const Fonts = () => (
       /* latin */
       @font-face {
         font-family: "irohakakuC";
-        src: url("../public/fonts/irohakakuC-Bold.ttf");
+        src: url("../public/fonts/irohakakuC-Bold.ttf") format('truetype');
         font-style: normal;
         font-display: swap;
       }

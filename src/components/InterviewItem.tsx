@@ -22,6 +22,7 @@ export default function InterviewItem(props: Props) {
             <Text
               fontSize={props.content?.length < 58 ? [11, 14] : [10, 11]}
               fontWeight="bold"
+              paddingRight={2}
             >
               {props.title}
             </Text>
