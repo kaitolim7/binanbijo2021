@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import Schedule from "../components/Schedule";
 import HowToVote from "../components/HowToVote";
 import { useBreakpointValue } from "@chakra-ui/media-query";
+import GiftImage from "../../public/images/gift.png";
 
 export default function Intro() {
   const isXl = useBreakpointValue({
@@ -56,14 +57,16 @@ export default function Intro() {
       <Flex justify="center">
         <Schedule />
       </Flex>
-      <Box marginTop="36px" />
-      <Heading marginLeft={[6, "72"]} pl={[0, 56]} fontSize={24}>
+      <Box marginTop={["36px", 20]} />
+      <Heading marginLeft={[6, 56]} pl={[0, 56]} fontSize={24}>
         受賞
       </Heading>
       <Flex justify="center">
-        <Text w={["100%", "350px"]} h="250px" bgColor="gray.300">
-          景品紹介
-        </Text>
+        {isXl ? (
+          <Image src={GiftImage} width={625} height={500} />
+        ) : (
+          <Image src={GiftImage} width={375} height={300} />
+        )}
       </Flex>
       <Box h={12} />
       <IntroLinkBox text="TOPに戻る" topage="/" />
