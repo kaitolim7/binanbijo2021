@@ -14,7 +14,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <Fonts />
       <Head>
-        <meta name="description" content="binanbijo2021" />
+        <link
+          rel="apple-touch-icon"
+          type="image/png"
+          href="/images/apple-touch-icon-180x180.png"
+        />
+        <link rel="icon" type="image/png" href="/images/icon-192x192.png" />
         <title>{title}</title>
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -22,12 +27,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content={url} />
         <meta property="og:image" content={image} />
         <meta property="og:site_name" content={title} />
-        <link
-          rel="apple-touch-icon"
-          type="image/png"
-          href="/images/apple-touch-icon-180x180.png"
-        />
-        <link rel="icon" type="image/png" href="/images/icon-192x192.png" />
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
