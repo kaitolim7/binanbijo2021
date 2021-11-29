@@ -3,7 +3,7 @@ import { useBreakpointValue } from "@chakra-ui/media-query";
 import MovieFrame from "./MovieFrame";
 
 type Props = {
-  youtubeUrl: string | undefined;
+  youtubeUrl: string;
 };
 
 export default function PersonalMovie(props: Props) {
