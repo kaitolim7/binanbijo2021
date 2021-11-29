@@ -58,17 +58,15 @@ export default function PersonalTopImage(props: Props) {
 
         <Box w="100%" h="100%" position="relative">
           {isXl ? (
-            <Center mt={16}>
-              <Center w={600}>
-                <Image
-                  src={props.topImage.url}
-                  width={props.topImage.width}
-                  height={props.topImage.height}
-                />
-              </Center>
+            <Center w={600} mt={16}>
+              <Image
+                src={props.topImage.url}
+                width={props.topImage.width}
+                height={props.topImage.height}
+              />
             </Center>
           ) : (
-            <Center w={375}>
+            <Center>
               <Image
                 src={props.topImage.url}
                 width={props.topImage.width}

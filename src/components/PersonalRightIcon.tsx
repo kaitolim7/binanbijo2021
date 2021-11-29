@@ -4,7 +4,7 @@ import { Box } from "@chakra-ui/layout";
 
 export default function RightIcon({ onClick }: any) {
   return (
-    <Box position="absolute" zIndex="1" top="45%" right="0.5">
+    <Box position="absolute" zIndex="1" top="48%" right="0.5">
       <Image
         src={RightScrollIcon}
         width={28}

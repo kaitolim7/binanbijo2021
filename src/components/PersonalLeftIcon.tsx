@@ -7,7 +7,7 @@ export default function LeftIcon({ onClick }: any) {
     <Box
       position="absolute"
       zIndex="1"
-      top="45%"
+      top="48%"
       left="0.5"
       transform="scale(-1, 1)"
     >
