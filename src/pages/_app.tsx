@@ -17,10 +17,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           href="/images/apple-touch-icon-180x180.png"
         />
         <link rel="icon" type="image/png" href="/images/icon-192x192.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"
           rel="stylesheet"
-        />
+        ></link>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
