@@ -53,11 +53,7 @@ export default function Model({ girls, boys }: any) {
       <Box w="100%">
         <Box marginTop={8} />
         <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
-          <AdArea
-            width={["234px", "540px"]}
-            height={["60px", "180px"]}
-            text="広告C①"
-          />
+          <AdArea />
         </Flex>
       </Box>
       <Box h={12} />

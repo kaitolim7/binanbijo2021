@@ -136,11 +136,7 @@ export default function Personal({ personal }: any) {
             justify="center"
             flexDir={["column", "row"]}
           >
-            <AdArea
-              width={["234px", "540px"]}
-              height={["60px", "180px"]}
-              text="広告C①"
-            />
+            <AdArea />
           </Flex>
           <Box h={10} />
           <Flex justify="center">
@@ -186,11 +182,7 @@ export default function Personal({ personal }: any) {
             justify="center"
             flexDir={["column", "row"]}
           >
-            <AdArea
-              width={["234px", "540px"]}
-              height={["60px", "180px"]}
-              text="広告C①"
-            />
+            <AdArea />
           </Flex>
         </>
       )}

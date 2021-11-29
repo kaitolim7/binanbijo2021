@@ -104,11 +104,7 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
       <Box marginTop="36px" />
       <Box marginTop="12px" />
       <Flex alignItems="center" justify="center" flexDir={["column", "row"]}>
-        <AdArea
-          width={["234px", "540px"]}
-          height={["60px", "180px"]}
-          text="広告C①"
-        />
+        <AdArea />
       </Flex>
       <Box marginTop="56px" />
       <Heading marginLeft={[6, 64]} pl={[0, 56]} fontSize={24}>
