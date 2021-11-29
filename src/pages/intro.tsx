@@ -46,21 +46,21 @@ export default function Intro() {
       <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         投票方法
       </Heading>
-      <Flex justify={["initial", "center"]}>
+      <Flex justify="center">
         <HowToVote />
       </Flex>
       <Box marginTop="36px" />
       <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         SCHEDULE
       </Heading>
-      <Flex justify={["initial", "center"]}>
+      <Flex justify="center">
         <Schedule />
       </Flex>
       <Box marginTop="36px" />
       <Heading marginLeft={[6, "72"]} pl={[0, 56]} fontSize={24}>
         受賞
       </Heading>
-      <Flex justify={["initial", "center"]}>
+      <Flex justify="center">
         <Text w={["100%", "350px"]} h="250px" bgColor="gray.300">
           景品紹介
         </Text>

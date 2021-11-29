@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Box, Center } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
-import { useEffect } from "react";
 import { useRouter } from "next/dist/client/router";
 
 export type ImageProps = {
@@ -18,10 +17,6 @@ type Props = {
 export default function ImageSliderItem(props: Props) {
   const router = useRouter();
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
-
-  useEffect(() => {
-    console.log(props.image);
-  }, []);
 
   if (isXl) {
     return (

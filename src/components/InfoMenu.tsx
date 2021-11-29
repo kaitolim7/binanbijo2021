@@ -205,8 +205,8 @@ export default function InfoMenu(props: Props) {
     );
   } else {
     return (
-      <Box shadow="md">
-        <Box w="100%" h="160px" bgColor="accent">
+      <Box shadow="md" bgColor="accent">
+        <Box w="100%" h="160px">
           <Center>
             <Flex>
               <Box paddingRight="8">
@@ -343,7 +343,7 @@ export default function InfoMenu(props: Props) {
             </Flex>
           </Center>
         </Box>
-        <Box w="100%" bgColor="accent" paddingTop="28">
+        <Box w="100%" paddingTop="28">
           <Flex
             justifyContent="flex-start"
             alignItems="center"
