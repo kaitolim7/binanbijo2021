@@ -28,13 +28,12 @@ export default function PersonalImageSliderItem(props: Props) {
     );
   } else {
     return (
-      <Center
-        _hover={{
-          // bgColor: "#250B0D",
-          opacity: "0.7",
-        }}
-      >
-        <Image src={props.image.url} width={375} height={562.5} />
+      <Center>
+        <Image
+          src={props.image.url}
+          width={props.image.width}
+          height={props.image.height}
+        />
       </Center>
     );
   }

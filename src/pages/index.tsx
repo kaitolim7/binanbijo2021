@@ -81,7 +81,9 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
       <ImageSlider heading="BOYS" hedingColor="blue.600" topImages={boys} />
       <Box marginTop="36px" />
       {isXl ? (
-        <Image src={IntroXlImage} height={360} />
+        <Center>
+          <Image src={IntroXlImage} width={1020} height={312} />
+        </Center>
       ) : (
         <Center>
           <Image src={IntroImage} />

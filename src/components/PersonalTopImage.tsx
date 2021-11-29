@@ -68,7 +68,7 @@ export default function PersonalTopImage(props: Props) {
               </Center>
             </Center>
           ) : (
-            <Center w={375}>
+            <Center>
               <Image
                 src={props.topImage.url}
                 width={props.topImage.width}

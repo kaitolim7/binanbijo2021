@@ -13,21 +13,21 @@ export default function InterviewItem(props: Props) {
         <Box w={[160, 200]} h={[160, 200]} border="1px" borderColor="black">
           <Flex paddingY={3} alignItems="center">
             <Text
-              fontSize={props.content?.length < 63 ? [23, 36] : [14, 23]}
+              fontSize={props.content?.length < 58 ? [23, 36] : [14, 23]}
               fontWeight="bold"
               paddingX={3.5}
             >
               {props.num}
             </Text>
             <Text
-              fontSize={props.content?.length < 63 ? [11, 14] : [10, 11]}
+              fontSize={props.content?.length < 58 ? [11, 14] : [10, 11]}
               fontWeight="bold"
             >
               {props.title}
             </Text>
           </Flex>
           <Text
-            fontSize={props.content?.length < 63 ? [13, 16] : [10, 11]}
+            fontSize={props.content?.length < 58 ? [13, 16] : [10, 11]}
             marginLeft={3}
             marginRight={1}
           >

@@ -7,7 +7,7 @@ export default function HeadingProfile() {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   if (isXl) {
     return (
-      <Box ml={96} pl={12}>
+      <Box ml={72} pl={12}>
         <Image src={HeadingProfileImage} width={250} height={50} />
       </Box>
     );
