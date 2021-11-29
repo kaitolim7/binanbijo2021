@@ -1,9 +1,6 @@
-import Test from "../../public/images/parker.jpeg";
 import Image from "next/image";
-import { Box, Center, Text } from "@chakra-ui/layout";
+import { Center } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
-import { useEffect } from "react";
-import { useRouter } from "next/dist/client/router";
 
 export type ImageProps = {
   url: string;
@@ -12,7 +9,7 @@ export type ImageProps = {
 };
 
 type Props = {
-  image: ImageProps | undefined;
+  image: ImageProps;
 };
 
 export default function PersonalImageSliderItem(props: Props) {
@@ -26,11 +23,7 @@ export default function PersonalImageSliderItem(props: Props) {
           opacity: "0.7",
         }}
       >
-        {props.image ? (
-          <Image src={props.image.url} width={333} height={500} />
-        ) : (
-          <Image src={Test} />
-        )}
+        <Image src={props.image.url} width={333} height={500} />
       </Center>
     );
   } else {
@@ -41,11 +34,7 @@ export default function PersonalImageSliderItem(props: Props) {
           opacity: "0.7",
         }}
       >
-        {props.image ? (
-          <Image src={props.image.url} width={375} height={562.5} />
-        ) : (
-          <Image src={Test} />
-        )}
+        <Image src={props.image.url} width={375} height={562.5} />
       </Center>
     );
   }

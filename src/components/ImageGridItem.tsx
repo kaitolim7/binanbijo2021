@@ -1,9 +1,7 @@
-import Test from "../../public/images/parker.jpeg";
 import Image from "next/image";
-import { Box, Center, Flex, Spacer, Text } from "@chakra-ui/layout";
+import { Box, Flex, Spacer, Text } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { useRouter } from "next/dist/client/router";
-import { useEffect } from "react";
 
 type Props = {
   topImage: {

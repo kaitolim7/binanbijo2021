@@ -1,19 +1,9 @@
-import {
-  Box,
-  Center,
-  Flex,
-  Heading,
-  SimpleGrid,
-  Spacer,
-  Text,
-} from "@chakra-ui/layout";
+import { Box, Center, SimpleGrid } from "@chakra-ui/layout";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import Image from "next/image";
-import Test from "../../public/images/parker.jpeg";
 import HeadingInterview from "./HeadingInterview";
 import { ImageProps } from "./ImageSliderItem";
 import InterviewItem from "./InterviewItem";
-import IntroLinkBox from "./IntroLinkBox";
 
 type Props = {
   whyEntry: string;
@@ -76,15 +66,11 @@ export default function PersonalInterview(props: Props) {
     return (
       <Box>
         <Center>
-          {props.image ? (
-            <Image
-              src={props.image.url}
-              width={props.image.width}
-              height={props.image.height}
-            />
-          ) : (
-            <Image src={Test} width={400} height={300} />
-          )}
+          <Image
+            src={props.image.url}
+            width={props.image.width}
+            height={props.image.height}
+          />
         </Center>
         <Box marginTop={["56px", "0"]} />
         <Box>
