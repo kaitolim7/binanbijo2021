@@ -27,7 +27,7 @@ export default function PersonalImageSliderItem(props: Props) {
         }}
       >
         {props.image ? (
-          <Image src={props.image.url} width={400} height={600} />
+          <Image src={props.image.url} width={333} height={500} />
         ) : (
           <Image src={Test} />
         )}

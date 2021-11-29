@@ -14,10 +14,10 @@ export default function NewsBox(props: Props) {
 
   const viewBox = "0 0 345 " + (publicNews.length * 100).toString();
 
-  const viewBoxXl = "0 0 827.261 " + (publicNews.length * 100).toString();
+  const viewBoxXl = "0 0 827.261 " + (publicNews.length * 110).toString();
 
   const height = (publicNews.length * 88).toString();
-  const heightXl = (publicNews.length * 77).toString();
+  const heightXl = (publicNews.length * 95).toString();
 
   const handleOpen = () => {
     setOpen(true);

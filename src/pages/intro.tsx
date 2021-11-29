@@ -43,21 +43,21 @@ export default function Intro() {
         )}
       </Center>
       <Box marginTop="36px" />
-      <Heading marginLeft={[6, 96]} pl={[0, 40]} fontSize={24}>
+      <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         投票方法
       </Heading>
       <Flex justify={["initial", "center"]}>
         <HowToVote />
       </Flex>
       <Box marginTop="36px" />
-      <Heading marginLeft={[6, 96]} pl={[0, 40]} fontSize={24}>
+      <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         SCHEDULE
       </Heading>
       <Flex justify={["initial", "center"]}>
         <Schedule />
       </Flex>
       <Box marginTop="36px" />
-      <Heading marginLeft={[6, 96]} pl={[0, 56]} fontSize={24}>
+      <Heading marginLeft={[6, "72"]} pl={[0, 56]} fontSize={24}>
         受賞
       </Heading>
       <Flex justify={["initial", "center"]}>
