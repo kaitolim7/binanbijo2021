@@ -12,11 +12,11 @@ export default function TempImage(props: Props) {
       <Flex
         alignItems="center"
         justify="center"
-        w={[413, 400]}
-        h={[620, 600]}
+        w={[412, 400]}
+        h={[619, 600]}
         bgColor="white"
         border="1px"
-        borderBottom="2px"
+        borderBottom="1px"
         borderColor="black"
       >
         <Text>12/{props.day} 追加更新予定</Text>
