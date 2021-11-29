@@ -5,7 +5,6 @@ import AdArea from "../components/AdArea";
 import ImageSlider from "../components/ImageSlider";
 import IntroLinkBox from "../components/IntroLinkBox";
 import Footer from "../components/Footer";
-
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import MenuBox from "../components/MenuBox";
 import HeadingModel from "../components/HeadingModel";
@@ -18,6 +17,7 @@ import TopHeader from "../components/TopHeader";
 import { getBoysTopImages, getGirlsTopImages, getNews } from "./api";
 import { useEffect, useState } from "react";
 import shuffle from "../hooks/shuffle";
+import KadaiInfoImage from "../../public/images/kadaiinfo.jpg";
 
 export async function getStaticProps() {
   const girls = await getGirlsTopImages();
@@ -86,14 +86,14 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
         <Image src={IntroImage} />
       )}
       <Box marginTop="36px" />
-      <Heading marginLeft={[6, 96]} pl={[0, 40]} fontSize={24}>
+      <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         投票方法
       </Heading>
       <Flex justify={["initial", "center"]}>
         <HowToVote />
       </Flex>
       <Box marginTop="36px" />
-      <Heading marginLeft={[6, 96]} pl={[0, 40]} fontSize={24}>
+      <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         SCHEDULE
       </Heading>
       <Flex justify={["initial", "center"]}>
@@ -111,13 +111,15 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
         />
       </Flex>
       <Box marginTop="56px" />
-      <Heading marginLeft={[6, 96]} pl={[0, 56]} fontSize={24}>
+      <Heading marginLeft={[6, 64]} pl={[0, 56]} fontSize={24}>
         運営
       </Heading>
       <Flex justify={["initial", "center"]}>
-        <Text w={["100%", "350px"]} h="250px" bgColor="gray.300">
-          KADAI INFOの紹介画像
-        </Text>
+        {isXl ? (
+          <Image src={KadaiInfoImage} width={500} height={400} />
+        ) : (
+          <Image src={KadaiInfoImage} width={375} height={300} />
+        )}
       </Flex>
       <Box marginTop="12px" />
       <IntroLinkBox

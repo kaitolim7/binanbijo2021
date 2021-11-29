@@ -43,7 +43,7 @@ export default function Model({ girls, boys }: any) {
       </Flex>
       <Box marginTop="56px" />
 
-      <Heading marginLeft={[6, 96]} pl={[0, 40]} fontSize={24}>
+      <Heading marginLeft={[6, "72"]} pl={[0, 40]} fontSize={24}>
         投票方法
       </Heading>
       <Flex justify={["initial", "center"]}>

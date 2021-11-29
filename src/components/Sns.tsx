@@ -12,11 +12,11 @@ type Props = {
 
 export default function Sns(props: Props) {
   const instaLink = props.instagram
-    ? `https://www.instagram.com/${props.instagram.replace("@", "")}`
+    ? `https://www.instagram.com/${props.instagram.replace("@", "")}/`
     : "";
 
   const twitterLink = props.twitter
-    ? `https://twitter.com/${props.twitter.replace("@", "")}`
+    ? `https://twitter.com/${props.twitter.replace("@", "")}/`
     : "";
 
   const router = useRouter();

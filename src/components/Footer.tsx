@@ -17,7 +17,7 @@ export default function Footer() {
     return (
       <Box>
         <Box w="100%" h="100px" bgColor="accent" position="relative">
-          <Box position="absolute" top="-20" left="10%">
+          <Box position="absolute" top="-20" left="5%">
             <Image src={KadaiInfoBox} width={100} height={161} />
           </Box>
           <Flex justify="center" paddingTop="8">

@@ -27,7 +27,7 @@ export default function PersonalProfile(props: Props) {
         <Box marginTop="24px" />
 
         <Flex alignItems="center" justify="center">
-          <Box w={200} />
+          <Box w={150} />
           <Box w={380}>
             <Text fontSize={["10", "18"]} paddingBottom={5}>
               ◯ 身長 / {props.tall}cm
@@ -66,7 +66,7 @@ export default function PersonalProfile(props: Props) {
               </Text>
             </Box>
           </Box>
-
+          <Box w={10} />
           {props.image ? (
             <Center w={600}>
               <Image
@@ -78,7 +78,7 @@ export default function PersonalProfile(props: Props) {
           ) : (
             <Image src={Test} width={400} height={300} />
           )}
-          <Box w={200} />
+          <Box w={150} />
         </Flex>
       </Box>
     );

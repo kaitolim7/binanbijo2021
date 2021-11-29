@@ -63,7 +63,7 @@ export default function TopHeader(props: Props) {
             pos="absolute"
             zIndex="1"
             top="28"
-            left="96"
+            left="18%"
           >
             <Image src={TopHeaderXlImage} width={1000} height={300} />
           </Center>
