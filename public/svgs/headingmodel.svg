@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="216.116" height="75.5" viewBox="0 0 216.116 75.5">
   <g id="グループ_86" data-name="グループ 86" transform="translate(-161.384 -1288.973)">
     <g id="グループ_85" data-name="グループ 85">
-      <text id="MODEL" transform="translate(166.5 1290.973)" fill="#250b0d" stroke="#250b0d" stroke-width="2" font-size="50" font-family="irohakakuC-Bold, irohakakuC" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="54">MODEL</tspan></text>
+      <text id="MODEL" transform="translate(166.5 1290.973)" fill="#250b0d" stroke="#250b0d" stroke-width="2" font-size="50" font-family="irohakakuC-Bold, irohakakuC, NotoSans-Medium, Noto Sans" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="54">MODEL</tspan></text>
       <g id="グループ_84" data-name="グループ 84" transform="translate(163.384 1292.473)">
         <g id="グループ_83" data-name="グループ 83" transform="translate(0 0)">
-          <text id="MODEL-2" data-name="MODEL" transform="translate(0 0)" fill="#fff" stroke="#250b0d" stroke-width="2" font-size="50" font-family="irohakakuC-Bold, irohakakuC" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="54">MODEL</tspan></text>
+          <text id="MODEL-2" data-name="MODEL" transform="translate(0 0)" fill="#fff" stroke="#250b0d" stroke-width="2" font-size="50" font-family="irohakakuC-Bold, irohakakuC, NotoSans-Medium, Noto Sans" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="54">MODEL</tspan></text>
         </g>
       </g>
     </g>

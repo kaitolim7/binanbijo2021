@@ -86,7 +86,7 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
         </Center>
       ) : (
         <Center>
-          <Image src={IntroImage} />
+          <Image src={IntroImage} width={414} />
         </Center>
       )}
       <Box marginTop="36px" />
