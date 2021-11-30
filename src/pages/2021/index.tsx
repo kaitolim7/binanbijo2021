@@ -6,4 +6,5 @@ export default function Redirect() {
   useEffect(() => {
     router.push("/");
   }, []);
+  return <></>;
 }
