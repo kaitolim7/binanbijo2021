@@ -118,7 +118,7 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
         {isXl ? (
           <Image src={KadaiInfoImage} width={500} height={400} />
         ) : (
-          <Image src={KadaiInfoImage} width={375} height={300} />
+          <Image src={KadaiInfoImage} width={414} height={331} />
         )}
       </Flex>
       <Box marginTop="12px" />
