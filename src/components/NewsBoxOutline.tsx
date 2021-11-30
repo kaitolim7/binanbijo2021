@@ -217,11 +217,11 @@ export default function NewsBoxOutline(props: Props) {
                                           stroke="#250b0d"
                                           stroke-width="1"
                                           font-size="50"
-                                          font-family="irohakakuC-Bold, irohakakuC"
+                                          font-family="NotoSans-Medium, Noto Sans"
                                           font-weight="700"
                                           letter-spacing="0.05em"
                                         >
-                                          <tspan x="0" y="54">
+                                          <tspan x="0" y="48">
                                             NEWS
                                           </tspan>
                                         </text>
@@ -241,11 +241,11 @@ export default function NewsBoxOutline(props: Props) {
                                               stroke="#250b0d"
                                               stroke-width="1"
                                               font-size="50"
-                                              font-family="irohakakuC-Bold, irohakakuC"
+                                              font-family="NotoSans-Medium, Noto Sans"
                                               font-weight="700"
                                               letter-spacing="0.05em"
                                             >
-                                              <tspan x="0" y="54">
+                                              <tspan x="0" y="48">
                                                 NEWS
                                               </tspan>
                                             </text>

@@ -38,7 +38,7 @@ export default function Personal({ personal }: any) {
   return (
     <Box w="100%" h="100%">
       <MenuBox />
-      {!isXl && (
+      {/* {!isXl && (
         <Flex position="fixed" right="2.5" bottom="5" zIndex="overlay">
           <Center
             w={14}
@@ -54,7 +54,7 @@ export default function Personal({ personal }: any) {
             </Text>
           </Center>
         </Flex>
-      )}
+      )} */}
 
       <Box marginTop="18px" />
       <Header />

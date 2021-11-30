@@ -1,179 +1,187 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400.459" height="710" viewBox="0 0 400.459 710">
-  <g id="ステージ制説明" transform="translate(14.697 -1764)">
-    <rect id="長方形_132" data-name="長方形 132" width="400.394" height="710" transform="translate(-14.697 1764)" fill="#f6d967" opacity="0.503"/>
-    <text id="美男美女SNAP2021は_初のステージ制を導入_" data-name="美男美女SNAP2021は
-初のステージ制を導入！" transform="translate(25.303 1792.987)" fill="#250b0d" font-size="23" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="20">美男美女SNAP2021は</tspan><tspan x="0" y="60">初のステージ制を導入！</tspan></text>
-    <rect id="長方形_150" data-name="長方形 150" width="322" height="137" transform="translate(24.303 1894)" fill="#fff"/>
-    <text id="_1st_STAGE" data-name="1st STAGE" transform="translate(34.303 1902.491)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">1st STAGE</tspan></text>
-    <text id="男子12人_女子11人からFINAL_STAGE_へ進むメンバーを4人選出する期間です_" data-name="男子12人、女子11人からFINAL STAGE
+<svg xmlns="http://www.w3.org/2000/svg" width="411.982" height="713.328" viewBox="0 0 411.982 713.328">
+  <g id="グループ_196" data-name="グループ 196" transform="translate(-2374.542 57)">
+    <g id="グループ_195" data-name="グループ 195">
+      <g id="グループ_194" data-name="グループ 194">
+        <g id="グループ_191" data-name="グループ 191" transform="translate(2389.239 -1821)">
+          <g id="グループ_190" data-name="グループ 190">
+            <path id="パス_45" data-name="パス 45" d="M0,0H411.916V713.328H0Z" transform="translate(-14.697 1764)" fill="#f6d967" opacity="0.503"/>
+          </g>
+        </g>
+        <text id="美男美女SNAP2021は_初のステージ制を導入_" data-name="美男美女SNAP2021は
+初のステージ制を導入！" transform="translate(2416.542 -28.013)" fill="#250b0d" font-size="23" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="0" y="25">美男美女</tspan><tspan y="25" font-family="NotoSans-Bold, Noto Sans" font-weight="700">SNAP2021</tspan><tspan y="25">は</tspan><tspan y="25" font-family="NotoSans-Bold, Noto Sans" font-weight="700"></tspan><tspan x="0" y="65">初のステージ制を導入！</tspan></text>
+        <rect id="長方形_150" data-name="長方形 150" width="322" height="137" transform="translate(2415.542 73)" fill="#fff"/>
+        <text id="_1st_STAGE" data-name="1st STAGE" transform="translate(2424.239 75.673)" fill="#250b0d" font-size="25" font-family="NotoSans-SemiBold, Noto Sans" font-weight="600" letter-spacing="0.05em"><tspan x="0" y="27">1st STAGE</tspan></text>
+        <text id="男子12人_女子11人からFINAL_STAGE_へ進むメンバーを4人選出する期間です_" data-name="男子12人、女子11人からFINAL STAGE
 へ進むメンバーを4人選出する期間です。
-" transform="translate(73.762 1973.108)" fill="#250b0d" font-size="13" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">男子12人、女子11人からFINAL STAGE</tspan><tspan x="0" y="34">へ進むメンバーを4人選出する期間です。</tspan></text>
-    <g id="グループ_92" data-name="グループ 92" transform="translate(-2.697 -9)">
-      <g id="楕円形_46" data-name="楕円形 46" transform="translate(158.45 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_47" data-name="楕円形 47" transform="translate(331.42 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
-        <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_48" data-name="楕円形 48" transform="translate(312.121 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_49" data-name="楕円形 49" transform="translate(292.823 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_50" data-name="楕円形 50" transform="translate(254.227 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_51" data-name="楕円形 51" transform="translate(234.928 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_52" data-name="楕円形 52" transform="translate(216.345 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
-        <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_53" data-name="楕円形 53" transform="translate(177.748 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_54" data-name="楕円形 54" transform="translate(273.525 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_55" data-name="楕円形 55" transform="translate(139.152 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_56" data-name="楕円形 56" transform="translate(119.853 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_57" data-name="楕円形 57" transform="translate(197.046 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-    </g>
-    <g id="グループ_90" data-name="グループ 90" transform="translate(33.362 1986.552) rotate(90)">
-      <g id="グループ_45" data-name="グループ 45" transform="translate(0 0)">
-        <path id="パス_38" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
-        <path id="パス_37" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
-      </g>
-      <path id="パス_38-2" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
-      <path id="パス_37-2" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
-    </g>
-    <rect id="長方形_151" data-name="長方形 151" width="322" height="155" transform="translate(24.303 2075)" fill="#fff"/>
-    <text id="RETURN_STAGE" data-name="RETURN STAGE" transform="translate(34.303 2085.482)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">RETURN STAGE</tspan></text>
-    <text id="_1st_STAGEで惜しくもFINAL_STAGEへ_進めなかった男女各8人からFINAL_STAGEへ_進む各2人を決定します_" data-name="1st STAGEで惜しくもFINAL STAGEへ
+" transform="translate(2470.157 149.09)" fill="#250b0d" font-size="13" font-family="HiraginoSans-W4, Hiragino Sans" letter-spacing="0.1em"><tspan x="0" y="14">男子</tspan><tspan y="14" font-family="NotoSans-Medium, Noto Sans" font-weight="500">12</tspan><tspan y="14">人、女子</tspan><tspan y="14" font-family="NotoSans-Medium, Noto Sans" font-weight="500">11</tspan><tspan y="14">人から</tspan><tspan y="14" font-family="NotoSans-Medium, Noto Sans" font-weight="500">FINAL STAGE</tspan><tspan x="0" y="40">へ進むメンバーを</tspan><tspan y="40" font-family="NotoSans-Medium, Noto Sans" font-weight="500">4</tspan><tspan y="40">人選出する期間です。</tspan><tspan y="40" font-family="NotoSans-Medium, Noto Sans" font-weight="500"></tspan></text>
+        <g id="グループ_92" data-name="グループ 92" transform="translate(2387.542 -1830)">
+          <g id="楕円形_46" data-name="楕円形 46" transform="translate(158.45 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_47" data-name="楕円形 47" transform="translate(331.42 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
+            <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_48" data-name="楕円形 48" transform="translate(312.121 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_49" data-name="楕円形 49" transform="translate(292.823 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_50" data-name="楕円形 50" transform="translate(254.227 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_51" data-name="楕円形 51" transform="translate(234.928 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_52" data-name="楕円形 52" transform="translate(216.345 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
+            <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_53" data-name="楕円形 53" transform="translate(177.748 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_54" data-name="楕円形 54" transform="translate(273.525 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_55" data-name="楕円形 55" transform="translate(139.152 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_56" data-name="楕円形 56" transform="translate(119.853 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_57" data-name="楕円形 57" transform="translate(197.046 2033)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+        </g>
+        <g id="グループ_90" data-name="グループ 90" transform="translate(2424.601 165.552) rotate(90)">
+          <g id="グループ_45" data-name="グループ 45" transform="translate(0 0)">
+            <path id="パス_38" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
+            <path id="パス_37" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
+          </g>
+          <path id="パス_38-2" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
+          <path id="パス_37-2" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
+        </g>
+        <rect id="長方形_151" data-name="長方形 151" width="322" height="155" transform="translate(2415.542 254)" fill="#fff"/>
+        <text id="RETURN_STAGE" data-name="RETURN STAGE" transform="translate(2426.239 260.333)" fill="#250b0d" font-size="25" font-family="NotoSans-SemiBold, Noto Sans" font-weight="600" letter-spacing="0.05em"><tspan x="0" y="27">RETURN STAGE</tspan></text>
+        <text id="_1st_STAGEで惜しくもFINAL_STAGEへ_進めなかった男女各8人からFINAL_STAGEへ_進む各2人を決定します_" data-name="1st STAGEで惜しくもFINAL STAGEへ
 進めなかった男女各8人からFINAL STAGEへ
 進む各2人を決定します。
-" transform="translate(73.762 2156.108)" fill="#250b0d" font-size="11" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="10">1st STAGEで惜しくもFINAL STAGEへ</tspan><tspan x="0" y="29">進めなかった男女各8人からFINAL STAGEへ</tspan><tspan x="0" y="48">進む各2人を決定します。</tspan></text>
-    <g id="グループ_91" data-name="グループ 91" transform="translate(33.362 2185.73) rotate(90)">
-      <g id="グループ_45-2" data-name="グループ 45" transform="translate(0 0)">
-        <path id="パス_38-3" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
-        <path id="パス_37-3" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
-      </g>
-      <path id="パス_38-4" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
-      <path id="パス_37-4" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
-    </g>
-    <rect id="長方形_152" data-name="長方形 152" width="322" height="137" transform="translate(24.303 2275.664)" fill="#fff"/>
-    <text id="FINAL_STAGE" data-name="FINAL STAGE" transform="translate(37.509 2286.146)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">FINAL STAGE</tspan></text>
-    <text id="_1st_STAGE_RETURN_STAGEから進んだ_男女各6人から上位各3位を決定します_" data-name="1st STAGE、RETURN STAGEから進んだ
+" transform="translate(2474.523 335.108)" fill="#250b0d" font-size="11" font-family="NotoSans-Medium, Noto Sans" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="12">1st STAGE</tspan><tspan y="12" font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400">で惜しくも</tspan><tspan y="12">FINAL STAGE</tspan><tspan y="12" font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400">へ</tspan><tspan y="12"></tspan><tspan font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400"><tspan x="0" y="33">進めなかった男女各</tspan><tspan y="33" font-family="NotoSans-Medium, Noto Sans" font-weight="500">8</tspan><tspan y="33">人から</tspan><tspan y="33" font-family="NotoSans-Medium, Noto Sans" font-weight="500">FINAL STAGE</tspan><tspan y="33">へ</tspan><tspan y="33" font-family="NotoSans-Medium, Noto Sans" font-weight="500"></tspan><tspan x="0" y="54">進む各</tspan><tspan y="54" font-family="NotoSans-Medium, Noto Sans" font-weight="500">2</tspan><tspan y="54">人を決定します。</tspan><tspan y="54" font-family="NotoSans-Medium, Noto Sans" font-weight="500"></tspan></tspan></text>
+        <g id="グループ_91" data-name="グループ 91" transform="translate(2424.601 364.73) rotate(90)">
+          <g id="グループ_45-2" data-name="グループ 45" transform="translate(0 0)">
+            <path id="パス_38-3" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
+            <path id="パス_37-3" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
+          </g>
+          <path id="パス_38-4" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
+          <path id="パス_37-4" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
+        </g>
+        <rect id="長方形_152" data-name="長方形 152" width="322" height="137" transform="translate(2415.542 454.664)" fill="#fff"/>
+        <text id="FINAL_STAGE" data-name="FINAL STAGE" transform="translate(2426.239 463.718)" fill="#250b0d" font-size="25" font-family="NotoSans-SemiBold, Noto Sans" font-weight="600" letter-spacing="0.05em"><tspan x="0" y="27">FINAL STAGE</tspan></text>
+        <text id="_1st_STAGE_RETURN_STAGEから進んだ_男女各6人から上位各3位を決定します_" data-name="1st STAGE、RETURN STAGEから進んだ
 男女各6人から上位各3位を決定します。
-" transform="translate(51.509 2360.518)" fill="#250b0d" font-size="13" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">1st STAGE、RETURN STAGEから進んだ</tspan><tspan x="0" y="34">男女各6人から上位各3位を決定します。</tspan></text>
-    <g id="グループ_94" data-name="グループ 94" transform="translate(-124.722 -8.468)">
-      <g id="楕円形_63" data-name="楕円形 63" transform="translate(286.104 2416.504)" fill="#a55c25" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
-        <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
-      </g>
-      <g id="楕円形_64" data-name="楕円形 64" transform="translate(306.217 2416.504)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
-        <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
-      </g>
-      <g id="楕円形_65" data-name="楕円形 65" transform="translate(265.991 2416.504)" fill="#b9b9b9" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
-        <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
-      </g>
-      <g id="楕円形_66" data-name="楕円形 66" transform="translate(245.878 2416.504)" fill="#b59836" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
-        <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
-      </g>
-      <g id="楕円形_67" data-name="楕円形 67" transform="translate(326.33 2416.504)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
-        <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
-      </g>
-      <text id="_1" data-name="1" transform="translate(249.712 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">1</tspan></text>
-      <text id="_2" data-name="2" transform="translate(269.825 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">2</tspan></text>
-      <text id="_3" data-name="3" transform="translate(289.938 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">3</tspan></text>
-      <g id="楕円形_83" data-name="楕円形 83" transform="translate(346.443 2416.504)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
-        <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
+" transform="translate(2460.492 536.91)" fill="#250b0d" font-size="13" font-family="NotoSans-Medium, Noto Sans" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="14">1st STAGE</tspan><tspan y="14" font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400">、</tspan><tspan y="14">RETURN STAGE</tspan><tspan y="14" font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400">から進んだ</tspan><tspan y="14"></tspan><tspan font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400"><tspan x="0" y="40">男女各</tspan><tspan y="40" font-family="NotoSans-Medium, Noto Sans" font-weight="500">6</tspan><tspan y="40">人から上位各</tspan><tspan y="40" font-family="NotoSans-Medium, Noto Sans" font-weight="500">3</tspan><tspan y="40">位を決定します。</tspan><tspan y="40" font-family="NotoSans-Medium, Noto Sans" font-weight="500"></tspan></tspan></text>
+        <g id="グループ_94" data-name="グループ 94" transform="translate(2271.517 -1829.468)">
+          <g id="楕円形_63" data-name="楕円形 63" transform="translate(286.104 2416.504)" fill="#a55c25" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
+            <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
+          </g>
+          <g id="楕円形_64" data-name="楕円形 64" transform="translate(306.217 2416.504)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
+            <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
+          </g>
+          <g id="楕円形_65" data-name="楕円形 65" transform="translate(265.991 2416.504)" fill="#b9b9b9" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
+            <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
+          </g>
+          <g id="楕円形_66" data-name="楕円形 66" transform="translate(245.878 2416.504)" fill="#b59836" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
+            <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
+          </g>
+          <g id="楕円形_67" data-name="楕円形 67" transform="translate(326.33 2416.504)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
+            <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
+          </g>
+          <text id="_1" data-name="1" transform="translate(249.712 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">1</tspan></text>
+          <text id="_2" data-name="2" transform="translate(269.825 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">2</tspan></text>
+          <text id="_3" data-name="3" transform="translate(289.938 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">3</tspan></text>
+          <g id="楕円形_83" data-name="楕円形 83" transform="translate(346.443 2416.504)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
+            <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
+          </g>
+        </g>
+        <g id="グループ_93" data-name="グループ 93" transform="translate(2386.542 -1830)">
+          <g id="楕円形_68" data-name="楕円形 68" transform="translate(162.45 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_69" data-name="楕円形 69" transform="translate(335.42 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
+            <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_70" data-name="楕円形 70" transform="translate(316.121 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_71" data-name="楕円形 71" transform="translate(296.823 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_72" data-name="楕円形 72" transform="translate(258.227 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_73" data-name="楕円形 73" transform="translate(238.928 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_74" data-name="楕円形 74" transform="translate(220.345 2233.018)" fill="#c46067" stroke="#250b0d" stroke-width="1">
+            <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
+            <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_75" data-name="楕円形 75" transform="translate(181.748 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_76" data-name="楕円形 76" transform="translate(277.525 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_77" data-name="楕円形 77" transform="translate(143.152 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_78" data-name="楕円形 78" transform="translate(123.853 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+          <g id="楕円形_79" data-name="楕円形 79" transform="translate(201.046 2233.018)" fill="#c46067" stroke="#250b0d" stroke-width="1">
+            <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
+            <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
+          </g>
+        </g>
+        <path id="パス_44" data-name="パス 44" d="M0,0H239.385V6.764H0Z" transform="translate(2471.043 318.433)" fill="#f6d967"/>
+        <text id="_12_18_Sat._20:00_12_24_Fri._23:59" data-name="12/18(Sat.)20:00 ～ 12/24(Fri.)23:59" transform="translate(2470.157 303.763)" fill="#250b0d" font-size="12" font-family="NotoSans-Medium, Noto Sans" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="13">12/18(Sat.)20:00 </tspan><tspan y="13" font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400">～</tspan><tspan y="13" xml:space="preserve"> 12/24(Fri.)23:59</tspan></text>
+        <g id="パス_46" data-name="パス 46" transform="translate(2584.588 203)" fill="#fff">
+          <path d="M 7.147515296936035 13.79503536224365 C 3.482065200805664 13.79503536224365 0.500005304813385 10.81296539306641 0.500005304813385 7.147515296936035 C 0.500005304813385 3.482065200805664 3.482065200805664 0.500005304813385 7.147515296936035 0.500005304813385 C 10.81296539306641 0.500005304813385 13.79503536224365 3.482065200805664 13.79503536224365 7.147515296936035 C 13.79503536224365 10.81296539306641 10.81296539306641 13.79503536224365 7.147515296936035 13.79503536224365 Z" stroke="none"/>
+          <path d="M 7.147515296936035 0.999995231628418 C 3.757765769958496 0.999995231628418 0.999995231628418 3.757765769958496 0.999995231628418 7.147515296936035 C 0.999995231628418 10.53726577758789 3.757765769958496 13.29502487182617 7.147515296936035 13.29502487182617 C 10.53726577758789 13.29502487182617 13.29502487182617 10.53726577758789 13.29502487182617 7.147515296936035 C 13.29502487182617 3.757765769958496 10.53726577758789 0.999995231628418 7.147515296936035 0.999995231628418 M 7.147515296936035 -4.76837158203125e-06 C 11.09497547149658 -4.76837158203125e-06 14.29502487182617 3.200055122375488 14.29502487182617 7.147515296936035 C 14.29502487182617 11.09497547149658 11.09497547149658 14.29502487182617 7.147515296936035 14.29502487182617 C 3.200055122375488 14.29502487182617 -4.76837158203125e-06 11.09497547149658 -4.76837158203125e-06 7.147515296936035 C -4.76837158203125e-06 3.200055122375488 3.200055122375488 -4.76837158203125e-06 7.147515296936035 -4.76837158203125e-06 Z" stroke="none" fill="#250b0d"/>
+        </g>
+        <path id="パス_39" data-name="パス 39" d="M1224.111,1038.509v4.945h137.054v-4.945" transform="translate(1370.239 -617)" fill="none" stroke="#250b0d" stroke-width="1"/>
+        <rect id="長方形_181" data-name="長方形 181" width="237.385" height="6.764" transform="translate(2474.523 133.236)" fill="#f6d967"/>
+        <text id="_12_01_Wed._20:00_12_17_Fri._23:59" data-name="12/01(Wed.)20:00〜12/17(Fri.)23:59" transform="translate(2476.523 118.567)" fill="#250b0d" font-size="12" font-family="NotoSans-Medium, Noto Sans" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="13">12/01(Wed.)20:00</tspan><tspan y="13" font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400">〜</tspan><tspan y="13">12/17(Fri.)23:59</tspan></text>
+        <rect id="長方形_182" data-name="長方形 182" width="240.862" height="6.764" transform="translate(2474.523 522.709)" fill="#f6d967"/>
+        <text id="_12_25_Sat._20:00_12_31_Fri._23:59" data-name="12/25(Sat.)20:00 ～ 12/31(Fri.)23:59" transform="translate(2474.523 507.628)" fill="#250b0d" font-size="12" font-family="NotoSans-Medium, Noto Sans" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="13">12/25(Sat.)20:00 </tspan><tspan y="13" font-family="HiraginoSans-W4, Hiragino Sans" font-weight="400">～</tspan><tspan y="13" xml:space="preserve"> 12/31(Fri.)23:59</tspan></text>
       </g>
     </g>
-    <g id="グループ_93" data-name="グループ 93" transform="translate(-2.697 -9)">
-      <g id="楕円形_68" data-name="楕円形 68" transform="translate(162.45 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_69" data-name="楕円形 69" transform="translate(335.42 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
-        <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_70" data-name="楕円形 70" transform="translate(316.121 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_71" data-name="楕円形 71" transform="translate(296.823 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_72" data-name="楕円形 72" transform="translate(258.227 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_73" data-name="楕円形 73" transform="translate(238.928 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_74" data-name="楕円形 74" transform="translate(220.345 2233.018)" fill="#c46067" stroke="#250b0d" stroke-width="1">
-        <ellipse cx="6.79" cy="7.148" rx="6.79" ry="7.148" stroke="none"/>
-        <ellipse cx="6.79" cy="7.148" rx="6.29" ry="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_75" data-name="楕円形 75" transform="translate(181.748 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_76" data-name="楕円形 76" transform="translate(277.525 2233.018)" fill="#fff" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_77" data-name="楕円形 77" transform="translate(143.152 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_78" data-name="楕円形 78" transform="translate(123.853 2233.018)" fill="#c72430" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-      <g id="楕円形_79" data-name="楕円形 79" transform="translate(201.046 2233.018)" fill="#c46067" stroke="#250b0d" stroke-width="1">
-        <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-        <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-      </g>
-    </g>
-    <rect id="長方形_155" data-name="長方形 155" width="252.385" height="6.764" transform="translate(67.918 2137.236)" fill="#f6d967"/>
-    <text id="_12_18_Sat._20:00_12_24_Fri._23:59" data-name="12/18(Sat.)20:00 ～ 12/24(Fri.)23:59" transform="translate(67.918 2124.763)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/18(Sat.)20:00 ～ 12/24(Fri.)23:59</tspan></text>
-    <g id="楕円形_80" data-name="楕円形 80" transform="translate(194.349 2024)" fill="#fff" stroke="#250b0d" stroke-width="1">
-      <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
-      <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
-    </g>
-    <path id="パス_39" data-name="パス 39" d="M1224.111,1038.509v4.945h137.054v-4.945" transform="translate(-1019 1204)" fill="none" stroke="#250b0d" stroke-width="1"/>
-    <rect id="長方形_181" data-name="長方形 181" width="252.385" height="6.764" transform="translate(70.285 1954.236)" fill="#f6d967"/>
-    <text id="_12_01_Wed._20:00_12_17_Fri._23:59" data-name="12/01(Wed.)20:00〜12/17(Fri.)23:59" transform="translate(70.285 1941.763)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/01(Wed.)20:00〜12/17(Fri.)23:59</tspan></text>
-    <rect id="長方形_182" data-name="長方形 182" width="252.385" height="6.764" transform="translate(73.762 2343.709)" fill="#f6d967"/>
-    <text id="_12_25_Sat._20:00_12_31_Fri._23:59" data-name="12/25(Sat.)20:00 ～ 12/31(Fri.)23:59" transform="translate(73.762 2331.236)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/25(Sat.)20:00 ～ 12/31(Fri.)23:59</tspan></text>
   </g>
 </svg>

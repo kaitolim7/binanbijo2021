@@ -7,7 +7,8 @@ import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const title: string = "美男美女SNAP2021";
-  const description: string = "美しいは面白いだ__。";
+  const description: string =
+    "2021 winter 美男美女SNAP2021 美しいは面白いだ__。";
   const url: string = "/binanbijosnap.com";
   const image: string = "/images/og_image.jpg";
   return (
@@ -27,12 +28,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content={url} />
         <meta property="og:image" content={image} />
         <meta property="og:site_name" content={title} />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap"
           rel="stylesheet"
-        />
+        ></link>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>

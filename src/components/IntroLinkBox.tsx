@@ -22,7 +22,7 @@ export default function IntroLinkBox(props: Props) {
       onClick={() => router.push(props.topage)}
     >
       <Flex>
-        <Text fontWeight="bold" fontSize="xl">
+        <Text fontWeight="bold" fontSize="xl" pb={0.5}>
           &nbsp;&nbsp;&nbsp;{props.text}&nbsp;&nbsp;&nbsp;
         </Text>
         <Image src={RightArrow} />

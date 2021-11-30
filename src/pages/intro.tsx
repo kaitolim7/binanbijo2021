@@ -38,7 +38,7 @@ export default function Intro() {
       </Center>
       <Center marginTop={[6, 0]}>
         {isXl ? (
-          <Image src={IntroXlImage} height={360} />
+          <Image src={IntroXlImage} height={380} />
         ) : (
           <Image src={IntroImage} />
         )}
