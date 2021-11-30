@@ -1,5 +1,4 @@
-import { Box, Center } from "@chakra-ui/layout";
-import HeadingModelImage2 from "../../public/svgs/headingmodel2.svg";
+import { Box, Center, Heading } from "@chakra-ui/layout";
 import MobileModelImage2 from "../../public/images/model2.png";
 import Image from "next/image";
 import { useBreakpointValue } from "@chakra-ui/media-query";
@@ -9,7 +8,9 @@ export default function HeadingModel2() {
   return (
     <Box>
       {isXl ? (
-        <Image src={HeadingModelImage2} />
+        <Center>
+          <Heading>MODEL</Heading>
+        </Center>
       ) : (
         <Center w={130}>
           <Image src={MobileModelImage2} />

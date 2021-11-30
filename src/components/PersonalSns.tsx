@@ -33,7 +33,7 @@ export default function PersonalSns(props: Props) {
       <Box zIndex="1" position="absolute" top="8%" right="23%">
         {instaLink || twitterLink ? (
           <Text fontSize="md" fontWeight="bold">
-            \ check it /
+            &#92; check it /
           </Text>
         ) : (
           <></>

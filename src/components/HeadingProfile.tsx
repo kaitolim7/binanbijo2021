@@ -13,7 +13,7 @@ export default function HeadingProfile() {
     );
   }
   return (
-    <Box ml={0} pl={0}>
+    <Box w={220}>
       <Image src={HeadingProfileImage} />
     </Box>
   );
