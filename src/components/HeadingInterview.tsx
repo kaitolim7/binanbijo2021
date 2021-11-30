@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/layout";
 import HeadingInterviewImage from "../../public/svgs/headinginterview.svg";
+import MobileInterviewImage from "../../public/images/INTERVIEW.png";
 import Image from "next/image";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
@@ -13,8 +14,8 @@ export default function HeadingInterview() {
     );
   }
   return (
-    <Box ml={0} pl={0}>
-      <Image src={HeadingInterviewImage} />
+    <Box w={160}>
+      <Image src={MobileInterviewImage} />
     </Box>
   );
 }

@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/layout";
 import HeadingPhotoImage from "../../public/svgs/headingphoto.svg";
+import MobilePhotoImage from "../../public/images/PHOTO.png";
 import Image from "next/image";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
@@ -13,8 +14,8 @@ export default function HeadingPhoto() {
     );
   }
   return (
-    <Box ml={0} pl={0}>
-      <Image src={HeadingPhotoImage} />
+    <Box w={120}>
+      <Image src={MobilePhotoImage} />
     </Box>
   );
 }
