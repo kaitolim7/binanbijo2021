@@ -28,7 +28,7 @@ export default function Photographer({ photographers }: any) {
     <Box w="100%" h="100%">
       <MenuBox />
       <Box marginTop="18" />
-      <Header />
+      <Header title={"カメラマン紹介"} disable={false} />
       <Box marginTop="18px" />
       <Center>
         <Heading fontSize={30}>Photographer</Heading>

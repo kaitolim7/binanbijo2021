@@ -29,7 +29,7 @@ export default function Model({ girls, boys }: any) {
     <Box w="100%" h="100%">
       <MenuBox />
       <Box marginTop="18px" />
-      <Header />
+      <Header title={"モデル一覧"} disable={false} />
       <Box marginTop="36px" />
       <Center>
         <HeadingModel2 />

@@ -24,7 +24,7 @@ export default function Intro() {
     <Box w="100%" h="100%">
       <MenuBox />
       <Box marginTop="18" />
-      <Header />
+      <Header title={"企画説明"} disable={false} />
       <Box marginTop={[6, 12]} />
       <Center>
         <Heading fontSize={30}>美男美女SNAP2021</Heading>
