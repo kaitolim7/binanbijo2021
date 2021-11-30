@@ -6,6 +6,7 @@ import YouTubeLogo from "../../public/svgs/youtube.svg";
 import InstagramLogo from "../../public/svgs/instagram.svg";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import OurSns from "../../public/svgs/oursns.svg";
+import MobileOurSns from "../../public/images/oursns.png";
 import KadaiInfoBox from "../../public/images/binanbijo_logo.png";
 import { useRouter } from "next/dist/client/router";
 import { Menu, MenuList, MenuItem, MenuButton } from "@chakra-ui/react";
@@ -208,8 +209,8 @@ export default function Footer() {
             <Image src={KadaiInfoBox} width={160} height={160} />
           </Box>
           <Flex justifyContent="flex-end" alignItems="center" paddingTop="2">
-            <Box paddingBottom="2" paddingRight="2.5">
-              <Image src={OurSns} />
+            <Box w={120} paddingBottom="0.5" mr="-2">
+              <Image src={MobileOurSns} />
             </Box>
             <Box paddingRight="1">
               <Image
