@@ -1,5 +1,9 @@
+import { useRouter } from "next/dist/client/router";
 import { useEffect } from "react";
 
 export default function Redirect() {
-  return <script>window.location.href('https://binanbijo.com/')</script>;
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/");
+  }, []);
 }
