@@ -71,11 +71,11 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
           </Center>
         </Box> */}
       </Flex>
-      <Box marginTop={["36px", "36px"]} />
+      <Box marginTop={["18px", "36px"]} />
       <Flex justify={["flex-end", "initial"]}>
         <HeadingModel />
       </Flex>
-      <Box marginTop={3} />
+      <Box marginTop={1} />
       <ImageSlider heading="GIRLS" hedingColor="red.600" topImages={girls} />
       <Box marginTop="30px" />
       <ImageSlider heading="BOYS" hedingColor="blue.600" topImages={boys} />

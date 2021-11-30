@@ -172,8 +172,8 @@ export default function Personal({ personal }: any) {
           </Flex>
           <Box h={8} />
           <Box>
-            <IntroLinkBox text={"この人に投票する"} topage={""} />
-            <Box h={3} />
+            {/* <IntroLinkBox text={"この人に投票する"} topage={""} />
+            <Box h={3} /> */}
             <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
           </Box>
           <Box h={14} />
