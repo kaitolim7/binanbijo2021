@@ -85,7 +85,7 @@ export default function PersonalTopImage(props: Props) {
               サークル / {props.club}
             </Text>
           ) : (
-            <Text fontSize="sm" fontWeight="bold" padding="2">
+            <Text fontSize="sm" fontWeight="medium" padding="2">
               ・ {props.faculty} &nbsp;&nbsp;・ 出身 / {props.from}&nbsp;&nbsp;
               ・ サークル / {props.club}
             </Text>
