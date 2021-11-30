@@ -2,12 +2,12 @@
   <g id="ステージ制説明" transform="translate(14.697 -1764)">
     <rect id="長方形_132" data-name="長方形 132" width="400.394" height="710" transform="translate(-14.697 1764)" fill="#f6d967" opacity="0.503"/>
     <text id="美男美女SNAP2021は_初のステージ制を導入_" data-name="美男美女SNAP2021は
-初のステージ制を導入！" transform="translate(25.303 1792.987)" fill="#250b0d" font-size="23" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="20">美男美女SNAP2021は</tspan><tspan x="0" y="60">初のステージ制を導入！</tspan></text>
+初のステージ制を導入！" transform="translate(25.303 1792.987)" fill="#250b0d" font-size="23" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700"><tspan x="0" y="20">美男美女SNAP2021は</tspan><tspan x="0" y="60">初のステージ制を導入！</tspan></text>
     <rect id="長方形_150" data-name="長方形 150" width="322" height="137" transform="translate(24.303 1894)" fill="#fff"/>
-    <text id="_1st_STAGE" data-name="1st STAGE" transform="translate(34.303 1902.491)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">1st STAGE</tspan></text>
+    <text id="_1st_STAGE" data-name="1st STAGE" transform="translate(34.303 1902.491)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">1st STAGE</tspan></text>
     <text id="男子12人_女子11人からFINAL_STAGE_へ進むメンバーを4人選出する期間です_" data-name="男子12人、女子11人からFINAL STAGE
 へ進むメンバーを4人選出する期間です。
-" transform="translate(73.762 1973.108)" fill="#250b0d" font-size="13" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">男子12人、女子11人からFINAL STAGE</tspan><tspan x="0" y="34">へ進むメンバーを4人選出する期間です。</tspan></text>
+" transform="translate(73.762 1973.108)" fill="#250b0d" font-size="13" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">男子12人、女子11人からFINAL STAGE</tspan><tspan x="0" y="34">へ進むメンバーを4人選出する期間です。</tspan></text>
     <g id="グループ_92" data-name="グループ 92" transform="translate(-2.697 -9)">
       <g id="楕円形_46" data-name="楕円形 46" transform="translate(158.45 2033)" fill="#c72430" stroke="#250b0d" stroke-width="1">
         <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
@@ -67,11 +67,11 @@
       <path id="パス_37-2" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
     </g>
     <rect id="長方形_151" data-name="長方形 151" width="322" height="155" transform="translate(24.303 2075)" fill="#fff"/>
-    <text id="RETURN_STAGE" data-name="RETURN STAGE" transform="translate(34.303 2085.482)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">RETURN STAGE</tspan></text>
+    <text id="RETURN_STAGE" data-name="RETURN STAGE" transform="translate(34.303 2085.482)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">RETURN STAGE</tspan></text>
     <text id="_1st_STAGEで惜しくもFINAL_STAGEへ_進めなかった男女各8人からFINAL_STAGEへ_進む各2人を決定します_" data-name="1st STAGEで惜しくもFINAL STAGEへ
 進めなかった男女各8人からFINAL STAGEへ
 進む各2人を決定します。
-" transform="translate(73.762 2156.108)" fill="#250b0d" font-size="11" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="10">1st STAGEで惜しくもFINAL STAGEへ</tspan><tspan x="0" y="29">進めなかった男女各8人からFINAL STAGEへ</tspan><tspan x="0" y="48">進む各2人を決定します。</tspan></text>
+" transform="translate(73.762 2156.108)" fill="#250b0d" font-size="11" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="10">1st STAGEで惜しくもFINAL STAGEへ</tspan><tspan x="0" y="29">進めなかった男女各8人からFINAL STAGEへ</tspan><tspan x="0" y="48">進む各2人を決定します。</tspan></text>
     <g id="グループ_91" data-name="グループ 91" transform="translate(33.362 2185.73) rotate(90)">
       <g id="グループ_45-2" data-name="グループ 45" transform="translate(0 0)">
         <path id="パス_38-3" data-name="パス 38" d="M0,0H74.9" transform="translate(0 0)" fill="none" stroke="#250b0d" stroke-width="2"/>
@@ -81,10 +81,10 @@
       <path id="パス_37-4" data-name="パス 37" d="M0,5.495,9.366,0" transform="translate(65.107 0.358)" fill="none" stroke="#250b0d" stroke-width="2"/>
     </g>
     <rect id="長方形_152" data-name="長方形 152" width="322" height="137" transform="translate(24.303 2275.664)" fill="#fff"/>
-    <text id="FINAL_STAGE" data-name="FINAL STAGE" transform="translate(37.509 2286.146)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">FINAL STAGE</tspan></text>
+    <text id="FINAL_STAGE" data-name="FINAL STAGE" transform="translate(37.509 2286.146)" fill="#250b0d" font-size="25" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="22">FINAL STAGE</tspan></text>
     <text id="_1st_STAGE_RETURN_STAGEから進んだ_男女各6人から上位各3位を決定します_" data-name="1st STAGE、RETURN STAGEから進んだ
 男女各6人から上位各3位を決定します。
-" transform="translate(51.509 2360.518)" fill="#250b0d" font-size="13" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">1st STAGE、RETURN STAGEから進んだ</tspan><tspan x="0" y="34">男女各6人から上位各3位を決定します。</tspan></text>
+" transform="translate(51.509 2360.518)" fill="#250b0d" font-size="13" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">1st STAGE、RETURN STAGEから進んだ</tspan><tspan x="0" y="34">男女各6人から上位各3位を決定します。</tspan></text>
     <g id="グループ_94" data-name="グループ 94" transform="translate(-124.722 -8.468)">
       <g id="楕円形_63" data-name="楕円形 63" transform="translate(286.104 2416.504)" fill="#a55c25" stroke="#250b0d" stroke-width="1">
         <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
@@ -106,9 +106,9 @@
         <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
         <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
       </g>
-      <text id="_1" data-name="1" transform="translate(249.712 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">1</tspan></text>
-      <text id="_2" data-name="2" transform="translate(269.825 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">2</tspan></text>
-      <text id="_3" data-name="3" transform="translate(289.938 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700"><tspan x="0" y="11">3</tspan></text>
+      <text id="_1" data-name="1" transform="translate(249.712 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700"><tspan x="0" y="11">1</tspan></text>
+      <text id="_2" data-name="2" transform="translate(269.825 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700"><tspan x="0" y="11">2</tspan></text>
+      <text id="_3" data-name="3" transform="translate(289.938 2436.245)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700"><tspan x="0" y="11">3</tspan></text>
       <g id="楕円形_83" data-name="楕円形 83" transform="translate(346.443 2416.504)" fill="#fff" stroke="#250b0d" stroke-width="1">
         <ellipse cx="7.449" cy="7.449" rx="7.449" ry="7.449" stroke="none"/>
         <ellipse cx="7.449" cy="7.449" rx="6.949" ry="6.949" fill="none"/>
@@ -165,15 +165,15 @@
       </g>
     </g>
     <rect id="長方形_155" data-name="長方形 155" width="252.385" height="6.764" transform="translate(67.918 2137.236)" fill="#f6d967"/>
-    <text id="_12_18_Sat._20:00_12_24_Fri._23:59" data-name="12/18(Sat.)20:00 ～ 12/24(Fri.)23:59" transform="translate(67.918 2124.763)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/18(Sat.)20:00 ～ 12/24(Fri.)23:59</tspan></text>
+    <text id="_12_18_Sat._20:00_12_24_Fri._23:59" data-name="12/18(Sat.)20:00 ～ 12/24(Fri.)23:59" transform="translate(67.918 2124.763)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/18(Sat.)20:00 ～ 12/24(Fri.)23:59</tspan></text>
     <g id="楕円形_80" data-name="楕円形 80" transform="translate(194.349 2024)" fill="#fff" stroke="#250b0d" stroke-width="1">
       <circle cx="7.148" cy="7.148" r="7.148" stroke="none"/>
       <circle cx="7.148" cy="7.148" r="6.648" fill="none"/>
     </g>
     <path id="パス_39" data-name="パス 39" d="M1224.111,1038.509v4.945h137.054v-4.945" transform="translate(-1019 1204)" fill="none" stroke="#250b0d" stroke-width="1"/>
     <rect id="長方形_181" data-name="長方形 181" width="252.385" height="6.764" transform="translate(70.285 1954.236)" fill="#f6d967"/>
-    <text id="_12_01_Wed._20:00_12_17_Fri._23:59" data-name="12/01(Wed.)20:00〜12/17(Fri.)23:59" transform="translate(70.285 1941.763)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/01(Wed.)20:00〜12/17(Fri.)23:59</tspan></text>
+    <text id="_12_01_Wed._20:00_12_17_Fri._23:59" data-name="12/01(Wed.)20:00〜12/17(Fri.)23:59" transform="translate(70.285 1941.763)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/01(Wed.)20:00〜12/17(Fri.)23:59</tspan></text>
     <rect id="長方形_182" data-name="長方形 182" width="252.385" height="6.764" transform="translate(73.762 2343.709)" fill="#f6d967"/>
-    <text id="_12_25_Sat._20:00_12_31_Fri._23:59" data-name="12/25(Sat.)20:00 ～ 12/31(Fri.)23:59" transform="translate(73.762 2331.236)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/25(Sat.)20:00 ～ 12/31(Fri.)23:59</tspan></text>
+    <text id="_12_25_Sat._20:00_12_31_Fri._23:59" data-name="12/25(Sat.)20:00 ～ 12/31(Fri.)23:59" transform="translate(73.762 2331.236)" fill="#250b0d" font-size="12" font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="11">12/25(Sat.)20:00 ～ 12/31(Fri.)23:59</tspan></text>
   </g>
 </svg>

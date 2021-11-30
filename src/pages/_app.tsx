@@ -27,12 +27,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content={url} />
         <meta property="og:image" content={image} />
         <meta property="og:site_name" content={title} />
-        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap"
           rel="stylesheet"
-        ></link> */}
+        ></link>
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
