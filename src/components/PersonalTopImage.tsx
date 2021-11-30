@@ -81,13 +81,13 @@ export default function PersonalTopImage(props: Props) {
         <Flex justify={["flex-end", "center"]}>
           {isXl ? (
             <Text fontSize="md" fontWeight="bold" padding="2" ml={96}>
-              ⚫ {props.faculty} &nbsp;&nbsp;⚫ 出身 / {props.from}&nbsp;&nbsp;
-              ⚫ サークル / {props.club}
+              ● {props.faculty} &nbsp;&nbsp;● 出身 / {props.from}&nbsp;&nbsp; ●
+              サークル / {props.club}
             </Text>
           ) : (
             <Text fontSize="sm" fontWeight="bold" padding="2">
-              ⚫ {props.faculty} &nbsp;&nbsp;⚫ 出身 / {props.from}&nbsp;&nbsp;
-              ⚫ サークル / {props.club}
+              ・ {props.faculty} &nbsp;&nbsp;・ 出身 / {props.from}&nbsp;&nbsp;
+              ・ サークル / {props.club}
             </Text>
           )}
         </Flex>
