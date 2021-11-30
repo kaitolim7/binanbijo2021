@@ -46,7 +46,7 @@ export default function PersonalTopImage(props: Props) {
               borderStart={["inherit", "unset"]}
               bgColor="white"
               fontSize="2xl"
-              fontWeight="bold"
+              fontWeight="medium"
               padding="2"
             >
               No.{props.entryNumber} {props.name}
