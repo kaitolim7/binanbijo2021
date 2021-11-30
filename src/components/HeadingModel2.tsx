@@ -11,7 +11,7 @@ export default function HeadingModel2() {
       {isXl ? (
         <Image src={HeadingModelImage2} />
       ) : (
-        <Center w={130} ml={4}>
+        <Center w={130}>
           <Image src={MobileModelImage2} />
         </Center>
       )}
