@@ -18,6 +18,7 @@ import { getBoysTopImages, getGirlsTopImages, getNews } from "./api";
 import { useEffect, useState } from "react";
 import shuffle from "../hooks/shuffle";
 import KadaiInfoImage from "../../public/images/kadaiinfo.jpg";
+import Header from "../components/Header";
 
 export async function getStaticProps() {
   const girls = await getGirlsTopImages();
@@ -53,6 +54,7 @@ const Home: NextPage = ({ girlsTopImages, boysTopImages, news }: any) => {
 
   return (
     <Box w="100%" h="100%">
+      <Header title="美男美女SNAP2021" disable={true} />
       <MenuBox />
       <Box marginTop="18" />
       <TopHeader topImages={girls.slice(0, 3).concat(boys.slice(0, 3))} />

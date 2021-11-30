@@ -35,6 +35,8 @@ export async function getStaticProps({ params }: any) {
 
 export default function Personal({ personal }: any) {
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
+  const title: string =
+    "No." + (personal.entry_number as string) + " " + personal.name;
   return (
     <Box w="100%" h="100%">
       <MenuBox />
@@ -57,7 +59,7 @@ export default function Personal({ personal }: any) {
       )} */}
 
       <Box marginTop="18px" />
-      <Header />
+      <Header title={title} disable={false} />
       <Box marginTop="36px" />
       <Flex flexDir={["column", "row"]} justify="center">
         <Center>
