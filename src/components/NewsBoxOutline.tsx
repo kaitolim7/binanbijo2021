@@ -78,7 +78,7 @@ export default function NewsBoxOutline(props: Props) {
                   stroke="#250b0d"
                   stroke-width="1"
                   font-size="60"
-                  font-family="irohakakuC-Bold, irohakakuC, 'Noto Sans JP'"
+                  font-family="irohakakuC-Bold, irohakakuC"
                   font-weight="700"
                   letter-spacing="0.05em"
                 >
@@ -99,7 +99,7 @@ export default function NewsBoxOutline(props: Props) {
                     stroke="#250b0d"
                     stroke-width="1"
                     font-size="60"
-                    font-family="irohakakuC-Bold, irohakakuC , 'Noto Sans JP'"
+                    font-family="irohakakuC-Bold, irohakakuC"
                     font-weight="700"
                     letter-spacing="0.05em"
                   >
@@ -113,7 +113,7 @@ export default function NewsBoxOutline(props: Props) {
                   transform="translate(507 1059)"
                   fill="#250b0d"
                   font-size="20"
-                  font-family="YuGo-Bold, YuGothic, 'Noto Sans JP'"
+                  font-family="YuGo-Bold, YuGothic"
                   font-weight="700"
                 >
                   <tspan x="0" y="18">
@@ -217,7 +217,7 @@ export default function NewsBoxOutline(props: Props) {
                                           stroke="#250b0d"
                                           stroke-width="1"
                                           font-size="50"
-                                          font-family="irohakakuC-Bold, irohakakuC, 'Noto Sans JP'"
+                                          font-family="irohakakuC-Bold, irohakakuC"
                                           font-weight="700"
                                           letter-spacing="0.05em"
                                         >
@@ -241,7 +241,7 @@ export default function NewsBoxOutline(props: Props) {
                                               stroke="#250b0d"
                                               stroke-width="1"
                                               font-size="50"
-                                              font-family="irohakakuC-Bold, irohakakuC, 'Noto Sans JP' "
+                                              font-family="irohakakuC-Bold, irohakakuC"
                                               font-weight="700"
                                               letter-spacing="0.05em"
                                             >
