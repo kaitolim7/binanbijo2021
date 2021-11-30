@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/layout";
 import HeadingProfileImage from "../../public/svgs/headingprofile.svg";
+import MobileProfileImage from "../../public/images/PROFILE.png";
 import Image from "next/image";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 
@@ -13,8 +14,8 @@ export default function HeadingProfile() {
     );
   }
   return (
-    <Box w={220}>
-      <Image src={HeadingProfileImage} />
+    <Box w={140}>
+      <Image src={MobileProfileImage} />
     </Box>
   );
 }
