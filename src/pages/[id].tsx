@@ -67,11 +67,11 @@ export default function Personal({ personal }: any) {
         </Center>
         <Center marginLeft={["0", "8"]}>
           {personal.gender[0] == "male" ? (
-            <Text color="blue.600" fontSize="xl">
+            <Text color="blue.600" fontSize={["xl", "2xl"]} fontWeight="bold">
               Boys
             </Text>
           ) : (
-            <Text color="red.600" fontSize="xl">
+            <Text color="red.600" fontSize={["xl", "2xl"]} fontWeight="bold">
               Girls
             </Text>
           )}
