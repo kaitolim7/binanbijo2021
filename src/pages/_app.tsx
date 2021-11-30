@@ -4,6 +4,10 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Fonts from "../../styles/fonts";
 import theme from "../../styles/theme";
 import Head from "next/head";
+import GoogleTagManager, {
+  googleTagManagerId,
+  GoogleTagManagerId,
+} from "../components/GoogleTagManager";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const title: string = "美男美女SNAP2021";
@@ -36,7 +40,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap"
           rel="stylesheet"
-        ></link>
+        ></link>{" "}
+        <GoogleTagManager
+          googleTagManagerId={googleTagManagerId as GoogleTagManagerId}
+        />
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>
