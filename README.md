@@ -6,5 +6,14 @@ https://www.binanbijosnap.com/2021
 
 
 ## 開発環境
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
+### npm install
+
+### npm run dev
+
+## 課題
+- build時にtypeerror
+- 個人ページのアイキャッチ
+- その他 worning, エラー多数
+- リファクター
+- 2021/配下に全ディレクトリ移動
