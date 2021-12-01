@@ -7,9 +7,12 @@ https://www.binanbijosnap.com/2021
 
 ## 開発環境
 
+React Next.js microCMS
+
 ### npm install
 
 ### npm run dev
+
 
 ## 課題
 - build時にtypeerror
