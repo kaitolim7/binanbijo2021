@@ -7,7 +7,7 @@ https://www.binanbijosnap.com/2021
 
 ## 開発環境
 
-React Next.js microCMS
+React Next.js microCMS Vercel
 
 ### npm install
 
