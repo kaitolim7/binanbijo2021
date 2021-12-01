@@ -57,7 +57,7 @@ export default function Intro() {
       <Flex justify="center">
         <Schedule />
       </Flex>
-      <Box marginTop={["36px", 20]} />
+      <Box marginTop={"36px"} />
       <Heading marginLeft={[6, 56]} pl={[0, 56]} fontSize={24}>
         受賞
       </Heading>
