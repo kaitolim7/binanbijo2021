@@ -32,7 +32,7 @@ export default function Header(props: Props) {
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
-          content={"../../public/images/og_image.jpg"}
+          content={"https://www.binanbijosnap.com/public/images/og_image.jpg"}
         />
       </Head>
       {!props.disable && (
