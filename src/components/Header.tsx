@@ -8,6 +8,10 @@ import Head from "next/head";
 type Props = {
   title: string;
   disable: boolean;
+  name?: string | undefined;
+  id?: string | undefined;
+  personalDescription?: string | undefined;
+  personalImage?: string | undefined;
 };
 
 export default function Header(props: Props) {
@@ -27,13 +31,27 @@ export default function Header(props: Props) {
         <meta property="og:url" content={url} />
         <meta property="og:image" content={image} />
         <meta property="og:site_name" content={title} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta
-          name="twitter:image"
-          content={"https://www.binanbijosnap.com/images/og_image.jpg"}
-        />
+        {props.id ? (
+          <>
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={props.name} />
+            <meta
+              name="twitter:description"
+              content={props.personalDescription}
+            />
+            <meta name="twitter:image" content={props.personalImage} />
+          </>
+        ) : (
+          <>
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={description} />
+            <meta
+              name="twitter:image"
+              content={"https://www.binanbijosnap.com/images/og_image.jpg"}
+            />
+          </>
+        )}
       </Head>
       {!props.disable && (
         <Box>

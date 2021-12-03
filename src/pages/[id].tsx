@@ -59,7 +59,14 @@ export default function Personal({ personal }: any) {
       )} */}
 
       <Box marginTop="18px" />
-      <Header title={title} disable={false} />
+      <Header
+        title={title}
+        disable={false}
+        name={personal.name}
+        id={personal.id}
+        personalDescription={personal.interview.a_word}
+        personalImage={personal.top_image}
+      />
       <Box marginTop="36px" />
       <Flex flexDir={["column", "row"]} justify="center">
         <Center>
