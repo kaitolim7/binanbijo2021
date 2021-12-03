@@ -65,7 +65,7 @@ export default function Personal({ personal }: any) {
         name={personal.name}
         id={personal.id}
         personalDescription={personal.interview.a_word}
-        personalImage={personal.top_image}
+        personalImage={personal.top_image.url}
       />
       <Box marginTop="36px" />
       <Flex flexDir={["column", "row"]} justify="center">
