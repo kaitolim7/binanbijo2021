@@ -159,9 +159,7 @@ export default function Footer() {
                 width={44}
                 height={44}
                 onClick={() =>
-                  router.push(
-                    "https://instagram.com/kadai_info_snap?utm_medium=copy_link"
-                  )
+                  router.push("https://www.instagram.com/kadai_info_snap/")
                 }
               />
             </Box>
@@ -170,9 +168,7 @@ export default function Footer() {
                 src={TwitterLogo}
                 width={58}
                 height={58}
-                onClick={() =>
-                  router.push("https://twitter.com/snap20204?s=21")
-                }
+                onClick={() => router.push("https://twitter.com/snap20204/")}
               />
             </Box>
             <Box paddingRight="3">
@@ -218,9 +214,7 @@ export default function Footer() {
                 width={36}
                 height={36}
                 onClick={() =>
-                  router.push(
-                    "https://instagram.com/kadai_info_snap?utm_medium=copy_link"
-                  )
+                  router.push("https://www.instagram.com/kadai_info_snap/")
                 }
               />
             </Box>
@@ -229,9 +223,7 @@ export default function Footer() {
                 src={TwitterLogo}
                 width={48}
                 height={48}
-                onClick={() =>
-                  router.push("https://twitter.com/snap20204?s=21")
-                }
+                onClick={() => router.push("https://twitter.com/snap20204/")}
               />
             </Box>
             <Box paddingRight="4">
