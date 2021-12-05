@@ -34,3 +34,12 @@ declare global {
     dataLayer: Record<string, unknown>[];
   }
 }
+
+type TapBannerLabel = "mayonaka no atelier" | "other";
+
+export const tapBanner = (label: TapBannerLabel): void => {
+  window.dataLayer.push({
+    event: "tap_banner",
+    tap_banner_label: label,
+  });
+};
