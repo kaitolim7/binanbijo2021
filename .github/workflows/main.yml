@@ -35,15 +35,3 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - name: Pushes to another repository
-        id: push_src
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: 'main'
-          destination-github-username: 'raimirarara'
-          destination-repository-name: 'binanbijo2021'
-          user-email: rai
-          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-          target-branch: miura
