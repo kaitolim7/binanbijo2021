@@ -37,7 +37,7 @@ jobs:
           
       - name: Pushes to another repository
         id: push_directory
-        uses: kadaiinfo/binanbijo2021@master
+        uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
