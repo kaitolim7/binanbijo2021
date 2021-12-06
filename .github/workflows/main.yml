@@ -41,7 +41,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'output'
+          source-directory: 'root'
           destination-github-username: 'raimirarara'
           destination-repository-name: 'binanbijo2021'
           user-email: rai
