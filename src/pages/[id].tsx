@@ -14,6 +14,9 @@ import PersonalProfile from "../components/PersonalProfile";
 import { useBreakpointValue } from "@chakra-ui/media-query";
 import { getPageIds, getPageInfo } from "./api";
 import IntroLinkBox from "../components/IntroLinkBox";
+import Image from "next/image";
+import HeartImage from "../../public/svgs/heart.svg";
+import { useRouter } from "next/dist/client/router";
 
 // ビルド時に /content.id のページを静的生成してくれる
 export async function getStaticPaths() {
@@ -34,14 +37,21 @@ export async function getStaticProps({ params }: any) {
 }
 
 export default function Personal({ personal }: any) {
+  const router = useRouter();
   const isXl = useBreakpointValue({ sm: false, md: false, lg: true, xl: true });
   const title: string =
     "No." + (personal.entry_number as string) + " " + personal.name;
   return (
     <Box w="100%" h="100%">
       <MenuBox />
-      {/* {!isXl && (
-        <Flex position="fixed" right="2.5" bottom="5" zIndex="overlay">
+      {!isXl && (
+        <Flex
+          position="fixed"
+          right="2.5"
+          bottom="5"
+          zIndex="overlay"
+          onClick={() => router.push("https://kadaiinfoapp.page.link/u9DC")}
+        >
           <Center
             w={14}
             h={14}
@@ -50,13 +60,16 @@ export default function Personal({ personal }: any) {
             borderRadius="full"
             borderColor="black"
             border="2px"
+            flexDir="column"
           >
+            <Image src={HeartImage} />
             <Text fontWeight="bold" fontSize={10} marginX="1">
               投票する
             </Text>
+            <Box h={1} />
           </Center>
         </Flex>
-      )} */}
+      )}
 
       <Box marginTop="18px" />
       <Header title={title} disable={false} />
@@ -153,11 +166,7 @@ export default function Personal({ personal }: any) {
             </Box>
           </Flex>
           <Box h={10} />
-          <Box>
-            <IntroLinkBox text={"この人に投票する"} topage={""} />
-            <Box h={3} />
-            <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
-          </Box>
+          <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
         </>
       ) : (
         <>
@@ -174,8 +183,11 @@ export default function Personal({ personal }: any) {
           </Flex>
           <Box h={8} />
           <Box>
-            {/* <IntroLinkBox text={"この人に投票する"} topage={""} />
-            <Box h={3} /> */}
+            <IntroLinkBox
+              text={"この人に投票する"}
+              topage={"https://kadaiinfoapp.page.link/u9DC"}
+            />
+            <Box h={3} />
             <IntroLinkBox text={"他のモデルを見る"} topage={"/model"} />
           </Box>
           <Box h={14} />
