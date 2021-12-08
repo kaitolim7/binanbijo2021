@@ -88,7 +88,7 @@ export default function PersonalImageSlider(props: ImagesProps) {
           {props.images.map((image) => (
             <PersonalImageSliderItem key={image.url} image={image} />
           ))}
-          <TempImage day={8} />
+          {/* <TempImage day={8} /> */}
           <TempImage day={15} />
         </Carousel>
       </Flex>
