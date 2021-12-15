@@ -73,7 +73,7 @@ export default function NewsBox(props: Props) {
                       content={news.content}
                     />
                   ))}
-              <Flex h="100%" alignItems="end" justify="end">
+              <Flex w="100%" h="100%" alignItems="end" justify="end">
                 {open ? (
                   <Text
                     fontWeight="bold"

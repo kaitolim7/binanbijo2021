@@ -111,6 +111,7 @@ export default function Personal({ personal }: any) {
             personal.images.slider_image2,
             personal.images.slider_image3,
             personal.images.slider_image4,
+            personal.images.slider_image5,
           ]}
         />
       </Box>
