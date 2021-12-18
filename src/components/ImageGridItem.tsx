@@ -28,6 +28,7 @@ export default function ImageGridItem(props: Props) {
             fontSize={["x-small", "sm"]}
             fontWeight="bold"
             bgColor="accent"
+            paddingTop={["0", "0.5"]}
             paddingX="3"
           >
             RETURN STAGE
