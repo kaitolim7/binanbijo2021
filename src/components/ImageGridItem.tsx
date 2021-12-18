@@ -22,14 +22,14 @@ export default function ImageGridItem(props: Props) {
       {props.returnStage ? (
         <Flex>
           <Text
-            marginX={["2", "3"]}
+            marginX="3"
             borderColor="black"
             borderWidth="thin"
             fontSize={["x-small", "sm"]}
             fontWeight="bold"
             bgColor="accent"
             paddingTop={["0", "0.5"]}
-            paddingX="3"
+            paddingX={["2", "3"]}
           >
             RETURN STAGE
           </Text>
