@@ -22,7 +22,7 @@ export default function ImageGridItem(props: Props) {
       {props.returnStage ? (
         <Flex>
           <Text
-            marginX="3"
+            marginX={["2", "3"]}
             borderColor="black"
             borderWidth="thin"
             fontSize={["x-small", "sm"]}
