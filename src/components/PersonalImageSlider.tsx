@@ -89,7 +89,7 @@ export default function PersonalImageSlider(props: ImagesProps) {
             <PersonalImageSliderItem key={image.url} image={image} />
           ))}
           {/* <TempImage day={8} /> */}
-          <TempImage day={15} />
+          {/* <TempImage day={15} /> */}
         </Carousel>
       </Flex>
     );

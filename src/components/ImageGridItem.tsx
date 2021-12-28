@@ -10,6 +10,8 @@ type Props = {
   id: number;
   entryNumber: number;
   name: string;
+  returnStage: boolean;
+  finalStage: boolean;
 };
 
 export default function ImageGridItem(props: Props) {
@@ -18,20 +20,39 @@ export default function ImageGridItem(props: Props) {
 
   return (
     <Flex flexDir="column">
-      {/* <Flex>
-        <Text
-          marginX="3"
-          borderColor="black"
-          borderWidth="thin"
-          fontSize={["x-small", "sm"]}
-          fontWeight="bold"
-          bgColor="accent"
-          paddingTop="0.5"
-          paddingX="3"
-        >
-          FINAL決定
-        </Text>
-      </Flex> */}
+      {props.finalStage ? (
+        <Flex>
+          <Text
+            marginX="3"
+            borderColor="black"
+            borderWidth="thin"
+            fontSize={["x-small", "sm"]}
+            fontWeight="bold"
+            bgColor="accent"
+            paddingTop={["0", "0.5"]}
+            paddingX={["2", "3"]}
+          >
+            FINAL STAGE
+          </Text>
+        </Flex>
+      ) : (
+        // <Flex>
+        //   <Text
+        //     marginX="3"
+        //     borderColor="black"
+        //     borderWidth="thin"
+        //     fontSize={["x-small", "sm"]}
+        //     fontWeight="bold"
+        //     // bgColor="accent"
+        //     paddingTop="0.5"
+        //     paddingX="3"
+        //   >
+        //     {/* FINAL 決定 */}
+        //   </Text>
+        // </Flex>
+        <Box h={[19, 25]} />
+      )}
+
       {isXl ? (
         <Box className="sample1">
           <Image src={props.topImage.url} width={300} height={200} />

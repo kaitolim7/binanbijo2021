@@ -33,6 +33,8 @@ export default function ModelGrid(props: Props) {
                 entryNumber={girl.entryNumber}
                 name={girl.name}
                 topImage={girl.topImage}
+                returnStage={girl.returnStage}
+                finalStage={girl.finalStage}
               />
             ))
           : boys.length > 0 &&
@@ -43,6 +45,8 @@ export default function ModelGrid(props: Props) {
                 entryNumber={boy.entryNumber}
                 name={boy.name}
                 topImage={boy.topImage}
+                returnStage={boy.returnStage}
+                finalStage={boy.finalStage}
               />
             ))}
       </SimpleGrid>
@@ -59,6 +63,8 @@ export default function ModelGrid(props: Props) {
                 entryNumber={girl.entryNumber}
                 name={girl.name}
                 topImage={girl.topImage}
+                returnStage={girl.returnStage}
+                finalStage={girl.finalStage}
               />
             ))
           : boys.length > 0 &&
@@ -69,6 +75,8 @@ export default function ModelGrid(props: Props) {
                 entryNumber={boy.entryNumber}
                 name={boy.name}
                 topImage={boy.topImage}
+                returnStage={boy.returnStage}
+                finalStage={boy.finalStage}
               />
             ))}
       </SimpleGrid>
