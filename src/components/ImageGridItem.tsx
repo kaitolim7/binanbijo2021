@@ -11,6 +11,7 @@ type Props = {
   entryNumber: number;
   name: string;
   returnStage: boolean;
+  finalStage: boolean;
 };
 
 export default function ImageGridItem(props: Props) {
@@ -19,7 +20,7 @@ export default function ImageGridItem(props: Props) {
 
   return (
     <Flex flexDir="column">
-      {props.returnStage ? (
+      {props.finalStage ? (
         <Flex>
           <Text
             marginX="3"
@@ -31,7 +32,7 @@ export default function ImageGridItem(props: Props) {
             paddingTop={["0", "0.5"]}
             paddingX={["2", "3"]}
           >
-            RETURN STAGE
+            FINAL STAGE
           </Text>
         </Flex>
       ) : (

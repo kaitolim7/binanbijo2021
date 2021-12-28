@@ -44,6 +44,7 @@ export async function getGirlsTopImages() {
         "gender",
         "top_image",
         "return_stage",
+        "final_stage",
       ],
       limit: 24,
     },
@@ -56,6 +57,7 @@ export async function getGirlsTopImages() {
       name: content.name,
       topImage: content.top_image,
       returnStage: content.return_stage,
+      finalStage: content.final_stage,
     };
   });
   return girlsTopPages.filter((content: any) => content != null);
@@ -71,6 +73,7 @@ export async function getBoysTopImages() {
         "gender",
         "top_image",
         "return_stage",
+        "final_stage",
       ],
       limit: 24,
     },
@@ -83,6 +86,7 @@ export async function getBoysTopImages() {
       name: content.name,
       topImage: content.top_image,
       returnStage: content.return_stage,
+      finalStage: content.final_stage,
     };
   });
   return boysTopPages.filter((content) => content != null);

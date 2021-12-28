@@ -10,6 +10,7 @@ export type Page = {
       height: string;
     };
     return_stage: boolean;
+    final_stage: boolean;
   }[];
 };
 
@@ -24,4 +25,5 @@ export type Content = {
     height: string;
   };
   return_stage: boolean;
+  final_stage: boolean;
 };
