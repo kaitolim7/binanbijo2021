@@ -2,13 +2,9 @@
   "name": "binanbijo2021",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-      "node": "16.20.2"
-    },
   "scripts": {
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider&& next dev",
     "build": "next build",
-    "deploy": "wrangler deploy",
     "start": "next start",
     "lint": "next lint"
   },
@@ -34,4 +30,3 @@
     "typescript": "4.4.4"
   }
 }
-
